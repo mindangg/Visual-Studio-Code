@@ -1,0 +1,19 @@
+body{
+    text-align: center;
+}
+
+#rollButton{
+    font-size: 3em;
+    padding: 5px 25px;
+    background-color: rgba(128, 128, 128, 0.5);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#rollButton:hover{
+    background-color: rgba(128, 128, 128, 0.8);
+}
+
+.numLabel{
+    font-size: 3em;
+}

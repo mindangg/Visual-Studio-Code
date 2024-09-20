@@ -1,0 +1,182 @@
+/* .fa-instagram{
+
+} */
+
+.fa-tiktok{
+   color: #111111;
+   filter: drop-shadow(2px 0px 0px #FD3E3E) drop-shadow(-2px -2px 0px #4DE8F4);
+}
+
+.dropdown1{
+    display: inline-block;
+ }
+ .dropdown1 button{
+    background-color: aliceblue;
+    color: black;
+    font-size: 17px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+ }
+ .dropdown1 a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+ }
+ .dropdown1 .content1{
+    display: none;
+    position: absolute;
+    background-color: rgba(128, 128, 128, 0.9);
+    min-width: 100px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 80%);
+ }
+ .dropdown1:hover .content1{
+    display: block;
+ }
+ .dropdown1:hover .button{
+    background-color: rgba(240, 248, 255, 70%);
+ }
+ .dropdown1 a:hover{
+    background-color: rgba(240, 248, 255, 0.7);
+ }
+
+ .dropdown2{
+   display: inline-block;
+}
+.dropdown2 button{
+   background-color: aliceblue;
+   color: black;
+   font-size: 17px;
+   padding: 10px 15px;
+   border-radius: 10px;
+   cursor: pointer;
+}
+.dropdown2 a{
+   display: block;
+   color: black;
+   text-decoration: none;
+   padding: 10px 15px;
+}
+.dropdown2 .content2{
+   display: none;
+   position: absolute;
+   background-color: rgba(128, 128, 128, 0.9);
+   min-width: 100px;
+   box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 80%);
+}
+.dropdown2:hover .content2{
+   display: block;
+}
+.dropdown2:hover .button{
+   background-color: rgba(240, 248, 255, 70%);
+}
+.dropdown2 a:hover{
+   background-color: hsla(208, 100%, 97%, 90%);
+}
+
+.dropdown3{
+   display: inline-block;
+}
+.dropdown3 button{
+   background-color: aliceblue;
+   color: black;
+   font-size: 17px;
+   padding: 10px 15px;
+   border-radius: 10px;
+   cursor: pointer;
+}
+.dropdown3 a{
+   display: block;
+   color: black;
+   text-decoration: none;
+   padding: 10px 15px;
+}
+.dropdown3 .content3{
+   display: none;
+   position: absolute;
+   background-color: rgba(128, 128, 128, 0.9);
+   min-width: 100px;
+   box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 80%);
+}
+.dropdown3:hover .content3{
+   display: block;
+}
+.dropdown3:hover .button{
+   background-color: rgba(240, 248, 255, 70%);
+}
+.dropdown3 a:hover{
+   background-color: hsla(208, 100%, 97%, 90%);
+}
+
+.dropdown4{
+   display: inline-block;
+}
+.dropdown4 button{
+   background-color: aliceblue;
+   color: black;
+   font-size: 17px;
+   padding: 10px 15px;
+   border-radius: 10px;
+   cursor: pointer;
+}
+.dropdown4 a{
+   display: block;
+   color: black;
+   text-decoration: none;
+   padding: 10px 15px;
+}
+.dropdown4 .content4{
+   display: none;
+   position: absolute;
+   background-color: rgba(128, 128, 128, 0.9);
+   min-width: 100px;
+   box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 80%);
+}
+.dropdown4:hover .content4{
+   display: block;
+}
+.dropdown4:hover .button{
+   background-color: rgba(240, 248, 255, 70%);
+}
+.dropdown4 a:hover{
+   background-color: hsla(208, 100%, 97%, 90%);
+}
+
+.dropdown5{
+   display: inline-block;
+}
+.dropdown5 button{
+   background-color: aliceblue;
+   color: black;
+   font-size: 17px;
+   padding: 10px 15px;
+   border-radius: 10px;
+   cursor: pointer;
+}
+.dropdown5 a{
+   display: block;
+   color: black;
+   text-decoration: none;
+   padding: 10px 15px;
+}
+.dropdown5 .content5{
+   display: none;
+   position: absolute;
+   background-color: rgba(128, 128, 128, 0.9);
+   min-width: 100px;
+   box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 80%);
+}
+.dropdown5:hover .content5{
+   display: block;
+}
+.dropdown5:hover .button{
+   background-color: rgba(240, 248, 255, 70%);
+}
+.dropdown5 a:hover{
+   background-color: hsla(208, 100%, 97%, 90%);
+}
+
+
+
+ 
