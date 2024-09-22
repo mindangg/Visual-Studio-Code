@@ -1,4 +1,10 @@
 {
     "editor.fontSize": 20,
-    "files.autoSave": "afterDelay"
+    "files.autoSave": "afterDelay",
+    "files.associations": {
+        "ostream": "cpp",
+        "iostream": "cpp"
+    },
+    "terminal.explorerKind": "both",
+    "code-runner.runInTerminal": true
 }
