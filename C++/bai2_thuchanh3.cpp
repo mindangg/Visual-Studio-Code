@@ -1,30 +1,30 @@
 #include <iostream>
 using namespace std;
-void swap(char &a, char &b)
+void swap(int &a, int &b)
 {
-	char t = a; a = b; b = t;
+	int t = a; a = b; b = t;
 }
 
 int main(int argc, char **argv)
 {
-    int a[100], n = 1;
+    int a[100], n = 0, t;
     for(int i = 1; i < argc; i++)
     {
-        int t = atoi(argv[i]);
-        if(isdigit(t))
+        t = atoi(argv[i]);
+        if(t != 0)
         {
-            a[i] = t;
+            a[n] = t;
             n++;
         }
     }  
 
-	for(int i = 1; i < n; i++)
-        for(int j = i + 1; j <= n; j++)
+	for(int i = 0; i < n - 1; i++)
+        for(int j = i + 1; j < n; j++)
             if(a[i] > a[j])
                 swap(a[i], a[j]);
 
-	cout<<"Day tang dan la: "<<n;
-	for(int i = 1; i < n; i++)
+	cout<<"Day tang dan la: ";
+	for(int i = 0; i < n; i++)
 		cout<<a[i]<<" ";
     
     return 0 ;
