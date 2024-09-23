@@ -60,4 +60,5 @@ public class main{
         // if(checkPrefect(6))
         //     System.err.println("Yes");
     }
+
 }

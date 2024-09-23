@@ -3,7 +3,9 @@
     "files.autoSave": "afterDelay",
     "files.associations": {
         "ostream": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "string": "cpp",
+        "format": "cpp"
     },
     "terminal.explorerKind": "both",
     "code-runner.runInTerminal": true
