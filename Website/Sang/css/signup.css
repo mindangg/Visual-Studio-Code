@@ -4,11 +4,12 @@ body{
 
 #h1{
     color: white;
+    font-size: 28px;
+    font-family: sans-serif;
 }
 
-#login{
+#signup{
     display: inline-block;
-
 }
 
 .input{
@@ -18,18 +19,18 @@ body{
     margin: 10px 0px;
 }
 
-#login button{
+#signup button{
     font-size: 25px;
     padding: 10px 100px;
     background-color: rgb(8,220,100);
 }
 
-#login:hover button{
+#signup:hover button{
     cursor: pointer;
     background-color: rgba(8, 220, 100, 0.8);
 }
 
-#login a{
+a{
     color: grey;
     font-size: 17px;
     text-decoration: underline;
