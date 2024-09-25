@@ -6,66 +6,72 @@
 body{
    margin-left: 0px;
    margin-right: 0px;
-   background-color: rgba(32, 28, 28);
+   background-color: #201c1c;
 }
 
-#display{
+#header{
    background-color: rgba(32, 28, 28);
    padding: 10px 10px;
+   width: 100%;
    display: flex;
-   justify-content: center;
 }
 
-.dropdown1 a{
+#dropdown1 a{
    color: white;
    font-size: 20px;
    text-decoration: none;
    padding: 20px 20px;
    cursor: pointer;
 }
-.dropdown1 .content1{
+#dropdown1 #content1{
    display: none;
    position: absolute;
+   background-color: rgba(128, 128, 128, 0.9);
+   min-width: 100px;
+   box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 80%);
 }
-.dropdown1:hover .content1{
-   display: flex;
+#dropdown1:hover #content1{
+   display: block;
 }
-.dropdown1 a:hover{
+#dropdown1 a:hover{
    color: gray;
 }
 
-.dropdown2 a{
+#dropdown2 a{
    color: white;
    font-size: 20px;
    text-decoration: none;
    padding: 20px 20px;
    cursor: pointer;
 }
-.dropdown2 .content2{
+#dropdown2 #content2{
    display: none;
    position: absolute;
 }
-.dropdown2:hover .content2{
-   display: flex;
+#dropdown2:hover #content2{
+   display: block;
 }
-.dropdown2 a:hover{
+#dropdown2 a:hover{
    color: gray;
 }
 
-.dropdown3 a{
+#dropdown3 a{
    color: white;
    font-size: 20px;
    text-decoration: none;
    padding: 20px 20px;
    cursor: pointer;
 }
-.dropdown3 .content3{
+#dropdown3 #content3{
    display: none;
    position: absolute;
 }
-.dropdown3:hover .content3{
-   display: flex;
+#dropdown3:hover #content3{
+   display: block;
 }
-.dropdown3 a:hover{
+#dropdown3 a:hover{
    color: gray;
+}
+
+#Home{
 }

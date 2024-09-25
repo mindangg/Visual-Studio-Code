@@ -8,19 +8,18 @@ body{
 
 #login{
     display: inline-block;
-
 }
 
 .input{
     font-size: 25px;
     padding: 10px;
     background-color: rgba(32, 28, 28);
-    margin: 10px 0px;
+    padding: 16px 20px 0px;
 }
 
 #login button{
     font-size: 25px;
-    padding: 10px 100px;
+    padding: 16px 20px 0px;
     background-color: rgb(8,220,100);
 }
 
