@@ -1,0 +1,86 @@
+*,
+*:before,
+*:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg: #201c1c;
+    --green: #08dc64;
+    --green-l: #08bc5c;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--bg);
+}
+
+.signup{
+    max-width: 500px;
+    width: 100%;
+}
+
+.signup h1{
+    font-size: 45px;
+    color: white;
+    text-align: center;
+}
+
+.signup_input{
+    width: 100%;
+    height: 55px;
+    margin: 15px 0;
+}
+
+.signup input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    border: 2px solid #363636;
+    padding: 20px 45px 20px 20px;
+    font-size: 16px;
+    color: white;
+}
+
+.signup input::placeholder{
+    color: #8d8d8d;
+    font-size: 16px;
+}
+
+.signup_btn{
+    width: 100%;
+    height: 65px;
+    background-color: var(--green);
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+}
+
+.signup_btn:hover{
+    background-color: var(--green-l);
+    cursor: pointer;
+}
+
+.signup a{
+    color: #bbbbbb;
+    text-decoration: underline;
+ }
+
+ .signup a:hover{
+    text-decoration: none;
+ }
+
+ .signup_login{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin: 25px 0px;
+ }
