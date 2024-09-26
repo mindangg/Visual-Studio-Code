@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class thuchanh_class
+public class HinhChuNhat
 {
 
     public static class HinhChuNhat
@@ -68,7 +68,7 @@ public class thuchanh_class
         public void nhap()
         {
             SetChieuDai(0);
-            SetChieuRong(0);
+            SetChieuRong(Integer.MAX_VALUE);
         }
     }
 
