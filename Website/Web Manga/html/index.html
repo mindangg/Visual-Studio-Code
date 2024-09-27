@@ -28,20 +28,34 @@
             </ul>
 
             <div class="navbar_home">
-                <a href=""><i class="fa-solid fa-magnifying-glass" style="color:white;"></i></a>
-                <a href=""><i class="fa-regular fa-user" style="color:white;"></i></a>
-                <a href=""><i class="fa-solid fa-cart-shopping" style="color:white;"></i></a>
+                <a id="search_icon"><i class="fa-solid fa-magnifying-glass" style="color:white;"></i></a>
+                <a id="login_icon"><i class="fa-regular fa-user" style="color:white;"></i></a>
+                <a h id="shopping_icon"><i class="fa-solid fa-cart-shopping" style="color:white;"></i></a>
             </div>
         </nav>
     </header>
 
     <!-- <section class="banner"></section> -->
 
+
+
     <main>
-        <div class="search">
-            <div class="searchbox">
-                <input type="search" placeholder="Search for...">
-                <i class="fa-solid fa-xmark" style="color:white;"></i>
+        <div class="popup">
+            <div class="search">
+                <div class="searchbox">
+                    <input type="search" placeholder="Search for...">
+                    <i class="fa-solid fa-xmark" style="color:white;"></i>
+                </div> 
+            </div>
+        </div>
+
+        <div class="shopping">
+            <div class="shopping_cart">
+                <!-- <div>
+                    <i class="fa-solid fa-cart-shopping" style="color:white;"></i>
+                </div> -->
+                <h3>Your cart is empty</h3>
+                <button class="shopping_btn">Continue shopping</button>
             </div> 
         </div>
     </main>
