@@ -4,7 +4,27 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        
+        {
+            "type": "java",
+            "name": "th3_sinhvien",
+            "request": "launch",
+            "mainClass": "th3_sinhvien",
+            "projectName": "Visual Studio Code_1497ad68"
+        },
+        {
+            "type": "java",
+            "name": "TamGiac",
+            "request": "launch",
+            "mainClass": "TamGiac",
+            "projectName": "Visual Studio Code_1497ad68"
+        },
+        {
+            "type": "java",
+            "name": "HinhChuNhat",
+            "request": "launch",
+            "mainClass": "HinhChuNhat",
+            "projectName": "Visual Studio Code_1497ad68"
+        },
         {
             "type": "java",
             "name": "menu",

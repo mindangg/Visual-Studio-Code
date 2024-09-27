@@ -1,6 +1,6 @@
 import java.util.Arrays;
 import java.util.Scanner;
-public class main{
+public class baitap{
     // public static boolean checkPrefect(int n)
     // {
     //     int s = 0;
