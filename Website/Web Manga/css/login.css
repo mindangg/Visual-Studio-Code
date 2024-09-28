@@ -74,10 +74,15 @@ body{
 .login a{
     color: #bbbbbb;
     text-decoration: underline;
+    text-underline-offset: 4px;
+    /* transform: translateX(1); */
  }
 
  .login a:hover{
     text-decoration: none;
+
+    /* transform: translateX(0); */
+
  }
  
 .login_forget{
