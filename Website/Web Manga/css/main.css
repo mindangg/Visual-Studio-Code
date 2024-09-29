@@ -19,6 +19,7 @@ html{
 body{
     background-color: var(--black);
     font-family: "Poppins-Regular", sans-serif;
+    /* overflow: visible; */
 }
 
 :root{
@@ -34,7 +35,7 @@ body{
     top: 123px;
     max-width: 1519px;
     width: 100%;
-    height: 580px;
+    height: 590px;
     overflow: hidden;
 }
 
@@ -74,7 +75,7 @@ body{
 
 .dots{
     position: absolute;
-    bottom: 10px;
+    bottom: 20px;
     color: #fff;
     left: 1300px;
     width: 100%;
@@ -108,7 +109,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: 0.6s;
+    transition: 0.5s;
     padding: 20px 0;
     /* padding: 24px 32px; */
     z-index: 1;
@@ -170,8 +171,78 @@ body{
     transform: translateY(-5px);
 }
 
+.series_navbar{
+    position: absolute;
+    top: 124px;
+    left: 0;
+    width: 100%;
+    align-items: center;
+    transition: 0.5s;
+    padding: 20px 0;
+    background-color: var(--black);
+    z-index: 2;
+    display: none;
+    justify-content: space-between;
+}
+
+.series_navbar_links{
+    /* display: block;
+    justify-content: space-between; */
+    margin: 40px;
+}
+
+.series_navbar li{
+    list-style: none;
+    padding: 20px;
+}
+
+.series_navbar_link a{
+    position: relative;
+    /* margin: 0 15px; */
+    text-decoration: none;
+    color:white;
+    font-weight: 500px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    /* padding: 30px; */
+}
+
+.series_navbar_link a:hover{
+    color: gray;
+    cursor: pointer;
+}
+
+/* 
+.series_navbar_links_1{
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+
+.series_navbar_links_2{
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+
+.series_navbar_links_3{
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+
+.series_navbar_link{
+    position: relative;
+    list-style: none;
+} */
+
+
+
+
+
 .search_popup{
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.3);
     width: 100%;
     height: 100%;
     display: none;
@@ -231,7 +302,7 @@ body{
 /* shopping cart */
 
 .shopping_popup{
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.3);
     width: 100%;
     height: 100%;
     display: none;

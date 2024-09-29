@@ -1,4 +1,4 @@
-// popup
+// search and shopping cart popup
 
 document.getElementById("search_icon").addEventListener("click", function(){
     document.querySelector(".search_popup").style.display = "flex";
@@ -14,6 +14,24 @@ document.getElementById("search_close").addEventListener("click", function(){
 
 document.getElementById("shopping_close").addEventListener("click", function(){
     document.querySelector(".shopping_popup").style.display = "none";
+})
+
+//navigation bar drop down
+
+document.getElementById("navbar_links_2").addEventListener("mouseover", function(){
+    document.querySelector(".series_navbar").style.display = "flex";
+})
+
+// document.getElementById("navbar_links_2").addEventListener("mouseout", function(){
+//     document.querySelector(".series_navbar").style.display = "none";
+// })
+
+document.querySelector(".series_navbar").addEventListener("mouseover", function(){
+    document.querySelector(".series_navbar").style.display = "flex";
+})
+
+document.querySelector(".series_navbar").addEventListener("mouseout", function(){
+    document.querySelector(".series_navbar").style.display = "none";
 })
 
 // let search_icon = document.getElementById("search_icon");
@@ -69,7 +87,7 @@ prev.onclick = function()
     ReloadSlider();
 }
 
-let refreshSlider = setInterval(() => {next.click()}, 4000);
+let refreshSlider = setInterval(() => {next.click()}, 5000);
 
 function ReloadSlider()
 {
@@ -80,7 +98,7 @@ function ReloadSlider()
     lastActiveDot.classList.remove("active");
     dots[active].classList.add("active");
     clearInterval(refreshSlider);
-    refreshSlider = setInterval(() => {next.click()}, 4000);
+    refreshSlider = setInterval(() => {next.click()}, 5000);
 }
 
 dots.forEach((li, key) =>{
