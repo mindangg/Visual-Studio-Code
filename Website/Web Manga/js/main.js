@@ -22,9 +22,9 @@ document.getElementById("navbar_links_2").addEventListener("mouseover", function
     document.querySelector(".series_navbar").style.display = "flex";
 })
 
-// document.getElementById("navbar_links_2").addEventListener("mouseout", function(){
-//     document.querySelector(".series_navbar").style.display = "none";
-// })
+document.getElementById("navbar_links_2").addEventListener("mouseout", function(){
+    document.querySelector(".series_navbar").style.display = "none";
+})
 
 document.querySelector(".series_navbar").addEventListener("mouseover", function(){
     document.querySelector(".series_navbar").style.display = "flex";
@@ -33,6 +33,45 @@ document.querySelector(".series_navbar").addEventListener("mouseover", function(
 document.querySelector(".series_navbar").addEventListener("mouseout", function(){
     document.querySelector(".series_navbar").style.display = "none";
 })
+
+
+document.getElementById("navbar_links_3").addEventListener("mouseover", function(){
+    document.querySelector(".category_navbar").style.display = "flex";
+})
+
+document.getElementById("navbar_links_3").addEventListener("mouseout", function(){
+    document.querySelector(".category_navbar").style.display = "none";
+})
+
+document.querySelector(".category_navbar").addEventListener("mouseover", function(){
+    document.querySelector(".category_navbar").style.display = "flex";
+})
+
+document.querySelector(".category_navbar").addEventListener("mouseout", function(){
+    document.querySelector(".category_navbar").style.display = "none";
+})
+
+
+document.getElementById("navbar_links_4").addEventListener("mouseover", function(){
+    document.querySelector(".author_navbar").style.display = "flex";
+})
+
+document.getElementById("navbar_links_4").addEventListener("mouseout", function(){
+    document.querySelector(".author_navbar").style.display = "none";
+})
+
+document.querySelector(".author_navbar").addEventListener("mouseover", function(){
+    document.querySelector(".author_navbar").style.display = "flex";
+})
+
+document.querySelector(".author_navbar").addEventListener("mouseout", function(){
+    document.querySelector(".author_navbar").style.display = "none";
+})
+
+
+
+
+
 
 // let search_icon = document.getElementById("search_icon");
 // search_icon.onclick = function()

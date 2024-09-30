@@ -1,98 +1,76 @@
-HTML CSSResult Skip Results Iframe
-EDIT ON
-/* @import url("https://fonts.googleapis.com/css?family=Open+Sans:700"); */
-
-/* Reset */
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  min-height: 100vh;
-  font-family: "Open Sans", sans-serif;
-  font-size: clamp(1.2rem, 3vw, 3rem);
-  font-weight: 700;
-  background: #c1f7f5;
-}
-
-ul {
-  list-style: none;
+*{
   margin: 0;
   padding: 0;
 }
-
-a {
-  color: inherit;
+header, nav{
+  /* canh giữa cách lề mỗi bên 10% */
+  margin: 5px 10%;
+}
+nav{
+  background: #484848; /*tô màu cho menu cha*/
+  border-radius: 5px; /* bo góc */
+}
+nav ul{
+  display: flex;
+}
+nav> ul li{
+  list-style: none; /* bỏ dấu chấm mặc định của li */
+  /* kẻ đường bên trái và bên phải của li */
+  border-right: 1px solid #ccc;
+  border-left:1px solid #333;
+}
+nav> ul li a{
+  display: block;
+  padding: 0 25px;
+  line-height: 50px;
+  color: #f1f2f3;
   text-decoration: none;
 }
-
-/* Layout */
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+nav ul li:first-child {
+  border-left: none; /* bỏ đường kè trái của phần tử đầu tiên */
 }
-
-ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+nav> ul li:first-child a{
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
 }
-
-li {
-  margin: 0 2rem;
+/* Khi hover đến li, tô màu cho thẻ a */
+nav ul li:hover>a{
+  background: red;
+  opacity: .7;
+  color: yellow;
 }
-
-/* Underline styles */
-a {
-  display: block;
-  position: relative;
-  padding: 0.2em 0;
-}
-
-/* Fade in */
-a::after {
-  content: '';
+/*menu con*/
+/*Ẩn các menu con cấp 1,2,3*/
+nav li ul{
+  display: none;
+  min-width: 350px;
   position: absolute;
-  bottom: 0;
-  left: 0;
+}
+nav li>ul li{
   width: 100%;
-  height: 0.1em;
-  background-color: hotpink;
-  opacity: 0;
-  transition: opacity 300ms, transform 300ms;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background: #999;
+  text-align: left;
 }
-
-a:hover::after,
-a:focus::after {
-  opacity: 1;
-  transform: translate3d(0, 0.2em, 0);
+nav li>ul li:first-child a{
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
 }
-
-/* Slide in */
-li:nth-child(2) a {
-  overflow: hidden;
+nav li>ul li:last-child {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
-
-li:nth-child(2) a::after {
-  opacity: 1;
-  transform: translate3d(-100%, 0, 0);
+nav li>ul li:last-child a{
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
-
-li:nth-child(2) a:hover::after,
-li:nth-child(2) a:focus::after{
-  transform: translate3d(0, 0, 0);
+/*khi hover thì hiện menu con*/
+nav  li:hover > ul{
+  display:  block;
 }
-
-/* Scale from center */
-li:nth-child(3) a::after {
-  opacity: 1;
-  transform: scale(0);
-  transform-origin: center;
-}
-
-li:nth-child(3) a:hover::after,
-li:nth-child(3) a:focus::after{
-  transform: scale(1);
+/*Hiển thị menu con cấp 2,3,4 bên cạnh phải*/
+nav > ul li > ul li >ul{
+  margin-left: 352px;
+  margin-top: -50px;
 }

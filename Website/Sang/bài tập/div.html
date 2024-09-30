@@ -4,53 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Div</title>
-    <style>
-        *{box-sizing: border-box;}
-        body{
-            margin-left: 40px;
-            margin-right: 40px;
-        }
-        ul, li{
-            margin: 0px;
-            padding: 0px;
-        }
-    </style>
+    <link rel="stylesheet" href="../css/div.css">
 </head>
 <body>
-
    <main>
-    <div style="width: 100%; border: solid 7px black;">
-        <div style="clear: both; height:120px; line-height: 120px; border: solid 3px orange; text-align: center; margin-bottom: 5px;">Header</div>
-        <div style="border: solid 3px blue; margin: 5px 1px;">
+    <div class="container">
+        <div id="header">
+        <div class="login_thongtin">Thông tin công ty</div>
+        <div class="login_container">
             <ul>
-                <li style="display: inline-block; width: 8%; border: solid 2px orange; background-color: aqua; text-align: center; margin: 1px 0;">Trang chủ</li>
-                <li style="display: inline-block; width: 12%; border: solid 2px orange; background-color: aqua; text-align: center; margin: 1px 0;">Thông tin tuyển sinh</li>
-                <li style="display: inline-block; width: 12%; border: solid 2px orange; background-color: aqua; text-align: center; margin: 1px 0;">Thông tin đào tạo</li>
-                <li style="display: inline-block; width: 5%; border: solid 2px orange; background-color: aqua; text-align: center; margin: 1px 0;">Liên hệ</li>
+                <li class="login">Đăng ký</li>
+                <li class="login">Đăng nhập</li>
+                <li class="login">Giỏ hàng</li>
             </ul> 
-
-            <ul>
-                <li style="border: solid 2px orange; background-color: aqua;">Trang chủ</li>
-                <li style="border: solid 2px orange; background-color: aqua;">Thông tin tuyển sinh</li>
-                <li style="border: solid 2px orange; background-color: aqua;">Thông tin đào tạo</li>
-                <li style="border: solid 2px orange; background-color: aqua;">Liên hệ</li>
-            </ul>
+        </div>
         </div>
 
-        <div style="border: solid 3px blue; margin: 5px 1px;">
-            <div style="float: left; width: 20%; border: solid 3px lime; padding: 10px;">
-                <div style="height:30px; float: top; border: solid 3px blue; padding-left: 10px; margin: 1px 0;">Trang chủ</div>
-                <div style="height:30px; float: top; border: solid 3px blue; padding-left: 10px; margin: 1px 0;">Thông tin tuyển sinh</div>
-                <div style="height:30px; float: top; border: solid 3px blue; padding-left: 10px; margin: 1px 0;">Thông tin đào tạo</div>
-                <div style="height:30px; float: top; border: solid 3px blue; padding-left: 10px; margin: 1px 0;">Giới thiệu</div>
-                <div style="height:30px; float: top; border: solid 3px blue; padding-left: 10px; margin: 1px 0;">Liên hệ</div>
+        <div class="home_container">
+            <ul>
+                <li class="home">Trang chủ</li>
+                <li class="home">Thông tin tuyển sinh</li>
+                <li class="home">Thông tin đào tạo</li>
+                <li class="home">Liên hệ</li>
+            </ul> 
+        </div>
+
+        <div class="main_container">
+            <div class="main_left">
+                <div>Trang chủ</div>
+                <div>Thông tin tuyển sinh</div>
+                <div>Thông tin đào tạo</div>
+                <div>Giới thiệu</div>
+                <div>Liên hệ</div>
             </div>
-            <div style="float: left; width: 60%; border: solid 3px lime;">C</div>
-            <div style="float: right; width: 20%; border: solid 3px lime;">R</div>
+
+            <div class="main_center">
+                <div>
+                    <img src="../img/1.jpg">
+                    <ul>
+                        <li>Mã SP</li>
+                        <li>Tên SP</li>
+                        <li>Giá SP</li>
+                        <li>Mua</li>
+                        <li>Chi tiết</li>
+                    </ul> 
+                </div>
+
+                <div>
+                    <img src="../img/1.jpg">
+                    <ul>
+                        <li>Mã SP</li>
+                        <li>Tên SP</li>
+                        <li>Giá SP</li>
+                        <li>Mua</li>
+                        <li>Chi tiết</li>
+                    </ul> 
+                </div>
+
+                <div>
+                    <img src="../img/1.jpg">
+                    <ul>
+                        <li>Mã SP</li>
+                        <li>Tên SP</li>
+                        <li>Giá SP</li>
+                        <li>Mua</li>
+                        <li>Chi tiết</li>
+                    </ul> 
+                </div>
+
+                <div>
+                    <img src="../img/1.jpg">
+                    <ul>
+                        <li>Mã SP</li>
+                        <li>Tên SP</li>
+                        <li>Giá SP</li>
+                        <li>Mua</li>
+                        <li>Chi tiết</li>
+                    </ul> 
+                </div>
+                <div>
+                    <img src="../img/1.jpg">
+                    <ul>
+                        <li>Mã SP</li>
+                        <li>Tên SP</li>
+                        <li>Giá SP</li>
+                        <li>Mua</li>
+                        <li>Chi tiết</li>
+                    </ul> 
+                </div>
+            </div>
+
+            <div class="main_right">R</div>
             <div style="clear:both"></div>
         </div>
         
-        <div style="clear: both; height:120px; line-height: 120px; border: solid 3px green; text-align: center; margin-top: 5px;">Footer</div>
+        <div id="footer">Footer</div>
     </div>
    </main>
 

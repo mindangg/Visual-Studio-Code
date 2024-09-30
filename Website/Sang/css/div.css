@@ -1,0 +1,261 @@
+*,
+*:before,
+*:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+ul, li{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    width: 100%; 
+    border: solid 7px black;
+}
+
+#header{
+    position: relative;
+    clear: both; 
+    height:120px; 
+    /* line-height: 120px;  */
+    border: solid 3px orange; 
+    /* text-align: center;  */
+    /* display: flex; */
+    margin-bottom: 5px;
+    /* contain: content; */
+}
+
+.login_container{
+    position: relative;
+    top: 54px;
+    left: 1190px;
+    border: solid 3px red; 
+    display: inline-block;
+}
+
+.login_thongtin{
+    position: relative;
+    top: 0;
+    left: 0px;
+    border: solid 3px lime;
+    width: 240px;
+    text-align: center;
+    /* display: inline-block; */
+}
+
+.login_container li{
+    list-style: none;
+}
+
+.login{
+    display: inline-block;
+    border: solid 3px blue; 
+    background-color: aqua; 
+    text-align: center; 
+    margin: 3px;
+}
+
+.home_container{
+    border: solid 3px blue; 
+    margin: 5px 1px;
+}
+
+.home_container li{
+    list-style: none;
+}
+
+.home{
+    display: inline-block;
+    border: solid 3px red; 
+    background-color: aqua; 
+    text-align: center; 
+    margin: 3px;
+}
+
+.main_container{
+    border: solid 3px blue; 
+    margin: 5px 1px;
+}
+
+.main_left{
+    float: left; 
+    width: 20%; 
+    border: solid 3px lime; 
+    padding: 10px;
+}
+
+.main_left div{
+    height:30px; 
+    float: top; 
+    border: solid 3px blue; 
+    border-radius: 5px;
+    padding-left: 10px; 
+    margin: 1px 0;
+}
+
+.main_center{
+    float: left; 
+    width: 60%; 
+    border: solid 3px lime;
+    display: block;
+}
+
+.main_center li{
+    list-style: none;
+    border-bottom: solid 3px black;
+    width: 100%;
+    padding: 5px 0;
+}
+
+.main_center img{
+   width: 100%; 
+   height: 150px;
+}
+
+.main_center div{
+    float: left; 
+    width: calc(33.3% - 6px);
+    border: solid 3px red; 
+    margin: 3px;
+    padding: 5px;
+ }
+
+.main_right{
+    float: right; 
+    width: 20%; 
+    border: solid 3px lime;
+}
+
+#footer{
+    clear: both; 
+    height:120px; 
+    line-height: 120px; 
+    border: solid 3px green; 
+    text-align: center;
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 700px){
+    body{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    #header{
+        clear: both; 
+        height:120px; 
+        /* line-height: 120px;  */
+        border: solid 3px orange; 
+        /* text-align: center;  */
+        /* display: flex; */
+        margin-bottom: 5px;
+    }
+
+    .login_container{
+        position: relative;
+        top: 54px;
+        left: 432px;
+        border: solid 3px red; 
+        display: inline-block;
+    }
+    
+    .login_thongtin{
+        position: relative;
+        top: 0;
+        left: 0px;
+        border: solid 3px lime;
+        width: 200px;
+        text-align: center;
+        /* display: inline-block; */
+    }
+    
+    .login_container li{
+        list-style: none;
+    }
+    
+    .login{
+        display: inline-block;
+        border: solid 3px blue; 
+        background-color: aqua; 
+        text-align: center; 
+        margin: 3px;
+    }
+    
+    .home_container{
+        border: solid 3px blue; 
+        margin: 5px 1px;
+    }
+    
+    .home_container li{
+        list-style: none;
+    }
+    
+    .home{
+        display: block;
+        border: solid 3px red; 
+        background-color: aqua; 
+        text-align: start; 
+        margin: 3px;
+    }
+    
+    .main_container{
+        border: solid 3px blue; 
+        margin: 5px 1px;
+    }
+    
+    .main_left{
+        float: left; 
+        width: 30%; 
+        border: solid 3px lime; 
+        padding: 2px;
+    }
+    
+    .main_left div{
+        float: top; 
+        border: solid 3px blue; 
+        border-radius: 5px;
+        padding-left: 5px; 
+        margin: 1px 0;
+    }
+    
+    .main_center{
+        float: left; 
+        width: 70%; 
+        border: solid 3px lime;
+        display: block;
+    }
+    
+    .main_center li{
+        list-style: none;
+        border-bottom: solid 3px black;
+        width: 100%;
+        padding: 5px 0;
+    }
+    
+    .main_center img{
+       width: 100%; 
+       height: 100px;
+    }
+    
+    .main_center div{
+        float: left; 
+        width: calc(50% - 6px);
+        border: solid 3px red; 
+        margin: 3px;
+        padding: 5px;
+    }
+
+     .main_right{
+        float: right; 
+        width: 0%; 
+        border: solid 3px lime;
+    }
+}

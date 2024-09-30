@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "QuanLyNhanVien.Main",
+            "projectName": "Visual Studio Code_1497ad68"
+        },
+        {
+            "type": "java",
+            "name": "Student",
+            "request": "launch",
+            "mainClass": "Student",
+            "projectName": "Visual Studio Code_1497ad68"
+        },
+        {
+            "type": "java",
             "name": "th3_sinhvien",
             "request": "launch",
             "mainClass": "th3_sinhvien",

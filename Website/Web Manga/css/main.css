@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 @font-face{
@@ -172,7 +171,7 @@ body{
 }
 
 .series_navbar{
-    position: absolute;
+    position: fixed;
     top: 124px;
     left: 0;
     width: 100%;
@@ -198,13 +197,13 @@ body{
 
 .series_navbar_link a{
     position: relative;
-    /* margin: 0 15px; */
     text-decoration: none;
     color:white;
     font-weight: 500px;
     font-weight: bold;
     letter-spacing: 2px;
     transition: 0.5s;
+    /* margin: 0 15px; */
     /* padding: 30px; */
 }
 
@@ -213,29 +212,91 @@ body{
     cursor: pointer;
 }
 
-/* 
-.series_navbar_links_1{
-    position: relative;
-    display: flex;
+.category_navbar{
+    position: fixed;
+    top: 124px;
+    left: 0;
     width: 100%;
+    align-items: center;
+    transition: 0.5s;
+    padding: 20px 0;
+    background-color: var(--black);
+    z-index: 2;
+    display: none;
+    justify-content: space-between;
 }
 
-.series_navbar_links_2{
-    position: relative;
-    display: flex;
-    width: 100%;
+.category_navbar_links{
+    /* display: block;
+    justify-content: space-between; */
+    margin: 40px;
 }
 
-.series_navbar_links_3{
-    position: relative;
-    display: flex;
-    width: 100%;
-}
-
-.series_navbar_link{
-    position: relative;
+.category_navbar li{
     list-style: none;
-} */
+    padding: 20px;
+}
+
+.category_navbar_link a{
+    position: relative;
+    text-decoration: none;
+    color:white;
+    font-weight: 500px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    /* margin: 0 15px; */
+    /* padding: 30px; */
+}
+
+.category_navbar_link a:hover{
+    color: gray;
+    cursor: pointer;
+}
+
+
+
+.author_navbar{
+    position: fixed;
+    top: 124px;
+    left: 0;
+    width: 100%;
+    align-items: center;
+    transition: 0.5s;
+    padding: 20px 0;
+    background-color: var(--black);
+    z-index: 2;
+    display: none;
+    justify-content: space-between;
+}
+
+.author_navbar_links{
+    /* display: block;
+    justify-content: space-between; */
+    margin: 40px;
+}
+
+.author_navbar li{
+    list-style: none;
+    padding: 20px;
+}
+
+.author_navbar_link a{
+    position: relative;
+    text-decoration: none;
+    color:white;
+    font-weight: 500px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    /* margin: 0 15px; */
+    /* padding: 30px; */
+}
+
+.author_navbar_link a:hover{
+    color: gray;
+    cursor: pointer;
+}
 
 
 
