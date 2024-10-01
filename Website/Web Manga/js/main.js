@@ -18,7 +18,7 @@ document.getElementById("shopping_close").addEventListener("click", function(){
 
 //navigation bar drop down
 let hover = true;
-document.getElementById("navbar_links_2").addEventListener("mouseover", function(){
+document.getElementById("navbar_links_2").addEventListener("mouseenter", function(){
     hover = true;
     document.querySelector(".series_navbar").style.display = "flex";
 })
@@ -26,11 +26,11 @@ document.getElementById("navbar_links_2").addEventListener("mouseover", function
 document.getElementById("navbar_links_2").addEventListener("mouseout", function(){
     hover = false;
     setTimeout(() => {document.querySelector(".series_navbar").style.display = "none";}, 1000);
-    setTimeout(() => {if(hover == true) document.querySelector(".series_navbar").style.display = "flex";}, 1000);
+    setTimeout(() => {if(hover == true) document.querySelector(".series_navbar").style.display = "flex";}, 1001);
     setTimeout(() => {if(hover == true) console.log("Hello World");}, 1000);
 })
 
-document.querySelector(".series_navbar").addEventListener("mouseover", function(){
+document.querySelector(".series_navbar").addEventListener("mouseenter", function(){
     hover = true;
     document.querySelector(".series_navbar").style.display = "flex";
 })
