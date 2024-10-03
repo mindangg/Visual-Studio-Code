@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manga</title>
-    <!-- main css -->
+    <!--css -->
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/header_footer.css">
     <link rel="icon" type="image/png" href="../img/WEBTOON_Logo.png">
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/758055a090.js" crossorigin="anonymous"></script>
@@ -14,143 +15,145 @@
     <header>
         <nav class="navbar">
             <!-- logo -->
-            <div class="navbar_logo">
+            <div class="navbar__logo">
                 <a href="index.html"><img src="../img/WEBTOON_Logo.png" alt="website logo"></a>
             </div>
             <!-- links -->
-            <ul class="navbar_links">
-                <li class="navbar_link"><a href="index.html">Home</a></li>
-                <li class="navbar_link" ><a id="navbar_links_2" href="">Series</a></li>
-                <li class="navbar_link" ><a id="navbar_links_3" href="">Category</a></li>
-                <li class="navbar_link" ><a id="navbar_links_4" href="">Author</a></li>
-                <li class="navbar_link" ><a id="navbar_links_5" href="">Price</a></li>
-                <li class="navbar_link"><a href="">About Us</a></li>
+            <ul class="navbar__links">
+                <li class="navbar__link"><a href="#">Home</a></li>
+                <li class="navbar__link" ><a id="navbar__link--series">Series</a></li>
+                <i class="fa-solid fa-angle-down" style="color: white;"></i>
+                <li class="navbar__link" ><a id="navbar__link--category">Category</a></li>
+                <i class="fa-solid fa-angle-down" style="color: white;"></i>
+                <li class="navbar__link" ><a id="navbar__link--author">Author</a></li>
+                <i class="fa-solid fa-angle-down" style="color: white;"></i>
+                <li class="navbar__link" ><a id="navbar__link--price">Price</a></li>
+                <i class="fa-solid fa-angle-down" style="color: white;"></i>
+                <li class="navbar__link"><a href="">About Us</a></li>
             </ul>
 
             <!-- nav bar icons -->
-            <div class="navbar_home">
-                <a id="search_icon"><i class="fa-solid fa-magnifying-glass" style="color:white;"></i></a>
+            <div class="navbar__home">
+                <a id="search__icon"><i class="fa-solid fa-magnifying-glass" style="color:white;"></i></a>
                 <a href="../html/login.html" id="login_icon"><i class="fa-regular fa-user" style="color:white;"></i></a>
-                <a id="shopping_icon"><i class="fa-solid fa-cart-shopping" style="color:white;"></i></a>
+                <a id="shopping__icon"><i class="fa-solid fa-cart-shopping" style="color:white;"></i></a>
             </div>
         </nav>
 
         <!-- series navigation bar -->
-        <nav class="series_navbar">
-            <ul class="series_navbar_links">
-                <li class="series_navbar_link"><a href="">Sakamoto Days</a></li>
-                <li class="series_navbar_link"><a href="">My Dress Up Darling</a></li>
-                <li class="series_navbar_link"><a href="">Classroom Of The Elite</a></li>
-                <li class="series_navbar_link"><a href="">One Punch Man</a></li>
-                <li class="series_navbar_link"><a href="">Naruto</a></li>
+        <nav class="navbar__series">
+            <ul class="navbar__series__links">
+                <li class="navbar__series__link"><a href="">Sakamoto Days</a></li>
+                <li class="navbar__series__link"><a href="">My Dress Up Darling</a></li>
+                <li class="navbar__series__link"><a href="">Classroom Of The Elite</a></li>
+                <li class="navbar__series__link"><a href="">One Punch Man</a></li>
+                <li class="navbar__series__link"><a href="">Naruto</a></li>
             </ul>
 
-            <ul class="series_navbar_links">
-                <li class="series_navbar_link"><a href="">Black Clover</a></li>
-                <li class="series_navbar_link"><a href="">Conan</a></li>
-                <li class="series_navbar_link"><a href="">Doraemon</a></li>
-                <li class="series_navbar_link"><a href="">Chain Saw Man</a></li>
-                <li class="series_navbar_link"><a href="">Fairy Tales</a></li>
+            <ul class="navbar__series__links">
+                <li class="navbar__series__link"><a href="">Black Clover</a></li>
+                <li class="navbar__series__link"><a href="">Conan</a></li>
+                <li class="navbar__series__link"><a href="">Doraemon</a></li>
+                <li class="navbar__eries__link"><a href="">Chain Saw Man</a></li>
+                <li class="navbar__series__link"><a href="">Fairy Tales</a></li>
             </ul>
 
-            <ul class="series_navbar_links">
-                <li class="series_navbar_link"><a href="">Demon Slayer</a></li>
-                <li class="series_navbar_link"><a href="">Jujutsu Kaisen</a></li>
-                <li class="series_navbar_link"><a href="">Black Clover</a></li>
-                <li class="series_navbar_link"><a href="">Mob Psycho 100</a></li>
-                <li class="series_navbar_link"><a href="">Seven Deadly Sins</a></li>
+            <ul class="navbar__series__links">
+                <li class="navbar__series__link"><a href="">Demon Slayer</a></li>
+                <li class="navbar__series__link"><a href="">Jujutsu Kaisen</a></li>
+                <li class="navbar__series__link"><a href="">Black Clover</a></li>
+                <li class="navbar__series__link"><a href="">Mob Psycho 100</a></li>
+                <li class="navbar__series__link"><a href="">Seven Deadly Sins</a></li>
             </ul>
 
-            <ul class="series_navbar_links">
-                <li class="series_navbar_link"><a href="">Spy X Family</a></li>
-                <li class="series_navbar_link"><a href="">Rent A Girlfriend</a></li>
-                <li class="series_navbar_link"><a href="">One Piece</a></li>
-                <li class="series_navbar_link"><a href="">Mashle: Magic And Muscles</a></li>
-                <li class="series_navbar_link"><a href="">My Hero Academia</a></li>
+            <ul class="navbar__series__links">
+                <li class="navbar__series__link"><a href="">Spy X Family</a></li>
+                <li class="navbar__series__link"><a href="">Rent A Girlfriend</a></li>
+                <li class="navbar__series__link"><a href="">One Piece</a></li>
+                <li class="navbar__series__link"><a href="">Mashle: Magic And Muscles</a></li>
+                <li class="navbar__series__link"><a href="">My Hero Academia</a></li>
             </ul>
         </nav>
 
         <!-- category navigation bar -->
-        <nav class="category_navbar">
-            <ul class="category_navbar_links">
-                <li class="category_navbar_link"><a href="">Shounen</a></li>
-                <li class="category_navbar_link"><a href="">Slice Of Life</a></li>
-                <li class="category_navbar_link"><a href="">Psychology</a></li>
+        <nav class="navbar__category">
+            <ul class="navbar__category__links">
+                <li class="navbar__category__link"><a href="">Shounen</a></li>
+                <li class="navbar__category__link"><a href="">Slice Of Life</a></li>
+                <li class="navbar__category__link"><a href="">Psychology</a></li>
             </ul>
 
-            <ul class="category_navbar_links">
-                <li class="category_navbar_link"><a href="">Rom-Com</a></li>
-                <li class="category_navbar_link"><a href="">Seinen</a></li>
-                <li class="category_navbar_link"><a href="">Horror</a></li>
+            <ul class="navbar__category__links">
+                <li class="navbar__category__link"><a href="">Rom-Com</a></li>
+                <li class="navbar__category__link"><a href="">Seinen</a></li>
+                <li class="navbar__category__link"><a href="">Horror</a></li>
 
             </ul>
 
-            <ul class="category_navbar_links">
-                <li class="category_navbar_link"><a href="">Hentai</a></li>
-                <li class="category_navbar_link"><a href="">Brain Rot</a></li>
-                <li class="category_navbar_link"><a href="">Shoujo</a></li>
+            <ul class="navbar__category__links">
+                <li class="navbar__category__link"><a href="">Hentai</a></li>
+                <li class="navbar__category__link"><a href="">Brain Rot</a></li>
+                <li class="navbar__category__link"><a href="">Shoujo</a></li>
             </ul>
 
-            <ul class="category_navbar_links">
-                <li class="category_navbar_link"><a href="">Jousei</a></li>
-                <li class="category_navbar_link"><a href="">Drama</a></li>
-                <li class="category_navbar_link"><a href="">Action</a></li>
+            <ul class="navbar__category__links">
+                <li class="navbar__category__link"><a href="">Jousei</a></li>
+                <li class="navbar__category__link"><a href="">Drama</a></li>
+                <li class="navbar__category__link"><a href="">Action</a></li>
             </ul>
         </nav>
 
         <!-- author navigation bar -->
-        <nav class="author_navbar">
-            <ul class="author_navbar_links">
-                <li class="author_navbar_link"><a href="">Oda Eiichiro</a></li>
-                <li class="author_navbar_link"><a href="">Fukuda Shinichi</a></li>
+        <nav class="navbar__author">
+            <ul class="navbar__author__links">
+                <li class="navbar__author__link"><a href="">Oda Eiichiro</a></li>
+                <li class="navbar__author__link"><a href="">Fukuda Shinichi</a></li>
             </ul>
 
-            <ul class="author_navbar_links">
-                <li class="author_navbar_link"><a href="">Kishimoto Masashi</a></li>
-                <li class="author_navbar_link"><a href="">Aoyama Gōshō</a></li>
+            <ul class="navbar__author__links">
+                <li class="navbar__author__link"><a href="">Kishimoto Masashi</a></li>
+                <li class="navbar__author__link"><a href="">Aoyama Gōshō</a></li>
 
             </ul>
 
-            <ul class="author_navbar_links">
-                <li class="author_navbar_link"><a href="">Tabata Yūki</a></li>
-                <li class="author_navbar_link"><a href="">Isayama Hajime</a></li>
+            <ul class="navbar__author__links">
+                <li class="navbar__author__link"><a href="">Tabata Yūki</a></li>
+                <li class="navbar__author__link"><a href="">Isayama Hajime</a></li>
             </ul>
 
-            <ul class="author_navbar_links">
-                <li class="author_navbar_link"><a href="">Horikoshi Kohei</a></li>
-                <li class="author_navbar_link"><a href="">Gege Akutami</a></li>
+            <ul class="navbar__author__links">
+                <li class="navbar__author__link"><a href="">Horikoshi Kohei</a></li>
+                <li class="navbar__author__link"><a href="">Gege Akutami</a></li>
             </ul>
 
 
         </nav>
 
         <!-- searchbox -->
-        <div class="search_popup">
+        <div class="search__popup">
             <div class="search">
                 <div class="searchbox">
                     <input type="search" placeholder="Search for...">
-                    <a id="search_close"><i class="fa-solid fa-xmark" style="color:white;"></i></a>
+                    <a id="search__close"><i class="fa-solid fa-xmark" style="color:white;"></i></a>
                 </div> 
             </div>
         </div>
 
         <!-- shopping cart -->
-        <div class="shopping_popup">
-            <div class="shopping_container">
-                <a id="shopping_close"><i class="fa-solid fa-xmark" style="color:white;"></i></a>     
+        <div class="shopping__popup">
+            <div class="shopping__container">
+                <a id="shopping__close"><i class="fa-solid fa-xmark" style="color:white;"></i></a>     
                 <div class="shopping">
-                    <div class="shopping_icon">
+                    <div class="shopping__icon">
                         <i class="fa-solid fa-cart-shopping" style="color:white;"></i>
                     </div>
                     <br>
                     <h3>Your cart is empty</h3>
-                    <button class="shopping_btn">Continue shopping</button>
+                    <button class="shopping__btn">Continue shopping</button>
                 </div>
             </div>
         </div>
     </header>
-
-    <!-- <section class="banner"></section> -->
 
     <main>
         <!-- slider -->
@@ -177,7 +180,7 @@
                 </div>
             </div>
 
-            <div class="slider_button">
+            <div class="slider__button">
                 <button id="prev"><</button>
                 <button id="next">></button>
             </div>
@@ -191,19 +194,74 @@
             </ul>
          </div>
 
-        <p>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quidem at quisquam id, laboriosam maxime aut error delectus consectetur placeat! Delectus, laborum dignissimos maxime aperiam officia autem ratione quibusdam totam?
-        Voluptatem nemo nobis unde, ipsam alias assumenda aut exercitationem dicta eos totam reiciendis asperiores recusandae rem laudantium! Explicabo aliquid nostrum facere tenetur rerum eligendi blanditiis voluptatum. Culpa minima officiis velit!
-        Nisi autem deleniti quas! Rerum asperiores esse possimus incidunt consequatur illum quia ipsa. Libero veniam at minus ad placeat quidem dignissimos facilis nemo explicabo, ab cum doloribus deserunt qui ipsum.
-        Vero possimus porro labore veritatis nihil corporis optio atque nostrum, cumque voluptatibus? Blanditiis cum molestias quibusdam enim voluptatum cupiditate, officia quod error pariatur officiis laborum fugit non obcaecati quis labore?
-        Odio, voluptatem sequi ab beatae est omnis quasi pariatur eum quas quis ut vel dolore quia reiciendis cupiditate assumenda ex ratione veniam tempora. Ipsam labore, eveniet tenetur doloribus harum enim!
-        Eaque assumenda accusamus dolores nostrum necessitatibus? Accusamus fuga mollitia quaerat officia! Nostrum id dolorum veniam velit ipsum fuga itaque. Accusamus voluptate temporibus perferendis nobis ea dolore ipsum, laudantium voluptatibus! Ut.
-        Sit sapiente ipsam, incidunt vel impedit enim harum velit placeat, a architecto modi, dignissimos quam optio! Odio nobis culpa, eaque quasi modi provident a quam perferendis, fugit sed asperiores voluptate.
-        Ex quaerat magnam voluptatum? Commodi, voluptate consectetur exercitationem libero quia ratione minus corporis eos odit, sed explicabo maxime cum est obcaecati dignissimos sit mollitia minima quam voluptas rem natus veritatis?
-        Cum, totam accusantium architecto consequuntur optio nam laboriosam id aliquid quo iusto nihil nostrum labore, aperiam eius laudantium unde sint ducimus provident minus nemo veritatis. Omnis ab quo delectus harum.
-        Iste, quos accusantium. Vero accusantium tempora placeat labore fugit dolorem nostrum sapiente perferendis mollitia eveniet sed omnis et laborum officia veritatis unde, nesciunt pariatur dolores? Quisquam cumque ipsam nemo aliquid!        </p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates porro magnam deleniti corrupti, cum sit neque quaerat similique id! Similique pariatur nihil aspernatur corrupti totam a minus reprehenderit deleniti repellendus?
+         Voluptatum autem officiis incidunt dicta voluptate, perspiciatis facilis? Iusto sapiente rerum, illum dicta soluta explicabo sed magni minima, odit officiis expedita unde optio reprehenderit qui cum, id praesentium dolore laudantium.
+         Harum libero et distinctio nesciunt, sapiente velit sint ducimus asperiores. Reprehenderit eligendi, a expedita eos at tenetur, vel voluptatum distinctio autem porro quas enim illum, modi aperiam reiciendis nihil est.
+         Enim architecto tempora ab ad nesciunt porro maxime, a illum? Delectus, fugit, molestiae ipsum corporis iure corrupti totam voluptas veniam sequi, magni ab aut. Accusamus consequuntur maxime facilis vero ut!
+         Labore unde accusantium sequi asperiores eos, quia ipsam architecto voluptate aliquam. Nihil aut doloremque veniam reprehenderit quis officiis labore asperiores fugit dignissimos possimus sint odio, architecto officia voluptatum est assumenda.
+         Non iure sequi voluptatem! Ratione, minima doloremque soluta atque provident quia, nihil distinctio nesciunt, reprehenderit quidem quos odio id sunt amet dignissimos? Quidem provident qui omnis laborum officiis vero illum!
+         Repudiandae, sit dolore! Ad dolorum itaque voluptas cupiditate quaerat molestias quibusdam, numquam voluptate delectus magnam ex tenetur rerum ab eius quisquam impedit labore atque ratione ullam sequi minima! Laudantium, eveniet!
+         Perferendis tempora corrupti minus eveniet. Rem, eos commodi pariatur dolore numquam nam dolorum ea magni ipsum! Modi, nihil dolores delectus dicta nulla vel eos, quibusdam fugit voluptatem, nesciunt voluptatibus error.
+         Qui ab provident repudiandae harum ea est, cum animi vitae officia eos deserunt amet similique totam eaque ipsum reprehenderit sit itaque iure ullam eum unde. Fugit atque alias maiores in?
+         Voluptas, ex maiores. Explicabo minus veritatis animi cumque odio incidunt debitis totam sed et omnis aliquid, illo, error aut expedita ipsa doloribus laudantium voluptate ad, quibusdam optio temporibus. Vitae, molestias.
+         Quia nobis assumenda aliquid eaque dicta at necessitatibus voluptate nulla mollitia. Dignissimos, impedit placeat, dolore suscipit consequatur sapiente consectetur eveniet sequi corporis ad rem cum ut facilis rerum minima saepe?
+         Repudiandae culpa quos eos autem voluptatem vel, repellendus repellat optio adipisci, labore doloremque cupiditate similique quibusdam fugiat voluptate quasi fugit distinctio? Distinctio dicta aut cum deserunt totam explicabo ipsum. Similique.
+         Minus ea nemo, quo nesciunt dolorum quia. Accusantium quos, nam quia saepe, dignissimos a neque nisi iste placeat repellat aliquid temporibus ipsam quaerat dolor perferendis? Harum numquam soluta adipisci saepe.
+         Odit ipsa hic impedit, numquam accusamus quis nihil natus! Sint itaque eos id fuga corporis distinctio, esse ratione ut nobis saepe assumenda. Repudiandae ipsa culpa exercitationem repellendus quo reiciendis sed?
+         Assumenda est inventore voluptates tenetur rem nisi adipisci eum officiis animi vitae mollitia eius id exercitationem quasi incidunt, consequatur ad sit quibusdam nihil perferendis deleniti omnis! Blanditiis accusantium sunt laborum.
+         Temporibus tempora aut molestiae maxime nulla. Modi praesentium incidunt quis cum, accusamus deserunt. Tenetur numquam debitis veritatis pariatur? Ea quod voluptates eligendi quas fuga cupiditate tenetur modi. Dicta, aspernatur asperiores.
+         At, natus veniam! Voluptas sed ut, minus eius cupiditate perspiciatis sint velit laborum, facilis repudiandae mollitia sunt consequuntur illum vitae optio. Explicabo, vero ea? Recusandae, illum? Molestias, debitis? Ullam, aliquid.
+         Ab fugiat commodi non perferendis ea sed doloribus quo animi alias vero aliquam id, laborum temporibus, voluptatibus voluptates numquam. Error, obcaecati! Tempora sapiente voluptatem explicabo exercitationem, iste facilis sit totam.
+         Reprehenderit nihil quas nulla tempore? Labore perferendis omnis quidem non sapiente reiciendis voluptas expedita, perspiciatis dolorem assumenda hic tempore consequatur possimus cumque iste, voluptatibus natus facilis vitae doloribus vel. Quas.
+         Necessitatibus architecto fugiat labore eum veritatis quae dolore expedita exercitationem maiores aut odio mollitia nulla dolorum similique consequatur in, atque quia rerum ipsam at pariatur autem laborum? Libero, maiores earum!</p>
 
+        
     </main>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__content">
+                <a><img src="../img/WEBTOON_Logo.png" class="footer__logo"></a>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt culpa porro earum dolores dolorem enim. Reprehenderit voluptates hic illo ipsa molestias odio, minima saepe recusandae illum quo dolor, impedit expedita?</p>
+            </div>
+
+            <div class="footer__content">
+                <h3>Customer Service</h3>
+                <p>FAQs</p>
+                <p>Returns Policy</p>
+                <p>Refund Policy</p>
+                <p class="footer__email--id">thanhsang@sgu.edu.vn</p>
+                <h4>076-302-0810</h4>
+            </div>
+
+            <div class="footer__content">
+                <h3>About</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            </div>
+
+
+            <div class="footer__content">
+                <h3>Newsletter</h3>
+                <form class="footer__form">
+                    <i class="fa-regular fa-envelope" style="color:white;"></i>
+                    <input type="email" placeholder="E-mail" required>
+                    <button type="submit">></button>
+                </form>
+
+                <div class="footer__social--icons">
+                    <a><i class="fa-brands fa-facebook" style="color:white;"></i></a>
+                    <a><i class="fa-brands fa-instagram" style="color:white;"></i></a>
+                    <a href="https://www.youtube.com/@dangkoo4896"><i class="fa-brands fa-youtube" style="color:white;"></i></a>
+                    <a href="https://www.tiktok.com/@ctmdang242?_t=8qCiySsAer1&_r=1"><i class="fa-brands fa-tiktok" style="color:white;"></i></a>
+                </div>
+            </div>
+        </div><br><br><br>
+        <hr>
+        <p class="copyright">© 2024, Web Development, Powered by J97</p>
+    </footer>
 
     <!-- main js -->
     <script src="../js/main.js"></script>
