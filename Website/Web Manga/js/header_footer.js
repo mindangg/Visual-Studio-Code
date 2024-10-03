@@ -155,7 +155,7 @@ class SpecialFooter extends HTMLElement{
             </div>
 
             <div class="footer__content">
-                <h3>Customer Service</h3>
+                <h3>Customer Service <div class="footer__underline"><span></span></div> </h3>
                 <p>FAQs</p>
                 <p>Returns Policy</p>
                 <p>Refund Policy</p>
@@ -168,14 +168,14 @@ class SpecialFooter extends HTMLElement{
             </div>
 
             <div class="footer__content">
-                <h3>Legal</h3>
+                <h3>Legal <div class="footer__underline"><span></span></div> </h3>
                 <p>Terms & Conditions</p>
                 <p>Privacy Notice</p>
             </div>
 
 
             <div class="footer__content">
-                <h3>Newsletter</h3>
+                <h3>Newsletter <div class="footer__underline"><span></span></div> </h3>
                 <form class="footer__form">
                     <i class="fa-regular fa-envelope" style="color:white;"></i>
                     <input type="email" placeholder="E-mail" required>
@@ -185,8 +185,8 @@ class SpecialFooter extends HTMLElement{
                 <div class="footer__social--icons">
                     <a><i class="fa-brands fa-facebook" style="color:white;"></i></a>
                     <a><i class="fa-brands fa-instagram" style="color:white;"></i></a>
-                    <a href="https://www.youtube.com/@dangkoo4896"><i class="fa-brands fa-youtube" style="color:white;"></i></a>
-                    <a href="https://www.tiktok.com/@ctmdang242?_t=8qCiySsAer1&_r=1"><i class="fa-brands fa-tiktok" style="color:white;"></i></a>
+                    <a href="https://www.youtube.com/@dangkoo4896" target="_blank"><i class="fa-brands fa-youtube" style="color:white;"></i></a>
+                    <a href="https://www.tiktok.com/@ctmdang242?_t=8qCiySsAer1&_r=1" target="_blank"><i class="fa-brands fa-tiktok" style="color:white;"></i></a>
                 </div>
             </div>
         </div><br><br><br>
