@@ -4,33 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <!--css -->
     <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/header_footer.css">
     <link rel="icon" type="image/png" href="../img/WEBTOON_Logo.png">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/758055a090.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="login">
-        <h1>Login</h1>
+    <special-header></special-header>
 
-        <div class="login_input">
-        <input type="text" placeholder="Username" minlength="6" required>
+    <main>
+        <div class="login">
+            <h1>Login</h1>
+
+            <div class="login__input">
+            <input type="text" placeholder="Username" minlength="6" required>
+            </div>
+
+            <div class="login__input">
+            <input type="password" placeholder="Password" minlength="6" required>
+            </div>
+
+            <div class="login__forget">
+            <a href="">Forget your password?</a>
+            </div>
+
+            <button type="submit" class="login__btn">Login</button>
+
+            <div class="login__signup">
+            <a href="../html/signup.html">Sign Up</a>
+            </div>
         </div>
+    </main>
 
-        <div class="login_input">
-        <input type="password" placeholder="Password" minlength="6" required>
-        </div>
+    <special-footer></special-footer>
 
-        <div class="login_forget">
-        <a href="">Forget your password?</a>
-        </div>
-
-        <button type="submit" class="login_btn">Login</button>
-
-        <div class="login_signup">
-        <a href="../html/signup.html">Sign Up</a>
-        </div>
-
-        </div>
-    </div>
+    <script src="../js/header_footer.js"></script>
 </body>
 </html>

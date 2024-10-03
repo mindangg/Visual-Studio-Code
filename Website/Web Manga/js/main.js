@@ -1,22 +1,3 @@
-// search and shopping cart popup
-
-document.getElementById("search__icon").addEventListener("click", function(){
-    document.querySelector(".search__popup").style.display = "flex";
-})
-
-document.getElementById("shopping__icon").addEventListener("click", function(){
-    document.querySelector(".shopping__popup").style.display = "flex";
-})
-
-document.getElementById("search__close").addEventListener("click", function(){
-    document.querySelector(".search__popup").style.display = "none";
-})
-
-document.getElementById("shopping__close").addEventListener("click", function(){
-    document.querySelector(".shopping__popup").style.display = "none";
-})
-
-
 //navigation bar drop down
 // let hover = false;
 // if(!hover)
