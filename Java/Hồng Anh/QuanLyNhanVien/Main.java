@@ -8,9 +8,13 @@ public class Main
 
     public static void main(String[] args) 
     {
-        NhanVien nv = new NhanVien();
-        nv.Nhap();
-        nv.Xuat();
+        // NhanVien nv = new NhanVien();
+        DSNhanVien dsnv = new DSNhanVien();
 
+        dsnv.NhapDSNhanVien();
+        dsnv.SapXepTheoNamVaoLam();
+        dsnv.XuatDSNhanVien();
+        // System.out.println(dsnv.TongLuongNhanVien());
+        // dsnv.NhanVienLuongCaoNhat();
     }
 }

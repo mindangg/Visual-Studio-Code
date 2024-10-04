@@ -5,10 +5,10 @@ import java.util.Scanner;
 
 public class NhanVien 
 {
-    private String maNV;
-    private String hoTen;
-    private float heSoLuong;
-    private int namVaoLam;
+    public String maNV;
+    public String hoTen;
+    public float heSoLuong;
+    public int namVaoLam;
     static int mucLuongToiThieu = 2340000;
     static Scanner sc = new Scanner(System.in);
 
@@ -105,9 +105,9 @@ public class NhanVien
         System.out.println("Nhap ho ten nhan vien: ");
         SetHoTen(sc.nextLine());
         System.out.println("Nhap he so luong nhan vien: ");
-        SetHeSoLuong(sc.nextFloat());
+        SetHeSoLuong(Float.parseFloat(sc.nextLine()));
         System.out.println("Nhap nam vao lam nhan vien: ");
-        SetNamVaoLam(sc.nextInt());
+        SetNamVaoLam(Integer.parseInt(sc.nextLine()));
     }
 
     public void Xuat()
