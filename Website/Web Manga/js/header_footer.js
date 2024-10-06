@@ -1,7 +1,7 @@
 class SpecialHeader extends HTMLElement{
     connectedCallback(){
         this.innerHTML = `
-            <header>
+    <header>
         <nav class="navbar">
             <!-- logo -->
             <div class="navbar__logo">
@@ -9,12 +9,101 @@ class SpecialHeader extends HTMLElement{
             </div>
             <!-- links -->
             <ul class="navbar__links">
-                <li class="navbar__link"><a href="#">Home</a></li>
-                <li class="navbar__link" ><a id="navbar__link--series">Series</a></li>
-                <li class="navbar__link" ><a id="navbar__link--category">Category</a></li>
-                <li class="navbar__link" ><a id="navbar__link--author">Author</a></li>
-                <li class="navbar__link" ><a id="navbar__link--price">Price</a></li>
-                <li class="navbar__link"><a href="">About Us</a></li>
+                <li class="navbar__link--home"><a href="#" class="navbar__link">Home</a></li>
+                <li class="navbar__link--series">
+                    <a href="#" class="navbar__link">Series</a>
+                    <div class="navbar__series">
+                        <ul>
+                            <li><a href="">Sakamoto Days</a></li>
+                            <li><a href="">My Dress Up Darling</a></li>
+                            <li><a href="">Classroom Of The Elite</a></li>
+                            <li><a href="">One Punch Man</a></li>
+                            <li><a href="">Naruto</a></li>
+                        </ul>
+            
+                        <ul>
+                            <li><a href="">Black Clover</a></li>
+                            <li><a href="">Conan</a></li>
+                            <li><a href="">Doraemon</a></li>
+                            <li><a href="">Chain Saw Man</a></li>
+                            <li><a href="">Fairy Tales</a></li>
+                        </ul>
+            
+                        <ul>
+                            <li><a href="">Demon Slayer</a></li>
+                            <li><a href="">Jujutsu Kaisen</a></li>
+                            <li><a href="">Black Clover</a></li>
+                            <li><a href="">Mob Psycho 100</a></li>
+                            <li><a href="">Seven Deadly Sins</a></li>
+                        </ul>
+            
+                        <ul>
+                            <li><a href="">Spy X Family</a></li>
+                            <li><a href="">Rent A Girlfriend</a></li>
+                            <li><a href="">One Piece</a></li>
+                            <li><a href="">Mashle: Magic And Muscles</a></li>
+                            <li><a href="">My Hero Academia</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="navbar__link--category">
+                    <a href="#" class="navbar__link">Category</a>
+                    <div class="navbar__category">
+                        <ul>
+                            <li><a href="">Shounen</a></li>
+                            <li><a href="">Slice Of Life</a></li>
+                            <li><a href="">Psychology</a></li>
+                        </ul>
+            
+                        <ul>
+                            <li><a href="">Rom-Com</a></li>
+                            <li><a href="">Seinen</a></li>
+                            <li><a href="">Horror</a></li>
+            
+                        </ul>
+            
+                        <ul>
+                            <li><a href="">Hentai</a></li>
+                            <li><a href="">Brain Rot</a></li>
+                            <li><a href="">Shoujo</a></li>
+                        </ul>
+            
+                        <ul>
+                            <li><a href="">Jousei</a></li>
+                            <li><a href="">Drama</a></li>
+                            <li><a href="">Action</a></li>
+                        </ul>
+                    </div>
+                </li>
+                
+                <li class="navbar__link--author">
+                    <a href="#" class="navbar__link">Author</a>
+                    <div class="navbar__author">
+                        <ul>
+                            <li><a href="">Oda Eiichiro</a></li>
+                            <li><a href="">Fukuda Shinichi</a></li>
+                        </ul>
+            
+                        <ul>
+                            <li><a href="">Kishimoto Masashi</a></li>
+                            <li><a href="">Aoyama Gōshō</a></li>
+            
+                        </ul>
+            
+                        <ul>
+                            <li><a href="">Tabata Yūki</a></li>
+                            <li><a href="">Isayama Hajime</a></li>
+                        </ul>
+            
+                        <ul>
+                            <li><a href="">Horikoshi Kohei</a></li>
+                            <li><a href="">Gege Akutami</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="navbar__link--price"><a href="#" class="navbar__link">Price</a></li>
+                <li class="navbar__link--about"><a href="#" class="navbar__link">About Us</a></li>
             </ul>
 
             <!-- nav bar icons -->
@@ -23,94 +112,6 @@ class SpecialHeader extends HTMLElement{
                 <a href="../html/login.html" id="login_icon"><i class="fa-regular fa-user" style="color:white;"></i></a>
                 <a id="shopping__icon"><i class="fa-solid fa-cart-shopping" style="color:white;"></i></a>
             </div>
-        </nav>
-
-        <!-- series navigation bar -->
-        <nav class="navbar__series">
-            <ul class="navbar__series__links">
-                <li class="navbar__series__link"><a href="">Sakamoto Days</a></li>
-                <li class="navbar__series__link"><a href="">My Dress Up Darling</a></li>
-                <li class="navbar__series__link"><a href="">Classroom Of The Elite</a></li>
-                <li class="navbar__series__link"><a href="">One Punch Man</a></li>
-                <li class="navbar__series__link"><a href="">Naruto</a></li>
-            </ul>
-
-            <ul class="navbar__series__links">
-                <li class="navbar__series__link"><a href="">Black Clover</a></li>
-                <li class="navbar__series__link"><a href="">Conan</a></li>
-                <li class="navbar__series__link"><a href="">Doraemon</a></li>
-                <li class="navbar__eries__link"><a href="">Chain Saw Man</a></li>
-                <li class="navbar__series__link"><a href="">Fairy Tales</a></li>
-            </ul>
-
-            <ul class="navbar__series__links">
-                <li class="navbar__series__link"><a href="">Demon Slayer</a></li>
-                <li class="navbar__series__link"><a href="">Jujutsu Kaisen</a></li>
-                <li class="navbar__series__link"><a href="">Black Clover</a></li>
-                <li class="navbar__series__link"><a href="">Mob Psycho 100</a></li>
-                <li class="navbar__series__link"><a href="">Seven Deadly Sins</a></li>
-            </ul>
-
-            <ul class="navbar__series__links">
-                <li class="navbar__series__link"><a href="">Spy X Family</a></li>
-                <li class="navbar__series__link"><a href="">Rent A Girlfriend</a></li>
-                <li class="navbar__series__link"><a href="">One Piece</a></li>
-                <li class="navbar__series__link"><a href="">Mashle: Magic And Muscles</a></li>
-                <li class="navbar__series__link"><a href="">My Hero Academia</a></li>
-            </ul>
-        </nav>
-
-        <!-- category navigation bar -->
-        <nav class="navbar__category">
-            <ul class="navbar__category__links">
-                <li class="navbar__category__link"><a href="">Shounen</a></li>
-                <li class="navbar__category__link"><a href="">Slice Of Life</a></li>
-                <li class="navbar__category__link"><a href="">Psychology</a></li>
-            </ul>
-
-            <ul class="navbar__category__links">
-                <li class="navbar__category__link"><a href="">Rom-Com</a></li>
-                <li class="navbar__category__link"><a href="">Seinen</a></li>
-                <li class="navbar__category__link"><a href="">Horror</a></li>
-
-            </ul>
-
-            <ul class="navbar__category__links">
-                <li class="navbar__category__link"><a href="">Hentai</a></li>
-                <li class="navbar__category__link"><a href="">Brain Rot</a></li>
-                <li class="navbar__category__link"><a href="">Shoujo</a></li>
-            </ul>
-
-            <ul class="navbar__category__links">
-                <li class="navbar__category__link"><a href="">Jousei</a></li>
-                <li class="navbar__category__link"><a href="">Drama</a></li>
-                <li class="navbar__category__link"><a href="">Action</a></li>
-            </ul>
-        </nav>
-
-        <!-- author navigation bar -->
-        <nav class="navbar__author">
-            <ul class="navbar__author__links">
-                <li class="navbar__author__link"><a href="">Oda Eiichiro</a></li>
-                <li class="navbar__author__link"><a href="">Fukuda Shinichi</a></li>
-            </ul>
-
-            <ul class="navbar__author__links">
-                <li class="navbar__author__link"><a href="">Kishimoto Masashi</a></li>
-                <li class="navbar__author__link"><a href="">Aoyama Gōshō</a></li>
-
-            </ul>
-
-            <ul class="navbar__author__links">
-                <li class="navbar__author__link"><a href="">Tabata Yūki</a></li>
-                <li class="navbar__author__link"><a href="">Isayama Hajime</a></li>
-            </ul>
-
-            <ul class="navbar__author__links">
-                <li class="navbar__author__link"><a href="">Horikoshi Kohei</a></li>
-                <li class="navbar__author__link"><a href="">Gege Akutami</a></li>
-            </ul>
-
         </nav>
 
         <!-- searchbox -->
@@ -199,15 +200,6 @@ class SpecialFooter extends HTMLElement{
 
 customElements.define(`special-footer`, SpecialFooter);
 
-
-
-
-
-
-
-
-
-
 // search and shopping cart popup
 
 document.getElementById("search__icon").addEventListener("click", function(){
@@ -225,3 +217,4 @@ document.getElementById("search__close").addEventListener("click", function(){
 document.getElementById("shopping__close").addEventListener("click", function(){
     document.querySelector(".shopping__popup").style.display = "none";
 })
+

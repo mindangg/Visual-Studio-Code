@@ -80,26 +80,33 @@ body{
 
 .login a{
     color: #bbbbbb;
-    text-decoration: underline;
-    text-underline-offset: 4px;
-    /* transform: translateX(1); */
- }
-
- .login a:hover{
     text-decoration: none;
+    position: relative;
+}
 
-    /* transform: translateX(0); */
+ .login a::after{
+    content: '';
+    background-color: #bbbbbb;
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+}
 
- }
+ .login a:hover::after{
+    width: 0;
+}
  
 .login__forget{
     font-size: 17px;
     margin-bottom: 25px;
- }
+}
 
 .login__signup{
     font-size: 20px;
     display: flex;
     justify-content: center;
     margin: 25px 0px;
- }
+}

@@ -37,19 +37,16 @@
 }
 
 .navbar__links{
-    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.navbar__link{
-    position: relative;
+.navbar__links li{
     list-style: none;
 }
 
-.navbar__link a{
-    position: relative;
+.navbar__link{
     margin: 0 15px;
     text-decoration: none;
     color:white;
@@ -59,13 +56,12 @@
     padding: 0 15px;
 }
 
-.navbar__link a:hover{
-    color: gray;
+.navbar__links a:hover{
+    color: #bbbbbb;
     cursor: pointer;
 }
 
 .navbar__home{
-    position: relative;
     margin: 0 15px;
     transition: 0.6s;
     margin: 0 40px;
@@ -81,131 +77,172 @@
     transform: translateY(-5px);
 }
 
+/* series navigation bar */
+
 .navbar__series{
     position: fixed;
     top: 124px;
     left: 0;
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     align-items: center;
     transition: 0.5s;
     padding: 20px 0;
     background-color: var(--black);
-    z-index: 2;
-    display: none;
-    justify-content: space-between;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
 }
 
-.navbar__series__links{
-    /* display: block;
-    justify-content: space-between; */
+.navbar__link--series:hover .navbar__series{
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease;
+}
+
+.navbar__series ul{
     margin: 40px;
 }
 
 .navbar__series li{
-    list-style: none;
-    padding: 20px;
+    margin: 40px;
 }
 
-.navbar__series__link a{
-    position: relative;
+.navbar__series a{
+    color: #bbbbbb;
     text-decoration: none;
-    color:white;
-    font-weight: 500px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    transition: 0.5s;
-    /* margin: 0 15px; */
-    /* padding: 30px; */
+    position: relative;
 }
 
-.navbar__series__link a:hover{
-    color: gray;
-    cursor: pointer;
+ .navbar__series a::after{
+    content: '';
+    background-color: #bbbbbb;
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
 }
+
+ .navbar__series a:hover::after{
+    width: 0;
+}
+
+/* category navigation bar */
 
 .navbar__category{
     position: fixed;
     top: 124px;
     left: 0;
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     align-items: center;
     transition: 0.5s;
     padding: 20px 0;
     background-color: var(--black);
-    z-index: 2;
-    display: none;
-    justify-content: space-between;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
 }
 
-.navbar__category__links{
-    /* display: block;
-    justify-content: space-between; */
+.navbar__link--category:hover .navbar__category{
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease;
+}
+
+.navbar__category ul{
     margin: 40px;
 }
 
 .navbar__category li{
-    list-style: none;
-    padding: 20px;
+    margin: 40px;
 }
 
-.navbar__category__link a{
-    position: relative;
+.navbar__category a{
+    color: #bbbbbb;
     text-decoration: none;
-    color:white;
-    font-weight: 500px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    transition: 0.5s;
-    /* margin: 0 15px; */
-    /* padding: 30px; */
+    position: relative;
 }
 
-.navbar__category__link a:hover{
-    color: gray;
-    cursor: pointer;
+ .navbar__category a::after{
+    content: '';
+    background-color: #bbbbbb;
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
 }
+
+ .navbar__category a:hover::after{
+    width: 0;
+}
+
+/* author navigation bar */
 
 .navbar__author{
     position: fixed;
     top: 124px;
     left: 0;
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     align-items: center;
     transition: 0.5s;
     padding: 20px 0;
     background-color: var(--black);
-    z-index: 2;
-    display: none;
-    justify-content: space-between;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
 }
 
-.navbar__author__links{
-    /* display: block;
-    justify-content: space-between; */
+.navbar__link--author:hover .navbar__author{
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease;
+}
+
+.navbar__author ul{
     margin: 40px;
 }
 
 .navbar__author li{
-    list-style: none;
-    padding: 20px;
+    margin: 40px;
 }
 
-.navbar__author__link a{
-    position: relative;
+.navbar__author a{
+    color: #bbbbbb;
     text-decoration: none;
-    color:white;
-    font-weight: 500px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    transition: 0.5s;
-    /* margin: 0 15px; */
-    /* padding: 30px; */
+    position: relative;
 }
 
-.navbar__author__link a:hover{
-    color: gray;
-    cursor: pointer;
+ .navbar__author a::after{
+    content: '';
+    background-color: #bbbbbb;
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
 }
+
+ .navbar__author a:hover::after{
+    width: 0;
+}
+
+
+
+
+
+
+
+/* search box */
 
 .search__popup{
     background-color: rgba(0, 0, 0, 0.4);
@@ -216,8 +253,6 @@
     top: 0;
     z-index: 2;
 }
-
-/* search box */
 
 .search{
     max-width: 650px;

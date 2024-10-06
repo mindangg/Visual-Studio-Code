@@ -80,13 +80,24 @@ body{
 
 .signup a{
     color: #bbbbbb;
-    text-decoration: underline;
-    text-underline-offset: 4px;
- }
-
- .signup a:hover{
     text-decoration: none;
- }
+    position: relative;
+}
+
+ .signup a::after{
+    content: '';
+    background-color: #bbbbbb;
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+ .signup a:hover::after{
+    width: 0;
+}
 
  .signup__login{
     font-size: 20px;
