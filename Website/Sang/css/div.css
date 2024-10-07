@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin-left: 40px;
     margin-right: 40px;
@@ -63,6 +67,11 @@ ul, li{
     margin: 3px;
 }
 
+.login:hover{
+    cursor: pointer;
+    background-color: chocolate;
+}
+
 .home_container{
     border: solid 3px blue; 
     margin: 5px 1px;
@@ -78,7 +87,88 @@ ul, li{
     background-color: aqua; 
     text-align: center; 
     margin: 3px;
+    padding: 3px;
 }
+
+.home:hover{
+    cursor: pointer;
+    background-color:orange;
+}
+
+.home_dropdown_tuyensinh{
+    background-color: aqua;
+    border: solid 3px red;
+    position: absolute;
+    top: 34px;
+    left: 88px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.home_dropdown_tuyensinh li{
+    border: solid 3px blue;
+    margin: 3px;
+}
+
+.home_dropdown_tuyensinh li:hover{
+    cursor: pointer;
+    background-color: red;
+}
+
+#home_tuyensinh:hover > ul{
+    opacity: 1;
+    visibility: visible;
+}
+
+.home_dropdown_daotao{
+    background-color: aqua;
+    border: solid 3px red;
+    position: absolute;
+    top: 34px;
+    left: 242px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.home_dropdown_daotao li{
+    border: solid 3px blue;
+    margin: 3px;
+}
+
+.home_dropdown_daotao li:hover{
+    cursor: pointer;
+    background-color: red;
+}
+
+#home_daotao:hover > ul{
+    opacity: 1;
+    visibility: visible;
+}
+
+.home_dropdown_daotao_clc_drop{
+    background-color: aqua;
+    border: solid 3px red;
+    position: absolute;
+    top: 80px;
+    left: 224px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#home_dropdown_daotao_clc:hover > ul{
+    opacity: 1;
+    visibility: visible;
+}
+
+/* .home_dropdown_daotao li{
+    border: solid 3px blue;
+    margin: 3px;
+}
+
+.home_dropdown_daotao li:hover{
+    cursor: pointer;
+    background-color: red;
+} */
 
 .main_container{
     border: solid 3px blue; 
@@ -92,11 +182,16 @@ ul, li{
     padding: 10px;
 }
 
+.main_left_btn:hover{
+    cursor: pointer;
+    background-color: purple;
+}
+
 .main_left div{
     height:30px; 
     float: top; 
     border: solid 3px blue; 
-    border-radius: 5px;
+    border-radius: 50px;
     padding-left: 10px; 
     margin: 1px 0;
 }
@@ -111,13 +206,25 @@ ul, li{
 .main_center li{
     list-style: none;
     border-bottom: solid 3px black;
-    width: 100%;
+    /* width: 100%; */
     padding: 5px 0;
+    padding-right: 10px;
+}
+
+.main_center_btn{
+    border: solid 3.5px red;
+}
+
+.main_center a:hover{
+    cursor: pointer;
+    background-color: red;
 }
 
 .main_center img{
    width: 100%; 
    height: 150px;
+   border: solid 5px blue;
+   border-radius: 100%;
 }
 
 .main_center div{
@@ -137,10 +244,28 @@ ul, li{
 #footer{
     clear: both; 
     height:120px; 
-    line-height: 120px; 
     border: solid 3px green; 
     text-align: center;
     margin-top: 5px;
+}
+
+.footer_dau{
+    position: relative;
+    left: 0;
+    border: solid 3px lime;
+    width: 240px;
+    text-align: center;
+}
+
+.footer_dau a{
+    text-decoration: none;
+    color: black;
+    width: 100%;
+}
+
+.footer_dau:hover{
+    cursor: pointer;
+    background-color:pink;
 }
 
 @media screen and (max-width: 700px){

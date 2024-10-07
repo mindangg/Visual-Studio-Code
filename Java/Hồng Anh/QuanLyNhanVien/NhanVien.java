@@ -17,7 +17,7 @@ public class NhanVien
 
     }
 
-    public void Employee(String maNV, String hoTen, float heSoLuong, int namVaoLam) 
+    public void NhanVien(String maNV, String hoTen, float heSoLuong, int namVaoLam) 
     {
         this.maNV = maNV;
         this.hoTen = hoTen;

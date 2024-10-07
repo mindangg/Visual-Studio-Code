@@ -8,6 +8,13 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "CtyABC.Main",
+            "projectName": "Visual Studio Code_1497ad68"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "QuanLyNhanVien.Main",
             "projectName": "Visual Studio Code_1497ad68"
         },

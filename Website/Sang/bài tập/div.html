@@ -13,29 +13,55 @@
         <div class="login_thongtin">Thông tin công ty</div>
         <div class="login_container">
             <ul>
-                <li class="login">Đăng ký</li>
-                <li class="login">Đăng nhập</li>
-                <li class="login">Giỏ hàng</li>
+                <li class="login"><a>Đăng ký</a></li>
+                <li class="login"><a>Đăng nhập</a></li>
+                <li class="login"><a>Giỏ hàng</a></li>
             </ul> 
         </div>
         </div>
 
         <div class="home_container">
-            <ul>
-                <li class="home">Trang chủ</li>
-                <li class="home">Thông tin tuyển sinh</li>
-                <li class="home">Thông tin đào tạo</li>
-                <li class="home">Liên hệ</li>
+            <ul style="position: relative;">
+                <li class="home"><a>Trang chủ</a></li>
+                <li class="home" id="home_tuyensinh">
+                    <a>Thông tin tuyển sinh</a>
+                    <ul class="home_dropdown_tuyensinh">
+                        <li>aaaaaaaaaaaaaaaaa</li>
+                        <li>aaaaaaaaa</li>
+                        <li>aaa</li>
+                        <li>aaaaaaaaa</li>
+                        <li>aaaaaaaaaaaaaaaaa</li>
+                    </ul>
+                </li>
+                <li class="home" id="home_daotao">
+                    <a>Chương trình đào tạo</a>
+                        <ul class="home_dropdown_daotao">
+                            <li>Ngành Công nghệ thông tin</li>
+                            <li>Ngành KTPM</li>
+                            <li>Ngành TTNT</li>
+                            <li id="home_dropdown_daotao_clc">
+                                Ngành CNTT hệ Chất lượng cao
+                                <ul class="home_dropdown_daotao_clc_drop">
+                                    <li>ccccccccccccccccc</li>
+                                    <li>ccccccccc</li>
+                                    <li>ccc</li>
+                                    <li>ccccccccc</li>
+                                    <li>ccccccccccccccccc</li>
+                                </ul>
+                            </li>
+                        </ul>
+                </li>
+                <li class="home"><a>Liên hệ</a></li>
             </ul> 
         </div>
 
         <div class="main_container">
             <div class="main_left">
-                <div>Trang chủ</div>
-                <div>Thông tin tuyển sinh</div>
-                <div>Thông tin đào tạo</div>
-                <div>Giới thiệu</div>
-                <div>Liên hệ</div>
+                <div class="main_left_btn"><a>Trang chủ</a></div>
+                <div class="main_left_btn"><a>Thông tin tuyển sinh</a></div>
+                <div class="main_left_btn"><a>Thông tin đào tạo</a></div>
+                <div class="main_left_btn"><a>Giới thiệu</a></div>
+                <div class="main_left_btn"><a>Liên hệ</a></div>
             </div>
 
             <div class="main_center">
@@ -45,8 +71,10 @@
                         <li>Mã SP</li>
                         <li>Tên SP</li>
                         <li>Giá SP</li>
-                        <li>Mua</li>
-                        <li>Chi tiết</li>
+                        <ul style="display: flex;">
+                            <li><a class="main_center_btn">Mua</a</li>
+                            <li><a class="main_center_btn">Chi tiết</a></li>
+                        </ul>
                     </ul> 
                 </div>
 
@@ -56,8 +84,10 @@
                         <li>Mã SP</li>
                         <li>Tên SP</li>
                         <li>Giá SP</li>
-                        <li>Mua</li>
-                        <li>Chi tiết</li>
+                        <ul style="display: flex;">
+                            <li><a class="main_center_btn">Mua</a></li>
+                            <li><a class="main_center_btn">Chi tiết</a></li>
+                        </ul>
                     </ul> 
                 </div>
 
@@ -67,8 +97,10 @@
                         <li>Mã SP</li>
                         <li>Tên SP</li>
                         <li>Giá SP</li>
-                        <li>Mua</li>
-                        <li>Chi tiết</li>
+                        <ul style="display: flex;">
+                            <li><a class="main_center_btn">Mua</a></li>
+                            <li><a class="main_center_btn">Chi tiết</a></li>
+                        </ul>
                     </ul> 
                 </div>
 
@@ -78,8 +110,10 @@
                         <li>Mã SP</li>
                         <li>Tên SP</li>
                         <li>Giá SP</li>
-                        <li>Mua</li>
-                        <li>Chi tiết</li>
+                        <ul style="display: flex;">
+                            <li><a class="main_center_btn">Mua</a></li>
+                            <li><a class="main_center_btn">Chi tiết</a></li>
+                        </ul>
                     </ul> 
                 </div>
                 <div>
@@ -88,8 +122,10 @@
                         <li>Mã SP</li>
                         <li>Tên SP</li>
                         <li>Giá SP</li>
-                        <li>Mua</li>
-                        <li>Chi tiết</li>
+                        <ul style="display: flex;">
+                            <li><a class="main_center_btn">Mua</a></li>
+                            <li><a class="main_center_btn">Chi tiết</a></li>
+                        </ul>
                     </ul> 
                 </div>
             </div>
@@ -98,7 +134,9 @@
             <div style="clear:both"></div>
         </div>
         
-        <div id="footer">Footer</div>
+        <div id="footer">
+            <div class="footer_dau"><a href="#">Đầu trang</a></div>
+        </div>
     </div>
    </main>
 
