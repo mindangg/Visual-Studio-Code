@@ -3,8 +3,8 @@
 let list = document.querySelector(".slider .slider__list");
 let items = document.querySelectorAll(".slider .slider__list .slider__item");
 let dots = document.querySelectorAll(".slider .slider__dots li");
-let prev = document.getElementById("prev");
-let next = document.getElementById("next");
+let prev = document.getElementById("slider__prev");
+let next = document.getElementById("slider__next");
 
 let active = 0;
 let lengthItems = items.length - 1;
