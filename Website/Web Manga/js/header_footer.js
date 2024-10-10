@@ -102,8 +102,27 @@ class SpecialHeader extends HTMLElement{
                         </ul>
                     </div>
                 </li>
-                <li class="navbar__link--price"><a href="#" class="navbar__link">Price</a></li>
-                <li class="navbar__link--about"><a href="#" class="navbar__link">About Us</a></li>
+                <li class="navbar__link--price">
+                    <a href="#" class="navbar__link">Price</a>
+                    <div class="navbar__price">
+                        <ul>
+                            <li><a href="">Under 10 Dollars</a></li>
+                        </ul>
+            
+                        <ul>
+                            <li><a href="">10 To 20 Dollars</a></li>
+                        </ul>
+            
+                        <ul>
+                            <li><a href="">20 To 50 dollars</a></li>
+                        </ul>
+            
+                        <ul>
+                            <li><a href="">Over 50 dollars</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="navbar__link--about"><a href="#special-footer" class="navbar__link">About Us</a></li>
             </ul>
 
             <!-- nav bar icons -->
@@ -187,7 +206,7 @@ class SpecialFooter extends HTMLElement{
                     <a><i class="fa-brands fa-facebook" style="color:white;"></i></a>
                     <a><i class="fa-brands fa-instagram" style="color:white;"></i></a>
                     <a href="https://www.youtube.com/@dangkoo4896" target="_blank"><i class="fa-brands fa-youtube" style="color:white;"></i></a>
-                    <a href="https://www.tiktok.com/@ctmdang242?_t=8qCiySsAer1&_r=1" target="_blank"><i class="fa-brands fa-tiktok" style="color:white;"></i></a>
+                    <a href="https://www.tiktok.com/@_.mindang?_t=8qOahI38W4V&_r=1" target="_blank"><i class="fa-brands fa-tiktok" style="color:white;"></i></a>
                 </div>
             </div>
         </div><br><br><br>

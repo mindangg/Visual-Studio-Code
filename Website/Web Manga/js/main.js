@@ -1,8 +1,8 @@
 //slider
 
-let list = document.querySelector(".slider .list");
-let items = document.querySelectorAll(".slider .list .item");
-let dots = document.querySelectorAll(".slider .dots li");
+let list = document.querySelector(".slider .slider__list");
+let items = document.querySelectorAll(".slider .slider__list .slider__item");
+let dots = document.querySelectorAll(".slider .slider__dots li");
 let prev = document.getElementById("prev");
 let next = document.getElementById("next");
 
@@ -34,7 +34,7 @@ function ReloadSlider()
     let checkLeft = items[active].offsetLeft;
     list.style.left = -checkLeft + "px";
 
-    let lastActiveDot = document.querySelector(".slider .dots li.active");
+    let lastActiveDot = document.querySelector(".slider .slider__dots li.active");
     lastActiveDot.classList.remove("active");
     dots[active].classList.add("active");
     clearInterval(refreshSlider);

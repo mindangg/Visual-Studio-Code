@@ -115,8 +115,27 @@
                         </ul>
                     </div>
                 </li>
-                <li class="navbar__link--price"><a href="#" class="navbar__link">Price</a></li>
-                <li class="navbar__link--about"><a href="#" class="navbar__link">About Us</a></li>
+                <li class="navbar__link--price">
+                    <a href="#" class="navbar__link">Price</a>
+                    <div class="navbar__price">
+                        <ul>
+                            <li><a href="">Under 10 Dollars</a></li>
+                        </ul>
+            
+                        <ul>
+                            <li><a href="">10 To 20 Dollars</a></li>
+                        </ul>
+            
+                        <ul>
+                            <li><a href="">20 To 50 dollars</a></li>
+                        </ul>
+            
+                        <ul>
+                            <li><a href="">Over 50 dollars</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="navbar__link--about"><a href="#special-footer" class="navbar__link">About Us</a></li>
             </ul>
 
             <!-- nav bar icons -->
@@ -156,24 +175,24 @@
     <main>
         <!-- slider -->
          <div class="slider">
-            <div class="list">
-                <div class="item">
+            <div class="slider__list">
+                <div class="slider__item">
                     <img src="../img/1.png" alt="Sakamoto Days Cover">
                 </div>
 
-                <div class="item">
+                <div class="slider__item">
                     <img src="../img/2.png" alt="My Dress Up Darling Cover">
                 </div>
 
-                <div class="item">
+                <div class="slider__item">
                     <img src="../img/3.png" alt="Classroom Of The Elite Cover">
                 </div>
 
-                <div class="item">
+                <div class="slider__item">
                     <img src="../img/4.jpeg" alt="Spy X Family Cover">
                 </div>
 
-                <div class="item">
+                <div class="slider__item">
                     <img src="../img/5.jpg" alt="Black Clover Cover">
                 </div>
             </div>
@@ -183,7 +202,7 @@
                 <button id="next">></button>
             </div>
 
-            <ul class="dots">
+            <ul class="slider__dots">
                 <li class="active"></li>
                 <li></li>
                 <li></li>
@@ -192,9 +211,46 @@
             </ul>
          </div>
 
+         <!-- shopping slider -->
+
+         <div class="shop__slider__container">
+            <h1>Best Seller</h1>
+            <div class="shop__slider">
+                <div class="shop__slider__list">
+                    <div class="shop__slider__item">
+                        <img src="../img/Volume_30.webp" alt="">
+                    </div>
+    
+                    <div class="shop__slider__item">
+                        <img src="../img/jujutsu-kaisen-vol-4-original-imahy5kghugbjkmt.webp" alt="">
+                    </div>
+    
+                    <div class="shop__slider__item">
+                        <img src="../img/Volume_06.webp" alt="">
+                    </div>
+    
+                    <div class="shop__slider__item">
+                        <img src="../img/One+Piece+100.jpg" alt="">
+                    </div>
+    
+                    <div class="shop__slider__item">
+                        <img src="../img/8mnsewvnkmpb1.jpg" alt="">
+                    </div>
+
+                    <div class="shop__slider__button">
+                        <button id="prev">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <button id="next">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+             </div>
+         </div>
     </main>
 
-    <special-footer></special-footer>
+    <special-footer id="special-footer"></special-footer>
 
     <!-- js -->
     <script src="../js/main.js"></script>

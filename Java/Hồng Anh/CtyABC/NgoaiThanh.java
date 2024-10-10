@@ -42,4 +42,5 @@ public class NgoaiThanh extends ChuyenXe {
     public String ToString() {
         return super.ToString() + String.format("%-10s %-10d", noiDen, soNgayDi);
     }
+
 }

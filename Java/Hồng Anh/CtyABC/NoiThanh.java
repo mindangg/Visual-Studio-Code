@@ -5,6 +5,7 @@ public class NoiThanh extends ChuyenXe{
     protected double soKM;
 
     public NoiThanh() {
+        
     }
     public NoiThanh(double doanhThu, String masSoChuyen, int soXe, String tenTaiXe, int soTuyen, double soKM) {
         super(doanhThu, masSoChuyen, soXe, tenTaiXe);

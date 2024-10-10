@@ -101,9 +101,9 @@
     transition: all 0.3s ease;
 }
 
-.navbar__series ul{
+/* .navbar__series ul{
     margin: 40px;
-}
+} */
 
 .navbar__series li{
     margin: 40px;
@@ -154,9 +154,9 @@
     transition: all 0.3s ease;
 }
 
-.navbar__category ul{
+/* .navbar__category ul{
     margin: 40px;
-}
+} */
 
 .navbar__category li{
     margin: 40px;
@@ -207,9 +207,9 @@
     transition: all 0.3s ease;
 }
 
-.navbar__author ul{
+/* .navbar__author ul{
     margin: 40px;
-}
+} */
 
 .navbar__author li{
     margin: 40px;
@@ -233,6 +233,59 @@
 }
 
  .navbar__author a:hover::after{
+    width: 0;
+}
+
+/* price navigation bar */
+
+.navbar__price{
+    position: fixed;
+    top: 124px;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    transition: 0.5s;
+    padding: 20px 0;
+    background-color: var(--black);
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.navbar__link--price:hover .navbar__price{
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease;
+}
+
+/* .navbar__author ul{
+    margin: 40px;
+} */
+
+.navbar__price li{
+    margin: 40px;
+}
+
+.navbar__price a{
+    color: #bbbbbb;
+    text-decoration: none;
+    position: relative;
+}
+
+ .navbar__price a::after{
+    content: '';
+    background-color: #bbbbbb;
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+ .navbar__price a:hover::after{
     width: 0;
 }
 
