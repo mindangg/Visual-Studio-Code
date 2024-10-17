@@ -8,6 +8,27 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "QuanLyChungCu.Main",
+            "projectName": "Visual Studio Code_1497ad68"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "QuanLyCanBo.Main",
+            "projectName": "Visual Studio Code_1497ad68"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "BT.Main",
+            "projectName": "Visual Studio Code_1497ad68"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "QuanLyNhanSu.Main",
             "projectName": "Visual Studio Code_1497ad68"
         },

@@ -13,6 +13,7 @@
 
 html{
     scroll-behavior: smooth;
+    font-size: 16px;
 }
 
 body{
@@ -27,6 +28,24 @@ body{
     --green-l: #08bc5c;
     --gray: #bbbbbb;
 }
+
+
+
+
+
+/* navigation between pages */
+
+#login__page{
+    display: none;
+}
+
+#signup__page{
+    display: none;
+}
+
+
+
+
 
 /* slider */
 
@@ -99,6 +118,10 @@ body{
     background-color: #fff;
     width: 29px;
 }
+
+
+
+
 
 /* shopping slider */
 
@@ -256,3 +279,316 @@ body{
 .best__slider__dots li.best__active{
     background-color: var(--green);
 } 
+
+
+
+
+
+.best__slider__popup{
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    /* display: none; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.best__slider__popup--details{
+    margin: 40px auto;
+    width: 900px;
+    height: 550px;
+    display: flex;
+    /* background-color: var(--black); */
+}
+
+.best__slider__popup--img{
+    width: 50%;
+    height: 100%;
+    background-color: red;
+}
+
+.best__slider__popup--img img{
+    width: 100%;
+    height: 100%;
+}
+
+.best__slider__popup--info{
+    width: 50%;
+    height: 100%;
+    /* text-align: center; */
+    padding-left: 40px;
+}
+
+.best__slider__popup h1{
+    color: white;
+    font-size: 1.6em;
+    margin: 60px 0 25px;
+}
+
+.best__slider__popup h3{
+    color: white;
+    font-size: 1.2em;
+    margin: 25px 0;
+}
+
+.best__slider__popup--info p{
+    color: var(--gray);
+    font-size: 1.2em;
+    font-weight: lighter;
+}
+
+.best__slider__popup--info button{
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    background-color: var(--green);
+    border: none;
+    width: 210px;
+    height: 50px;
+    padding: 15px;  
+    margin: 0 0 40px 0;
+}
+
+.best__slider__popup--info button:hover{
+    cursor: pointer;
+    background-color: var(--green-l);
+}
+
+.best__slider__popup--info #quantitydown{
+    font-size: 16px;
+    width: 50px;
+    padding: 0px;
+}
+
+.best__slider__popup--info #quantityup{
+    font-size: 16px;
+    width: 50px;
+    padding: 0px;
+}
+
+.best__slider__popup--info #quantity{
+    font-size: 16px;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+}
+
+.best__slider__popup--info #quantity input::placeholder{
+    color: black;
+    font-size: 16px;
+}
+
+.best__slider__popup--info .right__p p:nth-child(1){
+
+}
+
+.best__slider__popup--info p:nth-child(2){
+    font-weight: bold;
+}
+
+#best__slider__popup__close{
+    position: absolute;
+    font-size: 20px;
+    top: 50px;
+    right: 330px;
+    transition: transform 0.3s;
+}
+
+#best__slider__popup__close:hover{
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+
+/* .best__slider__popup .right .quantitydown{
+    display: inline-block;
+}
+
+.best__slider__popup .right .quantitydup{
+    display: inline-block;
+} */
+
+
+
+
+
+/* login page */
+
+.login{
+    width: 400px;
+    position: relative;
+    top: 150px;
+    margin: auto;
+}
+
+.login h1{
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+
+.login__input{
+    width: 100%;
+    height: 55px;
+    margin: 15px 0;
+}
+
+.login input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid #363636;
+    padding: 20px 45px 20px 20px;
+    font-size: 16px;
+    color: white;
+}
+
+.login input::placeholder{
+    color: #8d8d8d;
+    font-size: 16px;
+}
+
+.login__btn{
+    width: 100%;
+    height: 65px;
+    background-color: var(--green);
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+}
+
+.login__btn:hover {
+    cursor: pointer;
+    background-color: var(--green-l);
+}
+
+.login a{
+    color: var(--gray);
+    text-decoration: none;
+    position: relative;
+}
+
+.login a:hover{
+    cursor: pointer;
+}
+
+ .login a::after{
+    content: '';
+    background-color: var(--gray);
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+ .login a:hover::after{
+    width: 0;
+}
+ 
+.login__forget{
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+.login__signup{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin: 25px 0px;
+}
+
+
+
+
+
+/* signup page */
+
+.signup{
+    width: 500px;
+    position: relative;
+    top: 140px;
+    margin: auto;
+}
+
+.signup h1{
+    font-size: 45px;
+    color: white;
+    text-align: center;
+}
+
+.signup__input{
+    width: 100%;
+    height: 55px;
+    margin: 15px 0;
+}
+
+.signup input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    border: 2px solid #363636;
+    padding: 20px 45px 20px 20px;
+    font-size: 16px;
+    color: white;
+}
+
+.signup input::placeholder{
+    color: #8d8d8d;
+    font-size: 16px;
+}
+
+.signup__btn{
+    width: 100%;
+    height: 65px;
+    background-color: var(--green);
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+}
+
+.signup__btn:hover{
+    background-color: var(--green-l);
+    cursor: pointer;
+}
+
+.signup a{
+    color: var(--gray);
+    text-decoration: none;
+    position: relative;
+}
+
+.signup a:hover{
+    cursor: pointer;
+}
+
+ .signup a::after{
+    content: '';
+    background-color: var(--gray);
+    height: 1px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s;
+}
+
+ .signup a:hover::after{
+    width: 0;
+}
+
+ .signup__login{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin: 25px 0px;
+ }

@@ -1,6 +1,6 @@
 package SanPham;
 
-public class PCBuild extends MayTinh{
+public class Desktop extends MayTinh{
     protected String casePC;
     protected String tanNhiet;
 }
