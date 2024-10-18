@@ -1,7 +1,8 @@
 package SanPham;
 
 public class Laptop extends MayTinh{
-    protected float kichThuocManHinh;
-    protected float thoiLuongPin;
-    protected String loaiLaptop;
+    private float kichThuocManHinh;
+    private float thoiLuongPin;
+    private String loaiLaptop;
+    private boolean gaming;
 }
