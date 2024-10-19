@@ -51,7 +51,8 @@ public class Desktop extends MayTinh{
     }
 
     @Override
-    public String ToString() {
+    public String ToString()
+    {
         return super.ToString() + "Desktop [casePC=" + casePC + ", tanNhiet=" + tanNhiet + "]";
     }
 

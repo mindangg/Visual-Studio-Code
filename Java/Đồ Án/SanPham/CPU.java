@@ -2,7 +2,7 @@ package SanPham;
 
 public class CPU extends PhanCung{
     private int soNhan;
-    private int soLuong;
+    private int soLuongLoi;
     private int tocDoXungNhip;
 
     public CPU() 
@@ -12,12 +12,12 @@ public class CPU extends PhanCung{
 
     public CPU(String maSP, String tenSP, float giaSP, int soLuongSP, String moTaSP, float khuyenMaiSP,
             int thoiGianBaoHanhSP, float trongLuongSP, String mauSacSP, String phuKienDiKemSP, String loaiSP,
-            String nhaSanXuat, int soNhan, int soLuong, int tocDoXungNhip) 
+            String nhaSanXuat, int soNhan, int soLuongLoi, int tocDoXungNhip) 
     {
         super(maSP, tenSP, giaSP, soLuongSP, moTaSP, khuyenMaiSP, thoiGianBaoHanhSP, trongLuongSP, mauSacSP,
                 phuKienDiKemSP, loaiSP, nhaSanXuat);
         this.soNhan = soNhan;
-        this.soLuong = soLuong;
+        this.soLuongLoi = soLuongLoi;
         this.tocDoXungNhip = tocDoXungNhip;
     }
 
@@ -31,14 +31,14 @@ public class CPU extends PhanCung{
         this.soNhan = soNhan;
     }
 
-    public int GetSoLuong() 
+    public int GetSoLuongLoi() 
     {
-        return soLuong;
+        return soLuongLoi;
     }
 
-    public void SetSoLuong(int soLuong) 
+    public void SetSoLuongLoi(int soLuongLoi) 
     {
-        this.soLuong = soLuong;
+        this.soLuongLoi = soLuongLoi;
     }
 
     public int GetTocDoXungNhip() 
@@ -57,15 +57,15 @@ public class CPU extends PhanCung{
         super.Nhap();
         System.out.println("Nhap so nhan: ");
         SetSoNhan(Integer.parseInt(sc.nextLine()));
-        System.out.println("Nhap so luong: ");
-        SetSoLuong(Integer.parseInt(sc.nextLine()));
+        System.out.println("Nhap so luong loi: ");
+        SetSoLuongLoi(Integer.parseInt(sc.nextLine()));
         System.out.println("Nhap toc do xung nhip: ");
         SetTocDoXungNhip(Integer.parseInt(sc.nextLine()));
     }        
 
     @Override
     public String ToString() {
-        return super.ToString() + "CPU [soNhan=" + soNhan + ", soLuong=" + soLuong + ", tocDoXungNhip=" + tocDoXungNhip + "]";
+        return super.ToString() + "CPU [soNhan=" + soNhan + ", soLuong=" + soLuongLoi + ", tocDoXungNhip=" + tocDoXungNhip + "]";
     }
 
     @Override

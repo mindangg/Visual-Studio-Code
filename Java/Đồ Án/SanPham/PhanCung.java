@@ -1,8 +1,8 @@
 package SanPham;
 
-public class PhanCung extends SanPham{
+public abstract class PhanCung extends SanPham{
     protected String nhaSanXuat;
-    protected String loaiSP;
+    protected String loaiLinhKien;
 
     public PhanCung() 
     {
@@ -10,11 +10,11 @@ public class PhanCung extends SanPham{
     }
 
     public PhanCung(String maSP, String tenSP, float giaSP, int soLuongSP, String moTaSP, float khuyenMaiSP, 
-                int thoiGianBaoHanhSP, float trongLuongSP, String mauSacSP, String phuKienDiKemSP, String loaiSP, 
+                int thoiGianBaoHanhSP, float trongLuongSP, String mauSacSP, String phuKienDiKemSP, String loaiLinhKien, 
                 String nhaSanXuat) 
     {
         super(maSP, tenSP, giaSP, soLuongSP, moTaSP, khuyenMaiSP, thoiGianBaoHanhSP, trongLuongSP, mauSacSP, phuKienDiKemSP);
-        this.loaiSP = loaiSP;
+        this.loaiLinhKien = loaiLinhKien;
         this.nhaSanXuat = nhaSanXuat;
     }
 
@@ -28,14 +28,14 @@ public class PhanCung extends SanPham{
         this.nhaSanXuat = nhaSanXuat;
     }
 
-    public String GetLoaiSP() 
+    public String GetLoaiLinhKien() 
     {
-        return loaiSP;
+        return loaiLinhKien;
     }
 
-    public void SetLoaiSP(String loaiSP) 
+    public void SetLoaiLinhKien(String loaiLinhKien) 
     {
-        this.loaiSP = loaiSP;
+        this.loaiLinhKien = loaiLinhKien;
     }
 
     @Override
@@ -44,14 +44,14 @@ public class PhanCung extends SanPham{
         super.Nhap();
         System.out.println("Nhap nha san xuat: ");
         SetNhaSanXuat(sc.nextLine());
-        System.out.println("Nhap loai san pham: ");
-        SetLoaiSP(sc.nextLine());
+        System.out.println("Nhap loai linh kien: ");
+        SetLoaiLinhKien(sc.nextLine());
     }
 
     @Override
     public String ToString() 
     {
-        return super.ToString() + "PhanCung [nhaSanXuat=" + nhaSanXuat + ", loaiSP=" + loaiSP + "]";
+        return super.ToString() + "PhanCung [nhaSanXuat=" + nhaSanXuat + ", loaiSP=" + loaiLinhKien + "]";
     }
 
     @Override

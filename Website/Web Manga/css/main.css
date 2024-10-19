@@ -36,11 +36,11 @@ body{
 /* navigation between pages */
 
 #main__page{
-    display: none;
+    /* display: none; */
 }
 
 #product__page{
-    /* display: none; */
+    display: none;
 }
 
 #login__page{

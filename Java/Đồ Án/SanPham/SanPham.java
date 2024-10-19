@@ -132,7 +132,7 @@ public abstract class SanPham{
         System.out.println("Nhap thoi gian bao hanh san pham: ");
         SetThoiGianBaoHanhSP(Integer.parseInt(sc.nextLine()));
         System.out.println("Nhap trong luong san pham: ");
-        SetTrongLuongSP(Integer.parseInt(sc.nextLine()));
+        SetTrongLuongSP(Float.parseFloat(sc.nextLine()));
         System.out.println("Nhap mau sac san pham: ");
         SetMauSacSP(sc.nextLine());
         System.out.println("Nhap phu kien di kem san pham: ");
@@ -152,4 +152,8 @@ public abstract class SanPham{
         System.out.println(ToString());
     }
 
+    public float ThanhTien()
+    {
+        return (float)(giaSP - khuyenMaiSP * giaSP);
+    }
 }

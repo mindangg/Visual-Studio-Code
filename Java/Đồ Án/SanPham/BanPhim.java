@@ -1,7 +1,7 @@
 package SanPham;
 
 public class BanPhim extends ThietBiNgoaiVi {
-    private float kichThuoc;
+    private String kichThuoc;
     private String denLED;
     private String switchBP;
 
@@ -10,19 +10,19 @@ public class BanPhim extends ThietBiNgoaiVi {
 
     }
 
-    public BanPhim(float kichThuoc, String denLED, String switchBP, String loaiThietBi, String phuongThucKetNoi) {
+    public BanPhim(String kichThuoc, String denLED, String switchBP, String loaiThietBi, String phuongThucKetNoi) {
         super(loaiThietBi, phuongThucKetNoi);
         this.kichThuoc = kichThuoc;
         this.denLED = denLED;
         this.switchBP = switchBP;
     }
 
-    public float GetKichThuoc() 
+    public String GetKichThuoc() 
     {
         return kichThuoc;
     }
 
-    public void SetKichThuoc(float kichThuoc) 
+    public void SetKichThuoc(String kichThuoc) 
     {
         this.kichThuoc = kichThuoc;
     }
@@ -52,7 +52,7 @@ public class BanPhim extends ThietBiNgoaiVi {
     {
         super.Nhap();
         System.out.println("Nhap kich thuoc ban phim: ");
-        SetKichThuoc(Integer.parseInt(sc.nextLine()));
+        SetKichThuoc(sc.nextLine());
         System.out.println("Nhap den LED ban phim: ");
         SetDenLED(sc.nextLine());
         System.out.println("Nhap switch BP ban phim: ");

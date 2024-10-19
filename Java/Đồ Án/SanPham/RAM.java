@@ -4,7 +4,7 @@ public class RAM extends PhanCung{
     private int dungLuong;
     private String loaiRAM;
 
-    public RAM(int dungLuong) 
+    public RAM() 
     {
 
     }
