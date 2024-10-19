@@ -9,8 +9,12 @@ public class BoNho extends PhanCung{
 
     }
 
-    public BoNho(int dungLuong, String loaiBoNho, String loaiSP, String model, String nhaSanXuat, String maSP, String tenSP, float giaSP, int soLuongSP, String moTaSP, float khuyenMaiSP, int thoiGianBaoHanhSP, float trongLuongSP, String mauSacSP, String phuKienDiKemSP) {
-        super(loaiSP, model, nhaSanXuat, maSP, tenSP, giaSP, soLuongSP, moTaSP, khuyenMaiSP, thoiGianBaoHanhSP, trongLuongSP, mauSacSP, phuKienDiKemSP);
+    public BoNho(String maSP, String tenSP, float giaSP, int soLuongSP, String moTaSP, float khuyenMaiSP,
+            int thoiGianBaoHanhSP, float trongLuongSP, String mauSacSP, String phuKienDiKemSP, String loaiSP,
+            String nhaSanXuat, int dungLuong, String loaiBoNho) 
+    {
+        super(maSP, tenSP, giaSP, soLuongSP, moTaSP, khuyenMaiSP, thoiGianBaoHanhSP, trongLuongSP, mauSacSP,
+                phuKienDiKemSP, loaiSP, nhaSanXuat);
         this.dungLuong = dungLuong;
         this.loaiBoNho = loaiBoNho;
     }
@@ -35,5 +39,26 @@ public class BoNho extends PhanCung{
         this.loaiBoNho = loaiBoNho;
     }
 
+    @Override
+    public void Nhap()
+    {
+        super.Nhap();
+        System.out.println("Nhap dung luong: ");
+        SetDungLuong(Integer.parseInt(sc.nextLine()));
+        System.out.println("Nhap loai bo nho: ");
+        SetLoaiBoNho(sc.nextLine());
+    }            
+
+    @Override
+    public String ToString() 
+    {
+        return super.ToString() + "BoNho [dungLuong=" + dungLuong + ", loaiBoNho=" + loaiBoNho + "]";
+    }
+
+    @Override
+    public void Xuat()
+    {
+        System.out.println(ToString());
+    }
 
 }

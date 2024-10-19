@@ -12,14 +12,18 @@ public class GPU extends PhanCung{
 
     }
 
-    public GPU(int dungLuongVRAM, String loaiVRAM, int tocDoXungNhip, int soNhanCUDA, boolean rayTracing, String loaiSP, String model, String nhaSanXuat, String maSP, String tenSP, float giaSP, int soLuongSP, String moTaSP, float khuyenMaiSP, int thoiGianBaoHanhSP, float trongLuongSP, String mauSacSP, String phuKienDiKemSP) 
+    public GPU(String maSP, String tenSP, float giaSP, int soLuongSP, String moTaSP, float khuyenMaiSP,
+            int thoiGianBaoHanhSP, float trongLuongSP, String mauSacSP, String phuKienDiKemSP, String loaiSP,
+            String nhaSanXuat, int dungLuongVRAM, String loaiVRAM, int tocDoXungNhip, int soNhanCUDA,
+            boolean rayTracing) 
     {
-        super(loaiSP, model, nhaSanXuat, maSP, tenSP, giaSP, soLuongSP, moTaSP, khuyenMaiSP, thoiGianBaoHanhSP, trongLuongSP, mauSacSP, phuKienDiKemSP);
+        super(maSP, tenSP, giaSP, soLuongSP, moTaSP, khuyenMaiSP, thoiGianBaoHanhSP, trongLuongSP, mauSacSP,
+                phuKienDiKemSP, loaiSP, nhaSanXuat);
         this.dungLuongVRAM = dungLuongVRAM;
         this.loaiVRAM = loaiVRAM;
-        this.rayTracing = rayTracing;
-        this.soNhanCUDA = soNhanCUDA;
         this.tocDoXungNhip = tocDoXungNhip;
+        this.soNhanCUDA = soNhanCUDA;
+        this.rayTracing = rayTracing;
     }
 
     public int GetDungLuongVRAM() 
@@ -70,6 +74,34 @@ public class GPU extends PhanCung{
     public void SetRayTracing(boolean rayTracing) 
     {
         this.rayTracing = rayTracing;
+    }
+
+    @Override
+    public void Nhap()
+    {
+        super.Nhap();
+        System.out.println("Nhap dung luong VRAM: ");
+        SetDungLuongVRAM(Integer.parseInt(sc.nextLine()));
+        System.out.println("Nhap loai VRAM: ");
+        SetLoaiVRAM(sc.nextLine());
+        System.out.println("Nhap toc do xung nhip: ");
+        SetTocDoXungNhip(Integer.parseInt(sc.nextLine()));
+        System.out.println("Nhap so nhan CUDA: ");
+        SetSoNhanCUDA(Integer.parseInt(sc.nextLine()));
+        System.out.println("Co Ray Tracing khong: ");
+        System.out.println(Boolean.parseBoolean(sc.nextLine()));
+    }            
+
+    @Override
+    public String ToString() {
+        return super.ToString() + "GPU [dungLuongVRAM=" + dungLuongVRAM + ", loaiVRAM=" + loaiVRAM + ", tocDoXungNhip=" + tocDoXungNhip
+                + ", soNhanCUDA=" + soNhanCUDA + ", rayTracing=" + rayTracing + "]";
+    }
+
+    @Override
+    public void Xuat()
+    {
+        System.out.println(ToString());
     }
 
 }

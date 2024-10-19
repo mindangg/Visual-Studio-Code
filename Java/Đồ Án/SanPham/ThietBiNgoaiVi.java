@@ -35,7 +35,24 @@ public abstract class ThietBiNgoaiVi extends SanPham{
         this.phuongThucKetNoi = phuongThucKetNoi;
     }
 
-    
+    @Override
+    public void Nhap()
+    {
+        super.Nhap();
+        System.out.println("Nhap loai thiet bi: ");
+        SetLoaiThietBi(sc.nextLine());
+        System.out.println("Nhap phuong thuc ket noi: ");
+        SetPhuongThucKetNoi(sc.nextLine());
+    }
 
+    @Override
+    public String ToString() {
+        return super.ToString() + "ThietBiNgoaiVi [loaiThietBi=" + loaiThietBi + ", phuongThucKetNoi=" + phuongThucKetNoi + "]";
+    }
 
+    @Override
+    public void Xuat()
+    {
+        System.out.println(ToString());
+    }
 }

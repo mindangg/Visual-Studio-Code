@@ -1,9 +1,9 @@
 package SanPham;
 
 public class BanPhim extends ThietBiNgoaiVi {
-    protected float kichThuoc;
-    protected String denLED;
-    protected String switchBP;
+    private float kichThuoc;
+    private String denLED;
+    private String switchBP;
 
     public BanPhim()
     {
@@ -45,5 +45,28 @@ public class BanPhim extends ThietBiNgoaiVi {
     public void SetSwitchBP(String switchBP) 
     {
         this.switchBP = switchBP;
+    }
+
+    @Override
+    public void Nhap()
+    {
+        super.Nhap();
+        System.out.println("Nhap kich thuoc ban phim: ");
+        SetKichThuoc(Integer.parseInt(sc.nextLine()));
+        System.out.println("Nhap den LED ban phim: ");
+        SetDenLED(sc.nextLine());
+        System.out.println("Nhap switch BP ban phim: ");
+        SetSwitchBP(sc.nextLine());
+    }
+
+    @Override
+    public String ToString() {
+        return super.ToString() + "BanPhim [kichThuoc=" + kichThuoc + ", denLED=" + denLED + ", switchBP=" + switchBP + "]";
+    }
+
+    @Override
+    public void Xuat()
+    {
+        System.out.println(ToString());
     }
 }

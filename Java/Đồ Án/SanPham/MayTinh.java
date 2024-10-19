@@ -13,7 +13,10 @@ public abstract class MayTinh extends SanPham{
 
     }
 
-    public MayTinh(boolean coCardRoi, String heDieuHanh, String loaiSP, String model, String nhaSanXuat, PhanCung phanCung, String maSP, String tenSP, float giaSP, int soLuongSP, String moTaSP, float khuyenMaiSP, int thoiGianBaoHanhSP, float trongLuongSP, String mauSacSP, String phuKienDiKemSP) {
+    public MayTinh(String maSP, String tenSP, float giaSP, int soLuongSP, String moTaSP, float khuyenMaiSP, 
+                int thoiGianBaoHanhSP, float trongLuongSP, String mauSacSP, String phuKienDiKemSP, boolean coCardRoi, 
+                String heDieuHanh, String loaiSP, String model, String nhaSanXuat, PhanCung phanCung) 
+    {
         super(maSP, tenSP, giaSP, soLuongSP, moTaSP, khuyenMaiSP, thoiGianBaoHanhSP, trongLuongSP, mauSacSP, phuKienDiKemSP);
         this.coCardRoi = coCardRoi;
         this.heDieuHanh = heDieuHanh;
@@ -81,6 +84,38 @@ public abstract class MayTinh extends SanPham{
     public void SetCoCardRoi(boolean coCardRoi) 
     {
         this.coCardRoi = coCardRoi;
+    }
+
+    @Override
+    public void Nhap()
+    {
+        super.Nhap();
+        System.out.println("Nhap nha san xuat: ");
+        SetNhaSanXuat(sc.nextLine());
+        System.out.println("Nhap model: ");
+        SetModel(sc.nextLine());
+        System.out.println("Nhap loai san pham: ");
+        SetLoaiSP(sc.nextLine());
+        System.out.println("Nhap phan cung may tinh: ");
+        PhanCung phanCungMT = new PhanCung();
+        phanCungMT.Nhap();
+        SetPhanCung(phanCungMT);
+        System.out.println("Nhap he dieu hanh: ");
+        SetHeDieuHanh(sc.nextLine());
+        System.out.println("Co card roi khong: ");
+        SetCoCardRoi(Boolean.parseBoolean(sc.nextLine()));
+    }
+
+    @Override
+    public String toString() {
+        return super.ToString() + "MayTinh [nhaSanXuat=" + nhaSanXuat + ", model=" + model + ", loaiSP=" + loaiSP + ", phanCung="
+                + phanCung + ", heDieuHanh=" + heDieuHanh + ", coCardRoi=" + coCardRoi + "]";
+    }
+
+    @Override
+    public void Xuat()
+    {
+        System.out.println(ToString());
     }
 
 }

@@ -20,7 +20,8 @@ public abstract class SanPham{
 
     }
 
-    public SanPham(String maSP, String tenSP, float giaSP, int soLuongSP, String moTaSP, float khuyenMaiSP, int thoiGianBaoHanhSP, float trongLuongSP, String mauSacSP, String phuKienDiKemSP) 
+    public SanPham(String maSP, String tenSP, float giaSP, int soLuongSP, String moTaSP, float khuyenMaiSP, 
+                int thoiGianBaoHanhSP, float trongLuongSP, String mauSacSP, String phuKienDiKemSP) 
     {
         this.giaSP = giaSP;
         this.khuyenMaiSP = khuyenMaiSP;
@@ -114,6 +115,41 @@ public abstract class SanPham{
         this.phuKienDiKemSP = phuKienDiKemSP;
     }
 
-    
-    
+    public void Nhap()
+    {
+        System.out.println("Nhap ma san pham: ");
+        SetMaSP(sc.nextLine());
+        System.out.println("Nhap ten san pham: ");
+        SetTenSP(sc.nextLine());
+        System.out.println("Nhap gia san pham: ");
+        SetGiaSP(Float.parseFloat(sc.nextLine()));
+        System.out.println("Nhap so luong san pham: ");
+        SetSoLuongSP(Integer.parseInt(sc.nextLine()));
+        System.out.println("Nhap mo ta san pham: ");
+        SetMoTaSP(sc.nextLine());
+        System.out.println("Nhap khuyen mai san pham: ");
+        SetKhuyenMaiSP(Float.parseFloat(sc.nextLine()));
+        System.out.println("Nhap thoi gian bao hanh san pham: ");
+        SetThoiGianBaoHanhSP(Integer.parseInt(sc.nextLine()));
+        System.out.println("Nhap trong luong san pham: ");
+        SetTrongLuongSP(Integer.parseInt(sc.nextLine()));
+        System.out.println("Nhap mau sac san pham: ");
+        SetMauSacSP(sc.nextLine());
+        System.out.println("Nhap phu kien di kem san pham: ");
+        SetPhuKienDiKemSP(sc.nextLine());
+    }
+
+    public String ToString() 
+    {
+        return "SanPham [maSP=" + maSP + ", tenSP=" + tenSP + ", giaSP=" + giaSP + ", soLuongSP=" + soLuongSP
+                + ", moTaSP=" + moTaSP + ", khuyenMaiSP=" + khuyenMaiSP + ", thoiGianBaoHanhSP=" + thoiGianBaoHanhSP
+                + ", trongLuongSP=" + trongLuongSP + ", mauSacSP=" + mauSacSP + ", phuKienDiKemSP=" + phuKienDiKemSP
+                + "]";
+    }
+
+    public void Xuat()
+    {
+        System.out.println(ToString());
+    }
+
 }

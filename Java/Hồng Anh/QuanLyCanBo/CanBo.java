@@ -1,6 +1,5 @@
 package QuanLyCanBo;
 
-import com.sun.jdi.IntegerType;
 import java.time.LocalDate;
 import java.util.Scanner;
 

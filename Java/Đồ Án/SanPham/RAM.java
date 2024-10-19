@@ -9,8 +9,12 @@ public class RAM extends PhanCung{
 
     }
 
-    public RAM(int dungLuong, String loaiRAM, String loaiSP, String model, String nhaSanXuat, String maSP, String tenSP, float giaSP, int soLuongSP, String moTaSP, float khuyenMaiSP, int thoiGianBaoHanhSP, float trongLuongSP, String mauSacSP, String phuKienDiKemSP) {
-        super(loaiSP, model, nhaSanXuat, maSP, tenSP, giaSP, soLuongSP, moTaSP, khuyenMaiSP, thoiGianBaoHanhSP, trongLuongSP, mauSacSP, phuKienDiKemSP);
+    public RAM(String maSP, String tenSP, float giaSP, int soLuongSP, String moTaSP, float khuyenMaiSP,
+            int thoiGianBaoHanhSP, float trongLuongSP, String mauSacSP, String phuKienDiKemSP, String loaiSP,
+            String nhaSanXuat, int dungLuong, String loaiRAM) 
+    {
+        super(maSP, tenSP, giaSP, soLuongSP, moTaSP, khuyenMaiSP, thoiGianBaoHanhSP, trongLuongSP, mauSacSP,
+                phuKienDiKemSP, loaiSP, nhaSanXuat);
         this.dungLuong = dungLuong;
         this.loaiRAM = loaiRAM;
     }
@@ -35,5 +39,24 @@ public class RAM extends PhanCung{
         this.loaiRAM = loaiRAM;
     }
 
+    @Override
+    public void Nhap()
+    {
+        super.Nhap();
+        System.out.println("Nhap dung luong RAM: ");
+        SetDungLuong(Integer.parseInt(sc.nextLine()));
+        System.out.println("Nhap loai RAM: ");
+        SetLoaiRAM(sc.nextLine());
+    }            
 
+    @Override
+    public String ToString() {
+        return super.ToString() + "RAM [dungLuong=" + dungLuong + ", loaiRAM=" + loaiRAM + "]";
+    }
+
+    @Override
+    public void Xuat()
+    {
+        System.out.println(ToString());
+    }
 }

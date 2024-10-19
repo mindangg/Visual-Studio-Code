@@ -8,6 +8,20 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "SanPham.Main",
+            "projectName": "Visual Studio Code_1497ad68"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "Visual Studio Code_1497ad68"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "QuanLyChungCu.Main",
             "projectName": "Visual Studio Code_1497ad68"
         },

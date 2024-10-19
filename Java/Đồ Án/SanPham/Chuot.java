@@ -4,19 +4,19 @@ public class Chuot extends ThietBiNgoaiVi{
     private int dPI;
     private int soLanBam;
     private String denLED;
-    private boolean coDay;
+    private String loaiChuot;
 
     public Chuot()
     {
 
     }
 
-    public Chuot(int dPI, String denLED, int soLanBam, boolean coDay, String loaiThietBi, String phuongThucKetNoi) {
+    public Chuot(String loaiThietBi, String phuongThucKetNoi, int dPI, int soLanBam, String denLED, String loaiChuot) {
         super(loaiThietBi, phuongThucKetNoi);
         this.dPI = dPI;
-        this.denLED = denLED;
         this.soLanBam = soLanBam;
-        this.coDay = coDay;
+        this.denLED = denLED;
+        this.loaiChuot = loaiChuot;
     }
 
     public int GetdPI() 
@@ -49,13 +49,37 @@ public class Chuot extends ThietBiNgoaiVi{
         this.denLED = denLED;
     }
 
-    public boolean IsCoDay() 
-    {
-        return coDay;
+    public String GetLoaiChuot() {
+        return loaiChuot;
     }
 
-    public void SetCoDay(boolean coDay) 
+    public void SetLoaiChuot(String loaiChuot) {
+        this.loaiChuot = loaiChuot;
+    }
+
+
+    @Override
+    public void Nhap()
     {
-        this.coDay = coDay;
+        super.Nhap();
+        System.out.println("Nhap DPI chuot: ");
+        SetdPI(Integer.parseInt(sc.nextLine()));
+        System.out.println("Nhap so lan bam chuot: ");
+        SetSoLanBam(Integer.parseInt(sc.nextLine()));
+        System.out.println("Nhap den LED chuot: ");
+        SetDenLED(sc.nextLine());
+        System.out.println("Nhap loai chuot: ");
+        SetLoaiChuot(sc.nextLine());
+    }
+
+    @Override
+    public String toString() {
+        return super.ToString() + "Chuot [dPI=" + dPI + ", soLanBam=" + soLanBam + ", denLED=" + denLED + ", loaiChuot=" + loaiChuot + "]";
+    }
+
+    @Override
+    public void Xuat()
+    {
+        System.out.println(ToString());
     }
 }
