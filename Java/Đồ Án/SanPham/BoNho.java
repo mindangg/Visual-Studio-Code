@@ -1,7 +1,7 @@
 package SanPham;
 
 public class BoNho extends PhanCung{
-    private int dungLuong;
+    private int dungLuongBoNho;
     private String loaiBoNho;
 
     public BoNho() 
@@ -9,24 +9,30 @@ public class BoNho extends PhanCung{
 
     }
 
-    public BoNho(String maSP, String tenSP, float giaSP, int soLuongSP, String moTaSP, float khuyenMaiSP,
-            int thoiGianBaoHanhSP, float trongLuongSP, String mauSacSP, String phuKienDiKemSP, String loaiSP,
-            String nhaSanXuat, int dungLuong, String loaiBoNho) 
+    public BoNho(int dungLuongBoNho, String loaiBoNho) 
     {
-        super(maSP, tenSP, giaSP, soLuongSP, moTaSP, khuyenMaiSP, thoiGianBaoHanhSP, trongLuongSP, mauSacSP,
-                phuKienDiKemSP, loaiSP, nhaSanXuat);
-        this.dungLuong = dungLuong;
+        this.dungLuongBoNho = dungLuongBoNho;
         this.loaiBoNho = loaiBoNho;
     }
 
-    public int GetDungLuong() 
-    {
-        return dungLuong;
+    public BoNho(int dungLuongBoNho, String loaiBoNho, String loaiLinhKien, String model, String nhaSanXuat, String maSP, String tenSP, float giaSP, int soLuongSP, String moTaSP, float khuyenMaiSP, int thoiGianBaoHanhSP, float trongLuongSP, String mauSacSP, String phuKienDiKemSP) {
+        super(loaiLinhKien, model, nhaSanXuat, maSP, tenSP, giaSP, soLuongSP, moTaSP, khuyenMaiSP, thoiGianBaoHanhSP, trongLuongSP, mauSacSP, phuKienDiKemSP);
+        this.dungLuongBoNho = dungLuongBoNho;
+        this.loaiBoNho = loaiBoNho;
     }
 
-    public void SetDungLuong(int dungLuong) 
+
+
+
+
+    public int GetDungLuongBoNho() 
     {
-        this.dungLuong = dungLuong;
+        return dungLuongBoNho;
+    }
+
+    public void SetDungLuongBoNho(int dungLuongBoNho) 
+    {
+        this.dungLuongBoNho = dungLuongBoNho;
     }
 
     public String GetLoaiBoNho() 
@@ -44,7 +50,7 @@ public class BoNho extends PhanCung{
     {
         super.Nhap();
         System.out.println("Nhap dung luong: ");
-        SetDungLuong(Integer.parseInt(sc.nextLine()));
+        SetDungLuongBoNho(Integer.parseInt(sc.nextLine()));
         System.out.println("Nhap loai bo nho: ");
         SetLoaiBoNho(sc.nextLine());
     }            
@@ -52,7 +58,7 @@ public class BoNho extends PhanCung{
     @Override
     public String ToString() 
     {
-        return super.ToString() + "BoNho [dungLuong=" + dungLuong + ", loaiBoNho=" + loaiBoNho + "]";
+        return super.ToString() + "BoNho [dungLuong=" + dungLuongBoNho + ", loaiBoNho=" + loaiBoNho + "]";
     }
 
     @Override

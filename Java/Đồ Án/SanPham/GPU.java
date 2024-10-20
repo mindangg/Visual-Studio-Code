@@ -12,19 +12,25 @@ public class GPU extends PhanCung{
 
     }
 
-    public GPU(String maSP, String tenSP, float giaSP, int soLuongSP, String moTaSP, float khuyenMaiSP,
-            int thoiGianBaoHanhSP, float trongLuongSP, String mauSacSP, String phuKienDiKemSP, String loaiSP,
-            String nhaSanXuat, int dungLuongVRAM, String loaiVRAM, int tocDoXungNhip, int soNhanCUDA,
-            boolean rayTracing) 
+    public GPU(int dungLuongVRAM, String loaiVRAM, boolean rayTracing, int soNhanCUDA, int tocDoXungNhip) 
     {
-        super(maSP, tenSP, giaSP, soLuongSP, moTaSP, khuyenMaiSP, thoiGianBaoHanhSP, trongLuongSP, mauSacSP,
-                phuKienDiKemSP, loaiSP, nhaSanXuat);
         this.dungLuongVRAM = dungLuongVRAM;
         this.loaiVRAM = loaiVRAM;
-        this.tocDoXungNhip = tocDoXungNhip;
-        this.soNhanCUDA = soNhanCUDA;
         this.rayTracing = rayTracing;
+        this.soNhanCUDA = soNhanCUDA;
+        this.tocDoXungNhip = tocDoXungNhip;
     }
+
+    public GPU(int dungLuongVRAM, String loaiVRAM, boolean rayTracing, int soNhanCUDA, int tocDoXungNhip, String loaiLinhKien, String model, String nhaSanXuat, String maSP, String tenSP, float giaSP, int soLuongSP, String moTaSP, float khuyenMaiSP, int thoiGianBaoHanhSP, float trongLuongSP, String mauSacSP, String phuKienDiKemSP) {
+        super(loaiLinhKien, model, nhaSanXuat, maSP, tenSP, giaSP, soLuongSP, moTaSP, khuyenMaiSP, thoiGianBaoHanhSP, trongLuongSP, mauSacSP, phuKienDiKemSP);
+        this.dungLuongVRAM = dungLuongVRAM;
+        this.loaiVRAM = loaiVRAM;
+        this.rayTracing = rayTracing;
+        this.soNhanCUDA = soNhanCUDA;
+        this.tocDoXungNhip = tocDoXungNhip;
+    }
+
+
 
     public int GetDungLuongVRAM() 
     {

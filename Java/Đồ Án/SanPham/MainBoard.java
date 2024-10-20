@@ -10,16 +10,21 @@ public class MainBoard extends PhanCung{
 
     }
 
-    public MainBoard(String maSP, String tenSP, float giaSP, int soLuongSP, String moTaSP, float khuyenMaiSP,
-            int thoiGianBaoHanhSP, float trongLuongSP, String mauSacSP, String phuKienDiKemSP, String loaiSP,
-            String nhaSanXuat, String boXuLy, String chipSet, int soKheCamRAM) 
+    public MainBoard(String boXuLy, String chipSet, int soKheCamRAM) 
     {
-        super(maSP, tenSP, giaSP, soLuongSP, moTaSP, khuyenMaiSP, thoiGianBaoHanhSP, trongLuongSP, mauSacSP,
-                phuKienDiKemSP, loaiSP, nhaSanXuat);
         this.boXuLy = boXuLy;
         this.chipSet = chipSet;
         this.soKheCamRAM = soKheCamRAM;
     }
+
+    public MainBoard(String boXuLy, String chipSet, int soKheCamRAM, String loaiLinhKien, String model, String nhaSanXuat, String maSP, String tenSP, float giaSP, int soLuongSP, String moTaSP, float khuyenMaiSP, int thoiGianBaoHanhSP, float trongLuongSP, String mauSacSP, String phuKienDiKemSP) {
+        super(loaiLinhKien, model, nhaSanXuat, maSP, tenSP, giaSP, soLuongSP, moTaSP, khuyenMaiSP, thoiGianBaoHanhSP, trongLuongSP, mauSacSP, phuKienDiKemSP);
+        this.boXuLy = boXuLy;
+        this.chipSet = chipSet;
+        this.soKheCamRAM = soKheCamRAM;
+    }
+
+
 
     public String GetBoXuLy() 
     {
@@ -57,9 +62,9 @@ public class MainBoard extends PhanCung{
         super.Nhap();
         System.out.println("Nhap bo xu ly: ");
         SetBoXuLy(sc.nextLine());
-        System.out.println("Nhap loai san pham: ");
-        SetLoaiSP(sc.nextLine());
-        System.out.println("Nhap loai san pham: ");
+        System.out.println("Nhap chip set: ");
+        SetChipSet(sc.nextLine());
+        System.out.println("Nhap so khe cam RAM: ");
         SetSoKheCamRAM(Integer.parseInt(sc.nextLine()));
     }    
 

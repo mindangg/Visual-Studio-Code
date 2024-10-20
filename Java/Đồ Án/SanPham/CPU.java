@@ -10,16 +10,23 @@ public class CPU extends PhanCung{
 
     } 
 
-    public CPU(String maSP, String tenSP, float giaSP, int soLuongSP, String moTaSP, float khuyenMaiSP,
-            int thoiGianBaoHanhSP, float trongLuongSP, String mauSacSP, String phuKienDiKemSP, String loaiSP,
-            String nhaSanXuat, int soNhan, int soLuongLoi, int tocDoXungNhip) 
+    public CPU(int soLuongLoi, int soNhan, int tocDoXungNhip) 
     {
-        super(maSP, tenSP, giaSP, soLuongSP, moTaSP, khuyenMaiSP, thoiGianBaoHanhSP, trongLuongSP, mauSacSP,
-                phuKienDiKemSP, loaiSP, nhaSanXuat);
-        this.soNhan = soNhan;
         this.soLuongLoi = soLuongLoi;
+        this.soNhan = soNhan;
         this.tocDoXungNhip = tocDoXungNhip;
     }
+
+    public CPU(int soLuongLoi, int soNhan, int tocDoXungNhip, String loaiLinhKien, String model, String nhaSanXuat, String maSP, String tenSP, float giaSP, int soLuongSP, String moTaSP, float khuyenMaiSP, int thoiGianBaoHanhSP, float trongLuongSP, String mauSacSP, String phuKienDiKemSP) {
+        super(loaiLinhKien, model, nhaSanXuat, maSP, tenSP, giaSP, soLuongSP, moTaSP, khuyenMaiSP, thoiGianBaoHanhSP, trongLuongSP, mauSacSP, phuKienDiKemSP);
+        this.soLuongLoi = soLuongLoi;
+        this.soNhan = soNhan;
+        this.tocDoXungNhip = tocDoXungNhip;
+    }
+
+
+
+
 
     public int GetSoNhan() 
     {
@@ -64,7 +71,8 @@ public class CPU extends PhanCung{
     }        
 
     @Override
-    public String ToString() {
+    public String ToString() 
+    {
         return super.ToString() + "CPU [soNhan=" + soNhan + ", soLuong=" + soLuongLoi + ", tocDoXungNhip=" + tocDoXungNhip + "]";
     }
 

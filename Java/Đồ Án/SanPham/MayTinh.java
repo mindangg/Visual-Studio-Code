@@ -1,9 +1,11 @@
 package SanPham;
 
+import java.util.Arrays;
+
 public abstract class MayTinh extends SanPham{
     protected String nhaSanXuat;
     protected String model;
-    protected String loaiSP;
+    protected String loaiMayTinh;
     protected String heDieuHanh;
     protected boolean coCardRoi;
     protected PhanCung[] cacLinhKien;
@@ -16,12 +18,12 @@ public abstract class MayTinh extends SanPham{
 
     public MayTinh(String maSP, String tenSP, float giaSP, int soLuongSP, String moTaSP, float khuyenMaiSP, 
                 int thoiGianBaoHanhSP, float trongLuongSP, String mauSacSP, String phuKienDiKemSP, String nhaSanXuat,
-                String model, String loaiSP , String heDieuHanh, boolean coCardRoi, int soLuongLinhKien) 
+                String model, String loaiMayTinh , String heDieuHanh, boolean coCardRoi, int soLuongLinhKien) 
     {
         super(maSP, tenSP, giaSP, soLuongSP, moTaSP, khuyenMaiSP, thoiGianBaoHanhSP, trongLuongSP, mauSacSP, phuKienDiKemSP);
         this.coCardRoi = coCardRoi;
         this.heDieuHanh = heDieuHanh;
-        this.loaiSP = loaiSP;
+        this.loaiMayTinh = loaiMayTinh;
         this.model = model;
         this.nhaSanXuat = nhaSanXuat;
         this.cacLinhKien = new PhanCung[soLuongLinhKien];
@@ -48,14 +50,14 @@ public abstract class MayTinh extends SanPham{
         this.model = model;
     }
 
-    public String GetLoaiSP() 
+    public String GetLoaiMayTinh() 
     {
-        return loaiSP;
+        return loaiMayTinh;
     }
 
-    public void SetLoaiSP(String loaiSP) 
+    public void SetLoaiMayTinh(String loaiMayTinh) 
     {
-        this.loaiSP = loaiSP;
+        this.loaiMayTinh = loaiMayTinh;
     }
 
     public String GetHeDieuHanh() 
@@ -90,13 +92,9 @@ public abstract class MayTinh extends SanPham{
 
     public void ThemPhanCung(PhanCung phanCung) 
     {
-        if (soLuongLinhKien < cacLinhKien.length) 
-        {
-            cacLinhKien[soLuongLinhKien] = phanCung;
-            soLuongLinhKien++;
-        } 
-        else
-            System.out.println("Khong the them linh kien, mang da day.");
+        PhanCung[] newCacLinhKien = Arrays.copyOf(cacLinhKien, cacLinhKien.length + 1);
+        newCacLinhKien[this.cacLinhKien.length] = phanCung;
+        this.cacLinhKien = newCacLinhKien;
     }
 
     @Override
@@ -107,14 +105,15 @@ public abstract class MayTinh extends SanPham{
         SetNhaSanXuat(sc.nextLine());
         System.out.println("Nhap model san pham: ");
         SetModel(sc.nextLine());
-        System.out.println("Nhap loai san pham: ");
-        SetLoaiSP(sc.nextLine());
+        System.out.println("Nhap loai may tinh: ");
+        SetLoaiMayTinh(sc.nextLine());
         System.out.println("Nhap he dieu hanh: ");
         SetHeDieuHanh(sc.nextLine());
         System.out.println("Co card roi khong: ");
         SetCoCardRoi(Boolean.parseBoolean(sc.nextLine()));
+
         System.out.println("Nhap so luong linh kien: ");
-        SetSoLuongSP(Integer.parseInt(sc.nextLine()));
+        SetSoLuongLinhKien(Integer.parseInt(sc.nextLine()));
 
         System.out.println("Nhap phan cung may tinh: ");
 
