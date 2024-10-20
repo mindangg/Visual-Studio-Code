@@ -1,9 +1,9 @@
 package SanPham;
 
 public abstract class PhanCung extends SanPham{
+    protected String loaiLinhKien;
     protected String nhaSanXuat;
     protected String model;
-    protected String loaiLinhKien;
 
     public PhanCung() 
     {
@@ -16,8 +16,6 @@ public abstract class PhanCung extends SanPham{
         this.model = model;
         this.nhaSanXuat = nhaSanXuat;
     }
-
-    
 
     public String GetNhaSanXuat() 
     {
@@ -53,20 +51,22 @@ public abstract class PhanCung extends SanPham{
     public void Nhap()
     {
         super.Nhap();
+        System.out.println("Nhap loai linh kien: ");
+        SetLoaiLinhKien(sc.nextLine());
         System.out.println("Nhap nha san xuat: ");
         SetNhaSanXuat(sc.nextLine());
         System.out.println("Nhap model san pham: ");
         SetModel(sc.nextLine());
-        System.out.println("Nhap loai linh kien: ");
-        SetLoaiLinhKien(sc.nextLine());
     }
 
     public void Nhap1()
     {
-        System.out.println("Nhap nha san xuat: ");
-        SetNhaSanXuat(sc.nextLine());
         System.out.println("Nhap loai linh kien: ");
         SetLoaiLinhKien(sc.nextLine());
+        System.out.println("Nhap nha san xuat: ");
+        SetNhaSanXuat(sc.nextLine());
+        System.out.println("Nhap model san pham: ");
+        SetModel(sc.nextLine());
     }
 
     @Override
@@ -75,12 +75,19 @@ public abstract class PhanCung extends SanPham{
         return super.ToString() + "PhanCung [nhaSanXuat=" + nhaSanXuat + ", loaiSP=" + loaiLinhKien + "]";
     }
 
+    public String ToString1()
+    {
+        return "PhanCung [nhaSanXuat=" + nhaSanXuat + ", loaiSP=" + loaiLinhKien + "]";
+    }
+
     @Override
     public void Xuat()
     {
         System.out.println(ToString());
     }
 
-
-
+    public void Xuat1()
+    {
+        System.out.println(ToString1());
+    }
 }

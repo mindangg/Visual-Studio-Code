@@ -9,11 +9,23 @@ public class Desktop extends MayTinh{
 
     }
 
-    public Desktop(String casePC, String tanNhiet, String maSP, String tenSP, float giaSP, int soLuongSP, String moTaSP, float khuyenMaiSP, int thoiGianBaoHanhSP, float trongLuongSP, String mauSacSP, String phuKienDiKemSP, String nhaSanXuat, String model, String loaiMayTinh, String heDieuHanh, boolean coCardRoi, int soLuongLinhKien) {
-        super(maSP, tenSP, giaSP, soLuongSP, moTaSP, khuyenMaiSP, thoiGianBaoHanhSP, trongLuongSP, mauSacSP, phuKienDiKemSP, nhaSanXuat, model, loaiMayTinh, heDieuHanh, coCardRoi, soLuongLinhKien);
+    
+
+
+
+    public Desktop(PhanCung[] cacLinhKien, boolean coCardRoi, String heDieuHanh, String loaiMayTinh, String model,
+            String nhaSanXuat, int soLuongLinhKien, String maSP, String tenSP, float giaSP, int soLuongSP,
+            String moTaSP, float khuyenMaiSP, int thoiGianBaoHanhSP, float trongLuongSP, String mauSacSP,
+            String phuKienDiKemSP, String casePC, String tanNhiet) {
+        super(cacLinhKien, coCardRoi, heDieuHanh, loaiMayTinh, model, nhaSanXuat, soLuongLinhKien, maSP, tenSP, giaSP,
+                soLuongSP, moTaSP, khuyenMaiSP, thoiGianBaoHanhSP, trongLuongSP, mauSacSP, phuKienDiKemSP);
         this.casePC = casePC;
         this.tanNhiet = tanNhiet;
     }
+
+
+
+
 
     public String GetCasePC() 
     {

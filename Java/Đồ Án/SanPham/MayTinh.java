@@ -16,19 +16,20 @@ public abstract class MayTinh extends SanPham{
 
     }
 
-    public MayTinh(String maSP, String tenSP, float giaSP, int soLuongSP, String moTaSP, float khuyenMaiSP, 
-                int thoiGianBaoHanhSP, float trongLuongSP, String mauSacSP, String phuKienDiKemSP, String nhaSanXuat,
-                String model, String loaiMayTinh , String heDieuHanh, boolean coCardRoi, int soLuongLinhKien) 
-    {
+    public MayTinh(PhanCung[] cacLinhKien, boolean coCardRoi, String heDieuHanh, String loaiMayTinh, String model, String nhaSanXuat, int soLuongLinhKien, String maSP, String tenSP, float giaSP, int soLuongSP, String moTaSP, float khuyenMaiSP, int thoiGianBaoHanhSP, float trongLuongSP, String mauSacSP, String phuKienDiKemSP) {
         super(maSP, tenSP, giaSP, soLuongSP, moTaSP, khuyenMaiSP, thoiGianBaoHanhSP, trongLuongSP, mauSacSP, phuKienDiKemSP);
+
         this.coCardRoi = coCardRoi;
         this.heDieuHanh = heDieuHanh;
         this.loaiMayTinh = loaiMayTinh;
         this.model = model;
         this.nhaSanXuat = nhaSanXuat;
-        this.cacLinhKien = new PhanCung[soLuongLinhKien];
-        this.soLuongLinhKien = soLuongLinhKien;
+
+        this.cacLinhKien = new PhanCung[5];
+        this.soLuongLinhKien = 0;
     }
+
+
 
     public String GetNhaSanXuat() 
     {
@@ -80,22 +81,24 @@ public abstract class MayTinh extends SanPham{
         this.coCardRoi = coCardRoi;
     }
 
-    public int GetSoLuongLinhKien() 
-    {
-        return soLuongLinhKien;
-    }
-
-    public void SetSoLuongLinhKien(int soLuongLinhKien) 
-    {
-        this.soLuongLinhKien = soLuongLinhKien;
-    }
-
     public void ThemPhanCung(PhanCung phanCung) 
     {
-        PhanCung[] newCacLinhKien = Arrays.copyOf(cacLinhKien, cacLinhKien.length + 1);
-        newCacLinhKien[this.cacLinhKien.length] = phanCung;
-        this.cacLinhKien = newCacLinhKien;
+        // soLuongLinhKien = 0;
+        // PhanCung[] newCacLinhKien = Arrays.copyOf(cacLinhKien, cacLinhKien.length + 1);
+        // newCacLinhKien[this.cacLinhKien.length] = phanCung;
+        // this.cacLinhKien = newCacLinhKien;
+        // cacLinhKien[soLuongLinhKien] = phanCung;
+        if(soLuongLinhKien <= cacLinhKien.length)
+        {
+            cacLinhKien[soLuongLinhKien] = phanCung;
+            soLuongLinhKien++;
+        }
+
+        else
+            System.out.println("Het cho");
     }
+
+    
 
     @Override
     public void Nhap()
@@ -112,62 +115,44 @@ public abstract class MayTinh extends SanPham{
         System.out.println("Co card roi khong: ");
         SetCoCardRoi(Boolean.parseBoolean(sc.nextLine()));
 
-        System.out.println("Nhap so luong linh kien: ");
-        SetSoLuongLinhKien(Integer.parseInt(sc.nextLine()));
-
         System.out.println("Nhap phan cung may tinh: ");
 
-        for(int i = 0; i < soLuongLinhKien; i++) 
-        {
-            System.out.println("Nhap loai linh kien: ");
-            String loaiLinhKien = sc.nextLine();
+        this.cacLinhKien = new PhanCung[5];
+            
+        System.out.println("MainBoard: ");
+        MainBoard mainBoard = new MainBoard();
+        mainBoard.Nhap1();
+        ThemPhanCung(mainBoard);
 
-            if(loaiLinhKien.equalsIgnoreCase("MainBoard")) 
-            {
-                MainBoard mainBoard = new MainBoard();
-                mainBoard.Nhap();
-                ThemPhanCung(mainBoard);
-            }
+        System.out.println("CPU: ");
+        CPU cpu = new CPU();
+        cpu.Nhap1();
+        ThemPhanCung(cpu);
 
-            else if(loaiLinhKien.equalsIgnoreCase("CPU")) 
-            {
-                CPU cpu = new CPU();
-                cpu.Nhap();
-                ThemPhanCung(cpu);
-            }
+        System.out.println("GPU: ");
+        GPU gpu = new GPU();
+        gpu.Nhap1();
+        ThemPhanCung(gpu);
 
-            else if(loaiLinhKien.equalsIgnoreCase("GPU")) 
-            {
-                GPU gpu = new GPU();
-                gpu.Nhap();
-                ThemPhanCung(gpu);
-            }
-
-
-            else if(loaiLinhKien.equalsIgnoreCase("RAM")) 
-            {
-
-                RAM ram = new RAM();
-                ram.Nhap();
-                ThemPhanCung(ram);
-            }
-
-            else
-            {
-                BoNho boNho = new BoNho();
-                boNho.Nhap();
-                ThemPhanCung(boNho);
-            }
-
-        }
+        System.out.println("RAM: ");
+        RAM ram = new RAM();
+        ram.Nhap1();
+        ThemPhanCung(ram);
+    
+        System.out.println("Bo Nho: ");
+        BoNho boNho = new BoNho();
+        boNho.Nhap1();
+        ThemPhanCung(boNho);
     }
+    
 
-    // @Override
-    // public String toString() {
-    //     return super.ToString() + "MayTinh [nhaSanXuat=" + nhaSanXuat + ", model=" + model + ", loaiSP=" + loaiSP + ", phanCung="
-    //             + phanCung + ", heDieuHanh=" + heDieuHanh + ", coCardRoi=" + coCardRoi + "]";
-    // }
-
+    
+    @Override
+    public String ToString() {
+        return "MayTinh [nhaSanXuat=" + nhaSanXuat + ", model=" + model + ", loaiMayTinh=" + loaiMayTinh
+                + ", heDieuHanh=" + heDieuHanh + ", coCardRoi=" + coCardRoi + ", cacLinhKien="
+                + Arrays.toString(cacLinhKien) + "]";
+    }
 
 
     @Override
@@ -175,6 +160,10 @@ public abstract class MayTinh extends SanPham{
     {
         System.out.println(ToString());
     }
+
+
+
+
 
 
 

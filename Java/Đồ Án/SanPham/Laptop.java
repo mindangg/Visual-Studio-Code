@@ -10,12 +10,26 @@ public class Laptop extends MayTinh{
 
     }
 
-    public Laptop(String kichThuocManHinh, String loaiLaptop, float thoiLuongPin, String maSP, String tenSP, float giaSP, int soLuongSP, String moTaSP, float khuyenMaiSP, int thoiGianBaoHanhSP, float trongLuongSP, String mauSacSP, String phuKienDiKemSP, String nhaSanXuat, String model, String loaiMayTinh, String heDieuHanh, boolean coCardRoi, int soLuongLinhKien) {
-        super(maSP, tenSP, giaSP, soLuongSP, moTaSP, khuyenMaiSP, thoiGianBaoHanhSP, trongLuongSP, mauSacSP, phuKienDiKemSP, nhaSanXuat, model, loaiMayTinh, heDieuHanh, coCardRoi, soLuongLinhKien);
+    
+
+
+
+
+
+    public Laptop(PhanCung[] cacLinhKien, boolean coCardRoi, String heDieuHanh, String loaiMayTinh, String model,
+            String nhaSanXuat, int soLuongLinhKien, String maSP, String tenSP, float giaSP, int soLuongSP,
+            String moTaSP, float khuyenMaiSP, int thoiGianBaoHanhSP, float trongLuongSP, String mauSacSP,
+            String phuKienDiKemSP, String kichThuocManHinh, float thoiLuongPin, String loaiLaptop) {
+        super(cacLinhKien, coCardRoi, heDieuHanh, loaiMayTinh, model, nhaSanXuat, soLuongLinhKien, maSP, tenSP, giaSP,
+                soLuongSP, moTaSP, khuyenMaiSP, thoiGianBaoHanhSP, trongLuongSP, mauSacSP, phuKienDiKemSP);
         this.kichThuocManHinh = kichThuocManHinh;
-        this.loaiLaptop = loaiLaptop;
         this.thoiLuongPin = thoiLuongPin;
+        this.loaiLaptop = loaiLaptop;
     }
+
+
+
+
 
 
 

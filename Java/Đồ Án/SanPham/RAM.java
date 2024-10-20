@@ -21,10 +21,6 @@ public class RAM extends PhanCung{
         this.loaiRAM = loaiRAM;
     }
 
-
-
-
-
     public int GetDungLuongRAM() 
     {
         return dungLuongRAM;
@@ -53,7 +49,17 @@ public class RAM extends PhanCung{
         SetDungLuongRAM(Integer.parseInt(sc.nextLine()));
         System.out.println("Nhap loai RAM: ");
         SetLoaiRAM(sc.nextLine());
-    }            
+    }   
+    
+    @Override
+    public void Nhap1()
+    {
+        super.Nhap1();
+        System.out.println("Nhap dung luong RAM: ");
+        SetDungLuongRAM(Integer.parseInt(sc.nextLine()));
+        System.out.println("Nhap loai RAM: ");
+        SetLoaiRAM(sc.nextLine());
+    }
 
     @Override
     public String ToString() {
@@ -61,8 +67,19 @@ public class RAM extends PhanCung{
     }
 
     @Override
+    public String ToString1() {
+        return super.ToString1() + "RAM [dungLuong=" + dungLuongRAM + ", loaiRAM=" + loaiRAM + "]";
+    }
+
+    @Override
     public void Xuat()
     {
         System.out.println(ToString());
+    }
+
+    @Override
+    public void Xuat1()
+    {
+        System.out.println(ToString1());
     }
 }

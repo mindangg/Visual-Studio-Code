@@ -69,15 +69,39 @@ public class MainBoard extends PhanCung{
     }    
 
     @Override
+    public void Nhap1()
+    {
+        super.Nhap1();
+        System.out.println("Nhap bo xu ly: ");
+        SetBoXuLy(sc.nextLine());
+        System.out.println("Nhap chip set: ");
+        SetChipSet(sc.nextLine());
+        System.out.println("Nhap so khe cam RAM: ");
+        SetSoKheCamRAM(Integer.parseInt(sc.nextLine()));
+    }
+
+    @Override
     public String ToString() 
     {
         return super.ToString() + "MainBoard [boXuLy=" + boXuLy + ", chipSet=" + chipSet + ", soKheCamRAM=" + soKheCamRAM + "]";
     }
 
     @Override
+    public String ToString1() 
+    {
+        return super.ToString1() + "MainBoard [boXuLy=" + boXuLy + ", chipSet=" + chipSet + ", soKheCamRAM=" + soKheCamRAM + "]";
+    }
+
+    @Override
     public void Xuat()
     {
         System.out.println(ToString());
+    }
+
+    @Override
+    public void Xuat1()
+    {
+        System.out.println(ToString1());
     }
 
     

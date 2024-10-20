@@ -7,5 +7,4 @@ public class Main {
         desktop.Nhap();
         desktop.Xuat();
     }
-
 }

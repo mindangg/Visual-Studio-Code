@@ -21,10 +21,6 @@ public class BoNho extends PhanCung{
         this.loaiBoNho = loaiBoNho;
     }
 
-
-
-
-
     public int GetDungLuongBoNho() 
     {
         return dungLuongBoNho;
@@ -53,7 +49,17 @@ public class BoNho extends PhanCung{
         SetDungLuongBoNho(Integer.parseInt(sc.nextLine()));
         System.out.println("Nhap loai bo nho: ");
         SetLoaiBoNho(sc.nextLine());
-    }            
+    }  
+    
+    @Override
+    public void Nhap1()
+    {
+        super.Nhap1();
+        System.out.println("Nhap dung luong: ");
+        SetDungLuongBoNho(Integer.parseInt(sc.nextLine()));
+        System.out.println("Nhap loai bo nho: ");
+        SetLoaiBoNho(sc.nextLine());
+    }
 
     @Override
     public String ToString() 
@@ -62,9 +68,21 @@ public class BoNho extends PhanCung{
     }
 
     @Override
+    public String ToString1() 
+    {
+        return super.ToString1() + "BoNho [dungLuong=" + dungLuongBoNho + ", loaiBoNho=" + loaiBoNho + "]";
+    }
+
+    @Override
     public void Xuat()
     {
         System.out.println(ToString());
+    }
+
+    @Override
+    public void Xuat1()
+    {
+        System.out.println(ToString1());
     }
 
 }
