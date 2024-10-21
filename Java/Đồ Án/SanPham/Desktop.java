@@ -9,10 +9,6 @@ public class Desktop extends MayTinh{
 
     }
 
-    
-
-
-
     public Desktop(PhanCung[] cacLinhKien, boolean coCardRoi, String heDieuHanh, String loaiMayTinh, String model,
             String nhaSanXuat, int soLuongLinhKien, String maSP, String tenSP, float giaSP, int soLuongSP,
             String moTaSP, float khuyenMaiSP, int thoiGianBaoHanhSP, float trongLuongSP, String mauSacSP,
@@ -23,50 +19,42 @@ public class Desktop extends MayTinh{
         this.tanNhiet = tanNhiet;
     }
 
-
-
-
-
-    public String GetCasePC() 
-    {
+    public String getCasePC() {
         return casePC;
     }
 
-    public void SetCasePC(String casePC) 
-    {
+    public void setCasePC(String casePC) {
         this.casePC = casePC;
     }
 
-    public String GetTanNhiet() 
-    {
+    public String getTanNhiet() {
         return tanNhiet;
     }
 
-    public void SetTanNhiet(String tanNhiet) 
-    {
+    public void setTanNhiet(String tanNhiet) {
         this.tanNhiet = tanNhiet;
     }
 
     @Override
-    public void Nhap()
+    public void nhap()
     {
-        super.Nhap();
+        super.nhap();
         System.out.println("Nhap case PC: ");
-        SetCasePC(sc.nextLine());
+        setCasePC(sc.nextLine());
         System.out.println("Nhap tan nhiet: ");
-        SetTanNhiet(sc.nextLine());
+        setTanNhiet(sc.nextLine());
     }
 
     @Override
-    public String ToString()
+    public String toString()
     {
-        return super.ToString() + "Desktop [casePC=" + casePC + ", tanNhiet=" + tanNhiet + "]";
+        return super.toString() + "Desktop [casePC=" + casePC + ", tanNhiet=" + tanNhiet + "]";
     }
 
     @Override
-    public void Xuat()
+    public void xuat()
     {
-        System.out.println(ToString());
+        System.out.println(toString());
     }
 
 }

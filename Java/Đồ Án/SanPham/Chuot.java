@@ -19,67 +19,60 @@ public class Chuot extends ThietBiNgoaiVi{
         this.loaiChuot = loaiChuot;
     }
 
-    public int GetdPI() 
-    {
+    public int getdPI() {
         return dPI;
     }
 
-    public void SetdPI(int dPI) 
-    {
+    public void setdPI(int dPI) {
         this.dPI = dPI;
     }
 
-    public int GetSoLanBam() 
-    {
+    public int getSoLanBam() {
         return soLanBam;
     }
 
-    public void SetSoLanBam(int soLanBam) 
-    {
+    public void setSoLanBam(int soLanBam) {
         this.soLanBam = soLanBam;
     }
 
-    public String GetDenLED() 
-    {
+    public String getDenLED() {
         return denLED;
     }
 
-    public void SetDenLED(String denLED) 
-    {
+    public void setDenLED(String denLED) {
         this.denLED = denLED;
     }
 
-    public String GetLoaiChuot() {
+    public String getLoaiChuot() {
         return loaiChuot;
     }
 
-    public void SetLoaiChuot(String loaiChuot) {
+    public void setLoaiChuot(String loaiChuot) {
         this.loaiChuot = loaiChuot;
     }
 
-
     @Override
-    public void Nhap()
+    public void nhap()
     {
-        super.Nhap();
+        super.nhap();
         System.out.println("Nhap DPI chuot: ");
-        SetdPI(Integer.parseInt(sc.nextLine()));
+        setdPI(Integer.parseInt(sc.nextLine()));
         System.out.println("Nhap so lan bam chuot: ");
-        SetSoLanBam(Integer.parseInt(sc.nextLine()));
+        setSoLanBam(Integer.parseInt(sc.nextLine()));
         System.out.println("Nhap den LED chuot: ");
-        SetDenLED(sc.nextLine());
+        setDenLED(sc.nextLine());
         System.out.println("Nhap loai chuot: ");
-        SetLoaiChuot(sc.nextLine());
+        setLoaiChuot(sc.nextLine());
     }
 
     @Override
     public String toString() {
-        return super.ToString() + "Chuot [dPI=" + dPI + ", soLanBam=" + soLanBam + ", denLED=" + denLED + ", loaiChuot=" + loaiChuot + "]";
+        return super.toString() + "Chuot [dPI=" + dPI + ", soLanBam=" + soLanBam + ", denLED=" + denLED + ", loaiChuot=" + loaiChuot + "]";
     }
 
     @Override
-    public void Xuat()
+    public void xuat()
     {
-        System.out.println(ToString());
+        System.out.println(toString());
     }
 }

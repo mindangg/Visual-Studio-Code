@@ -17,14 +17,14 @@ public class QLSanPham{
         this.ds = ds;
     }
 
-    public void ThemSanPham(SanPham sp)
+    public void themSanPham(SanPham sp)
     {
         SanPham[] newDS = Arrays.copyOf(ds, ds.length + 1);
         newDS[this.ds.length] = sp;
         this.ds = newDS;
     }
 
-    public void Menu()
+    public void menu()
     {
         int choiceMenu = 1;
 
@@ -43,31 +43,31 @@ public class QLSanPham{
             switch(choiceMenu) 
             {
                 case 1:
-                    NhapDanhSach();
+                    nhapDanhSach();
                     break;
 
                 case 2:
-                    XuatDanhSach();
+                    xuatDanhSach();
                     break;
 
                 case 3:
-                    DocTuFile();
+                    docTuFile();
                     break;
 
                 case 4:
-                    NhapVaoFile();
+                    nhapVaoFile();
                     break;
 
                 case 5:
-                    SuaPhanTuTheoMa();
+                    suaPhanTuTheoMa();
                     break;
 
                 case 6:
-                    XoaPhanTuTheoMa();
+                    xoaPhanTuTheoMa();
                     break;
 
                 case 7:
-                    TimKiem();
+                    timKiem();
                     break;
 
                 default:
@@ -76,7 +76,7 @@ public class QLSanPham{
         }
     }
 
-    public void NhapDanhSach()
+    public void nhapDanhSach()
     {
         System.out.println("Nhap so luong san pham: ");
         int n = Integer.parseInt(sc.nextLine());
@@ -94,14 +94,14 @@ public class QLSanPham{
                 {
                     Desktop desktop = new Desktop();
                     desktop.Nhap();
-                    ThemSanPham(desktop);
+                    themSanPham(desktop);
                 }
 
                 else if(choiceMT.equalsIgnoreCase("Laptop"))
                 {
                     Laptop laptop = new Laptop();
                     laptop.Nhap();
-                    ThemSanPham(laptop);
+                    themSanPham(laptop);
                 }
 
                 else
@@ -115,39 +115,33 @@ public class QLSanPham{
                 System.out.println("Ban muon nhap loai linh kien nao: ");
                 System.out.println("Main Board - CPU - GPU - RAM - Bo Nho");
                 String choicePC = sc.nextLine();
-                if(choicePC.equalsIgnoreCase("Main Board"))
-                {
-                    MainBoard mainBoard = new MainBoard();
-                    mainBoard.Nhap();
-                    ThemSanPham(mainBoard);
-                }
 
-                else if(choicePC.equalsIgnoreCase("CPU"))
+                if(choicePC.equalsIgnoreCase("CPU"))
                 {
                     CPU cpu = new CPU();
                     cpu.Nhap();
-                    ThemSanPham(cpu);
+                    themSanPham(cpu);
                 }
 
                 else if(choicePC.equalsIgnoreCase("GPU"))
                 {
                     GPU gpu = new GPU();
                     gpu.Nhap();
-                    ThemSanPham(gpu);
+                    themSanPham(gpu);
                 }
 
                 else if(choicePC.equalsIgnoreCase("RAM"))
                 {
                     RAM ram = new RAM();
                     ram.Nhap();
-                    ThemSanPham(ram);
+                    themSanPham(ram);
                 }
 
                 else if(choicePC.equalsIgnoreCase("Bo Nho"))
                 {
                     BoNho boNho = new BoNho();
                     boNho.Nhap();
-                    ThemSanPham(boNho);
+                    themSanPham(boNho);
                 }
                 
                 else
@@ -166,21 +160,21 @@ public class QLSanPham{
                 {
                     Chuot chuot = new Chuot();
                     chuot.Nhap();
-                    ThemSanPham(chuot);
+                    themSanPham(chuot);
                 }
 
                 else if(choiceTB.equalsIgnoreCase("Man Hinh"))
                 {
                     ManHinh manHinh = new ManHinh();
                     manHinh.Nhap();
-                    ThemSanPham(manHinh);
+                    themSanPham(manHinh);
                 }
 
                 else if(choiceTB.equalsIgnoreCase("Ban Phim"))
                 {
                     BanPhim banPhim = new BanPhim();
                     banPhim.Nhap();
-                    ThemSanPham(banPhim);
+                    themSanPham(banPhim);
                 }
                 
                 else
@@ -196,33 +190,33 @@ public class QLSanPham{
         }
     }
 
-    public void XuatDanhSach()
+    public void xuatDanhSach()
     {
         for(var i:ds)
-            i.Xuat();
+            i.xuat();
     }
 
-    public void DocTuFile()
+    public void docTuFile()
     {
 
     }
 
-    public void NhapVaoFile()
+    public void nhapVaoFile()
     {
 
     }
 
-    public void SuaPhanTuTheoMa()
+    public void suaPhanTuTheoMa()
     {
 
     }
 
-    public void XoaPhanTuTheoMa()
+    public void xoaPhanTuTheoMa()
     {
         
     }
 
-    public void TimKiem()
+    public void timKiem()
     {
 
     }

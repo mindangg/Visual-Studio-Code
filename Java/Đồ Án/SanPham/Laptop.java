@@ -10,12 +10,6 @@ public class Laptop extends MayTinh{
 
     }
 
-    
-
-
-
-
-
     public Laptop(PhanCung[] cacLinhKien, boolean coCardRoi, String heDieuHanh, String loaiMayTinh, String model,
             String nhaSanXuat, int soLuongLinhKien, String maSP, String tenSP, float giaSP, int soLuongSP,
             String moTaSP, float khuyenMaiSP, int thoiGianBaoHanhSP, float trongLuongSP, String mauSacSP,
@@ -27,65 +21,53 @@ public class Laptop extends MayTinh{
         this.loaiLaptop = loaiLaptop;
     }
 
-
-
-
-
-
-
-    public String GetKichThuocManHinh() 
-    {
+    public String getKichThuocManHinh() {
         return kichThuocManHinh;
     }
 
-    public void SetKichThuocManHinh(String kichThuocManHinh) 
-    {
+    public void setKichThuocManHinh(String kichThuocManHinh) {
         this.kichThuocManHinh = kichThuocManHinh;
     }
 
-    public float GetThoiLuongPin() 
-    {
+    public float getThoiLuongPin() {
         return thoiLuongPin;
     }
 
-    public void SetThoiLuongPin(float thoiLuongPin) 
-    {
+    public void setThoiLuongPin(float thoiLuongPin) {
         this.thoiLuongPin = thoiLuongPin;
     }
 
-    public String GetLoaiLaptop() 
-    {
+    public String getLoaiLaptop() {
         return loaiLaptop;
     }
 
-    public void SetLoaiLaptop(String loaiLaptop)
-    {
+    public void setLoaiLaptop(String loaiLaptop) {
         this.loaiLaptop = loaiLaptop;
     }
 
     @Override
-    public void Nhap()
+    public void nhap()
     {
-        super.Nhap();
+        super.nhap();
         System.out.println("Nhap kich thuoc man hinh laptop: ");
-        SetKichThuocManHinh(sc.nextLine());
+        setKichThuocManHinh(sc.nextLine());
         System.out.println("Nhap thoi luong pin laptop: ");
-        SetThoiLuongPin(Float.parseFloat(sc.nextLine()));
+        setThoiLuongPin(Float.parseFloat(sc.nextLine()));
         System.out.println("Nhap loai laptop: ");
-        SetLoaiLaptop(sc.nextLine());
+        setLoaiLaptop(sc.nextLine());
     }
 
     @Override
-    public String ToString() 
+    public String toString() 
     {
-        return super.ToString() + "Laptop [kichThuocManHinh=" + kichThuocManHinh + ", thoiLuongPin=" + thoiLuongPin + ", loaiLaptop="
+        return super.toString() + "Laptop [kichThuocManHinh=" + kichThuocManHinh + ", thoiLuongPin=" + thoiLuongPin + ", loaiLaptop="
                 + loaiLaptop + "]";
     }
 
     @Override
-    public void Xuat()
+    public void xuat()
     {
-        System.out.println(ToString());
+        System.out.println(toString());
     }
     
 }

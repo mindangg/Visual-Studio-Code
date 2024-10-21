@@ -22,80 +22,70 @@ public class ManHinh extends ThietBiNgoaiVi{
         this.doPhanGiai = doPhanGiai;
     }
 
-    public String GetKieuManHinh() 
-    {
+    public String getKieuManHinh() {
         return kieuManHinh;
     }
 
-    public void SetKieuManHinh(String kieuManHinh) 
-    {
+    public void setKieuManHinh(String kieuManHinh) {
         this.kieuManHinh = kieuManHinh;
     }
 
-    public String GetKichThuoc() 
-    {
+    public String getKichThuoc() {
         return kichThuoc;
     }
 
-    public void SetKichThuoc(String kichThuoc) 
-    {
+    public void setKichThuoc(String kichThuoc) {
         this.kichThuoc = kichThuoc;
     }
 
-    public int GetTanSoQuet() 
-    {
+    public int getTanSoQuet() {
         return tanSoQuet;
     }
 
-    public void SetTanSoQuet(int tanSoQuet) 
-    {
+    public void setTanSoQuet(int tanSoQuet) {
         this.tanSoQuet = tanSoQuet;
     }
 
-    public String GetTamNen() 
-    {
+    public String getTamNen() {
         return tamNen;
     }
 
-    public void SetTamNen(String tamNen) 
-    {
+    public void setTamNen(String tamNen) {
         this.tamNen = tamNen;
     }
 
-    public int GetDoPhanGiai() 
-    {
+    public int getDoPhanGiai() {
         return doPhanGiai;
     }
 
-    public void SetDoPhanGiai(int doPhanGiai) 
-    {
+    public void setDoPhanGiai(int doPhanGiai) {
         this.doPhanGiai = doPhanGiai;
     }
 
     @Override
-    public void Nhap()
+    public void nhap()
     {
-        super.Nhap();
+        super.nhap();
         System.out.println("Nhap kieu man hinh: ");
-        SetKieuManHinh(sc.nextLine());
+        setKieuManHinh(sc.nextLine());
         System.out.println("Nhap kich thuoc man hinh: ");
-        SetKichThuoc(sc.nextLine());
+        setKichThuoc(sc.nextLine());
         System.out.println("Nhap tan so quet man hinh: ");
-        SetTanSoQuet(Integer.parseInt(sc.nextLine()));
+        setTanSoQuet(Integer.parseInt(sc.nextLine()));
         System.out.println("Nhap tam nen man hinh: ");
-        SetTamNen(sc.nextLine());
+        setTamNen(sc.nextLine());
         System.out.println("Nhap do phan giai man hinh: ");
-        SetDoPhanGiai(Integer.parseInt(sc.nextLine()));
+        setDoPhanGiai(Integer.parseInt(sc.nextLine()));
     }
 
     @Override
-    public String ToString() {
-        return super.ToString() + "ManHinh [kieuManHinh=" + kieuManHinh + ", kichThuoc=" + kichThuoc + ", tanSoQuet=" + tanSoQuet
+    public String toString() {
+        return super.toString() + "ManHinh [kieuManHinh=" + kieuManHinh + ", kichThuoc=" + kichThuoc + ", tanSoQuet=" + tanSoQuet
                 + ", tamNen=" + tamNen + ", doPhanGiai=" + doPhanGiai + "]";
     }
 
     @Override
-    public void Xuat()
+    public void xuat()
     {
         System.out.println(ToString());
     }

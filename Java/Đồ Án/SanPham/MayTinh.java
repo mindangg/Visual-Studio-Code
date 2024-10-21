@@ -1,7 +1,5 @@
 package SanPham;
 
-import java.util.Arrays;
-
 public abstract class MayTinh extends SanPham{
     protected String nhaSanXuat;
     protected String model;
@@ -16,70 +14,138 @@ public abstract class MayTinh extends SanPham{
 
     }
 
-    public MayTinh(PhanCung[] cacLinhKien, boolean coCardRoi, String heDieuHanh, String loaiMayTinh, String model, String nhaSanXuat, int soLuongLinhKien, String maSP, String tenSP, float giaSP, int soLuongSP, String moTaSP, float khuyenMaiSP, int thoiGianBaoHanhSP, float trongLuongSP, String mauSacSP, String phuKienDiKemSP) {
-        super(maSP, tenSP, giaSP, soLuongSP, moTaSP, khuyenMaiSP, thoiGianBaoHanhSP, trongLuongSP, mauSacSP, phuKienDiKemSP);
+    
 
-        this.coCardRoi = coCardRoi;
-        this.heDieuHanh = heDieuHanh;
-        this.loaiMayTinh = loaiMayTinh;
-        this.model = model;
+
+
+    public MayTinh(String maSP, String tenSP, float giaSP, float khuyenMaiSP, int thoiGianBaoHanhSP, float trongLuongSP,
+            String mauSacSP, String nhaSanXuat, String model, String loaiMayTinh, String heDieuHanh, boolean coCardRoi,
+            PhanCung[] cacLinhKien) {
+        super(maSP, tenSP, giaSP, khuyenMaiSP, thoiGianBaoHanhSP, trongLuongSP, mauSacSP);
         this.nhaSanXuat = nhaSanXuat;
-
+        this.model = model;
+        this.loaiMayTinh = loaiMayTinh;
+        this.heDieuHanh = heDieuHanh;
+        this.coCardRoi = coCardRoi;
         this.cacLinhKien = new PhanCung[5];
         this.soLuongLinhKien = 0;
+
     }
 
 
+    
 
-    public String GetNhaSanXuat() 
-    {
+    public String getNhaSanXuat() {
         return nhaSanXuat;
     }
 
-    public void SetNhaSanXuat(String nhaSanXuat) 
-    {
+
+
+
+
+    public void setNhaSanXuat(String nhaSanXuat) {
         this.nhaSanXuat = nhaSanXuat;
     }
 
-    public String GetModel() 
-    {
+
+
+
+
+    public String getModel() {
         return model;
     }
 
-    public void SetModel(String model) 
-    {
+
+
+
+
+    public void setModel(String model) {
         this.model = model;
     }
 
-    public String GetLoaiMayTinh() 
-    {
+
+
+
+
+    public String getLoaiMayTinh() {
         return loaiMayTinh;
     }
 
-    public void SetLoaiMayTinh(String loaiMayTinh) 
-    {
+
+
+
+
+    public void setLoaiMayTinh(String loaiMayTinh) {
         this.loaiMayTinh = loaiMayTinh;
     }
 
-    public String GetHeDieuHanh() 
-    {
+
+
+
+
+    public String getHeDieuHanh() {
         return heDieuHanh;
     }
 
-    public void SetHeDieuHanh(String heDieuHanh) 
-    {
+
+
+
+
+    public void setHeDieuHanh(String heDieuHanh) {
         this.heDieuHanh = heDieuHanh;
     }
 
-    public boolean IsCoCardRoi() 
-    {
+
+
+
+
+    public boolean isCoCardRoi() {
         return coCardRoi;
     }
 
-    public void SetCoCardRoi(boolean coCardRoi) 
-    {
+
+
+
+
+    public void setCoCardRoi(boolean coCardRoi) {
         this.coCardRoi = coCardRoi;
     }
+
+
+
+
+
+    public PhanCung[] getCacLinhKien() {
+        return cacLinhKien;
+    }
+
+
+
+
+
+    public void setCacLinhKien(PhanCung[] cacLinhKien) {
+        this.cacLinhKien = cacLinhKien;
+    }
+
+
+
+
+
+    public int getSoLuongLinhKien() {
+        return soLuongLinhKien;
+    }
+
+
+
+
+
+    public void setSoLuongLinhKien(int soLuongLinhKien) {
+        this.soLuongLinhKien = soLuongLinhKien;
+    }
+
+
+
+
 
     public void ThemPhanCung(PhanCung phanCung) 
     {
@@ -149,9 +215,14 @@ public abstract class MayTinh extends SanPham{
     
     @Override
     public String ToString() {
+        String xuat = "";
+        for(var i:cacLinhKien)
+        {
+            xuat += i.toString();
+        }
         return "MayTinh [nhaSanXuat=" + nhaSanXuat + ", model=" + model + ", loaiMayTinh=" + loaiMayTinh
                 + ", heDieuHanh=" + heDieuHanh + ", coCardRoi=" + coCardRoi + ", cacLinhKien="
-                + Arrays.toString(cacLinhKien) + "]";
+                + xuat + "]";
     }
 
 

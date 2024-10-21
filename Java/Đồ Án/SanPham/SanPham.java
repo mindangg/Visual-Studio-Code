@@ -6,153 +6,121 @@ public abstract class SanPham{
     protected String maSP;
     protected String tenSP;
     protected float giaSP;
-    protected int soLuongSP;
-    protected String moTaSP;
     protected float khuyenMaiSP;
     protected int thoiGianBaoHanhSP;
     protected float trongLuongSP;
     protected String mauSacSP;
-    protected String phuKienDiKemSP;
+
+    static int soLuongSP = 0;
     static Scanner sc = new Scanner(System.in);
 
     public SanPham()
     {
 
     }
-
-    public SanPham(String maSP, String tenSP, float giaSP, int soLuongSP, String moTaSP, float khuyenMaiSP, 
-                int thoiGianBaoHanhSP, float trongLuongSP, String mauSacSP, String phuKienDiKemSP) 
-    {
+    
+    public SanPham(String maSP, String tenSP, float giaSP, float khuyenMaiSP, int thoiGianBaoHanhSP, float trongLuongSP,
+            String mauSacSP) {
+        this.maSP = maSP;
+        this.tenSP = tenSP;
         this.giaSP = giaSP;
         this.khuyenMaiSP = khuyenMaiSP;
-        this.maSP = maSP;
-        this.mauSacSP = mauSacSP;
-        this.moTaSP = moTaSP;
-        this.phuKienDiKemSP = phuKienDiKemSP;
-        this.soLuongSP = soLuongSP;
-        this.tenSP = tenSP;
         this.thoiGianBaoHanhSP = thoiGianBaoHanhSP;
         this.trongLuongSP = trongLuongSP;
+        this.mauSacSP = mauSacSP;
+        soLuongSP++;
     }
 
-    public String GetMaSP() {
+    public String getMaSP() {
         return maSP;
     }
 
-    public void SetMaSP(String maSP) {
+    public void setMaSP(String maSP) {
         this.maSP = maSP;
     }
 
-    public String GetTenSP() {
+    public String getTenSP() {
         return tenSP;
     }
 
-    public void SetTenSP(String tenSP) {
+    public void setTenSP(String tenSP) {
         this.tenSP = tenSP;
     }
 
-    public float GetGiaSP() {
+    public float getGiaSP() {
         return giaSP;
     }
 
-    public void SetGiaSP(float giaSP) {
+    public void setGiaSP(float giaSP) {
         this.giaSP = giaSP;
     }
 
-    public int GetSoLuongSP() {
-        return soLuongSP;
-    }
-
-    public void SetSoLuongSP(int soLuongSP) {
-        this.soLuongSP = soLuongSP;
-    }
-
-    public String GetMoTaSP() {
-        return moTaSP;
-    }
-
-    public void SetMoTaSP(String moTaSP) {
-        this.moTaSP = moTaSP;
-    }
-
-    public float GetKhuyenMaiSP() {
+    public float getKhuyenMaiSP() {
         return khuyenMaiSP;
     }
 
-    public void SetKhuyenMaiSP(float khuyenMaiSP) {
+    public void setKhuyenMaiSP(float khuyenMaiSP) {
         this.khuyenMaiSP = khuyenMaiSP;
     }
 
-    public int GetThoiGianBaoHanhSP() {
+    public int getThoiGianBaoHanhSP() {
         return thoiGianBaoHanhSP;
     }
 
-    public void SetThoiGianBaoHanhSP(int thoiGianBaoHanhSP) {
+    public void setThoiGianBaoHanhSP(int thoiGianBaoHanhSP) {
         this.thoiGianBaoHanhSP = thoiGianBaoHanhSP;
     }
 
-    public float GetTrongLuongSP() {
+    public float getTrongLuongSP() {
         return trongLuongSP;
     }
 
-    public void SetTrongLuongSP(float trongLuongSP) {
+    public void setTrongLuongSP(float trongLuongSP) {
         this.trongLuongSP = trongLuongSP;
     }
 
-    public String GetMauSacSP() {
+    public String getMauSacSP() {
         return mauSacSP;
     }
 
-    public void SetMauSacSP(String mauSacSP) {
+    public void setMauSacSP(String mauSacSP) {
         this.mauSacSP = mauSacSP;
     }
 
-    public String GetPhuKienDiKemSP() {
-        return phuKienDiKemSP;
-    }
-
-    public void SetPhuKienDiKemSP(String phuKienDiKemSP) {
-        this.phuKienDiKemSP = phuKienDiKemSP;
-    }
-
-    public void Nhap()
+    public void nhap()
     {
         System.out.println("Nhap ma san pham: ");
-        SetMaSP(sc.nextLine());
+        setMaSP(sc.nextLine());
         System.out.println("Nhap ten san pham: ");
-        SetTenSP(sc.nextLine());
+        setTenSP(sc.nextLine());
         System.out.println("Nhap gia san pham: ");
-        SetGiaSP(Float.parseFloat(sc.nextLine()));
-        System.out.println("Nhap so luong san pham: ");
-        SetSoLuongSP(Integer.parseInt(sc.nextLine()));
-        System.out.println("Nhap mo ta san pham: ");
-        SetMoTaSP(sc.nextLine());
+
         System.out.println("Nhap khuyen mai san pham: ");
-        SetKhuyenMaiSP(Float.parseFloat(sc.nextLine()));
+        setKhuyenMaiSP(Float.parseFloat(sc.nextLine()));
         System.out.println("Nhap thoi gian bao hanh san pham: ");
-        SetThoiGianBaoHanhSP(Integer.parseInt(sc.nextLine()));
+        setThoiGianBaoHanhSP(Integer.parseInt(sc.nextLine()));
         System.out.println("Nhap trong luong san pham: ");
-        SetTrongLuongSP(Float.parseFloat(sc.nextLine()));
+        setTrongLuongSP(Float.parseFloat(sc.nextLine()));
         System.out.println("Nhap mau sac san pham: ");
-        SetMauSacSP(sc.nextLine());
-        System.out.println("Nhap phu kien di kem san pham: ");
-        SetPhuKienDiKemSP(sc.nextLine());
+        setMauSacSP(sc.nextLine());
+        soLuongSP++;
     }
 
-    public String ToString() 
+    
+
+    @Override
+    public String toString() {
+        return "SanPham [maSP=" + maSP + ", tenSP=" + tenSP + ", giaSP=" + giaSP + ", khuyenMaiSP=" + khuyenMaiSP
+                + ", thoiGianBaoHanhSP=" + thoiGianBaoHanhSP + ", trongLuongSP=" + trongLuongSP + ", mauSacSP="
+                + mauSacSP + "]";
+    }
+
+    public void xuat()
     {
-        return "SanPham [maSP=" + maSP + ", tenSP=" + tenSP + ", giaSP=" + giaSP + ", soLuongSP=" + soLuongSP
-                + ", moTaSP=" + moTaSP + ", khuyenMaiSP=" + khuyenMaiSP + ", thoiGianBaoHanhSP=" + thoiGianBaoHanhSP
-                + ", trongLuongSP=" + trongLuongSP + ", mauSacSP=" + mauSacSP + ", phuKienDiKemSP=" + phuKienDiKemSP
-                + "]";
+        System.out.println(toString());
     }
 
-    public void Xuat()
-    {
-        System.out.println(ToString());
-    }
-
-    public float ThanhTien()
+    public float thanhTien()
     {
         return (float)(giaSP - khuyenMaiSP * giaSP);
     }

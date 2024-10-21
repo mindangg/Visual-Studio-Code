@@ -17,56 +17,50 @@ public class BanPhim extends ThietBiNgoaiVi {
         this.switchBP = switchBP;
     }
 
-    public String GetKichThuoc() 
-    {
+    public String getKichThuoc() {
         return kichThuoc;
     }
 
-    public void SetKichThuoc(String kichThuoc) 
-    {
+    public void setKichThuoc(String kichThuoc) {
         this.kichThuoc = kichThuoc;
     }
 
-    public String GetDenLED() 
-    {
+    public String getDenLED() {
         return denLED;
     }
 
-    public void SetDenLED(String denLED) 
-    {
+    public void setDenLED(String denLED) {
         this.denLED = denLED;
     }
 
-    public String GetSwitchBP() 
-    {
+    public String getSwitchBP() {
         return switchBP;
     }
 
-    public void SetSwitchBP(String switchBP) 
-    {
+    public void setSwitchBP(String switchBP) {
         this.switchBP = switchBP;
     }
 
     @Override
-    public void Nhap()
+    public void nhap()
     {
-        super.Nhap();
+        super.nhap();
         System.out.println("Nhap kich thuoc ban phim: ");
-        SetKichThuoc(sc.nextLine());
+        setKichThuoc(sc.nextLine());
         System.out.println("Nhap den LED ban phim: ");
-        SetDenLED(sc.nextLine());
+        setDenLED(sc.nextLine());
         System.out.println("Nhap switch BP ban phim: ");
-        SetSwitchBP(sc.nextLine());
+        setSwitchBP(sc.nextLine());
     }
 
     @Override
-    public String ToString() {
-        return super.ToString() + "BanPhim [kichThuoc=" + kichThuoc + ", denLED=" + denLED + ", switchBP=" + switchBP + "]";
+    public String toString() {
+        return super.toString() + "BanPhim [kichThuoc=" + kichThuoc + ", denLED=" + denLED + ", switchBP=" + switchBP + "]";
     }
 
     @Override
-    public void Xuat()
+    public void xuat()
     {
-        System.out.println(ToString());
+        System.out.println(toString());
     }
 }
