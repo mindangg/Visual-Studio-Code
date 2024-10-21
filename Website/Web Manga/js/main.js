@@ -97,8 +97,8 @@ function best_RemoveSlider()
 
 //best slider popup
 
-document.getElementById("best__slider__popup__close").addEventListener("click", function(){
-    document.querySelector(".best__slider__popup").style.display = "none";
+document.getElementById("product__close").addEventListener("click", function(){
+    document.querySelector(".product__page").style.display = "none";
 })
 
 

@@ -24,9 +24,8 @@ public class QLSanPham{
         this.ds = newDS;
     }
 
-    public void NhapDanhSach()
+    public void Menu()
     {
-
         int choiceMenu = 1;
 
         while(choiceMenu != 0)
@@ -39,9 +38,9 @@ public class QLSanPham{
             System.out.println("6. Xoa phan tu theo ma.");
             System.out.println("7. Tim kiem san pham.");
             System.out.println("0. Thoat.");
-            choiceMenu = sc.nextInt();
+            choiceMenu = Integer.parseInt(sc.nextLine());
 
-            switch (choiceMenu) 
+            switch(choiceMenu) 
             {
                 case 1:
                     NhapDanhSach();
@@ -75,9 +74,10 @@ public class QLSanPham{
                     throw new AssertionError();
             }
         }
+    }
 
-
-
+    public void NhapDanhSach()
+    {
         System.out.println("Nhap so luong san pham: ");
         int n = Integer.parseInt(sc.nextLine());
         for(int i = 0; i < n; i++)
@@ -88,17 +88,22 @@ public class QLSanPham{
             if(choiceSP.equalsIgnoreCase("May Tinh"))
             {
                 System.out.println("Ban muon nhap loai may tinh nao: ");
-                System.out.println("Desktop - PhLaptop");
+                System.out.println("Desktop - Laptop");
                 String choiceMT = sc.nextLine();
                 if(choiceMT.equalsIgnoreCase("Desktop"))
                 {
-
+                    Desktop desktop = new Desktop();
+                    desktop.Nhap();
+                    ThemSanPham(desktop);
                 }
 
                 else if(choiceMT.equalsIgnoreCase("Laptop"))
                 {
-
+                    Laptop laptop = new Laptop();
+                    laptop.Nhap();
+                    ThemSanPham(laptop);
                 }
+
                 else
                 {
                     System.out.println("San pham khong ton tai.");
@@ -110,6 +115,45 @@ public class QLSanPham{
                 System.out.println("Ban muon nhap loai linh kien nao: ");
                 System.out.println("Main Board - CPU - GPU - RAM - Bo Nho");
                 String choicePC = sc.nextLine();
+                if(choicePC.equalsIgnoreCase("Main Board"))
+                {
+                    MainBoard mainBoard = new MainBoard();
+                    mainBoard.Nhap();
+                    ThemSanPham(mainBoard);
+                }
+
+                else if(choicePC.equalsIgnoreCase("CPU"))
+                {
+                    CPU cpu = new CPU();
+                    cpu.Nhap();
+                    ThemSanPham(cpu);
+                }
+
+                else if(choicePC.equalsIgnoreCase("GPU"))
+                {
+                    GPU gpu = new GPU();
+                    gpu.Nhap();
+                    ThemSanPham(gpu);
+                }
+
+                else if(choicePC.equalsIgnoreCase("RAM"))
+                {
+                    RAM ram = new RAM();
+                    ram.Nhap();
+                    ThemSanPham(ram);
+                }
+
+                else if(choicePC.equalsIgnoreCase("Bo Nho"))
+                {
+                    BoNho boNho = new BoNho();
+                    boNho.Nhap();
+                    ThemSanPham(boNho);
+                }
+                
+                else
+                {
+                    System.out.println("San pham khong ton tai.");
+                }
             }
 
             else if(choiceSP.equalsIgnoreCase("Thiet Bi Ngoai Vi"))
@@ -117,6 +161,32 @@ public class QLSanPham{
                 System.out.println("Ban muon nhap thiet bi nao: ");
                 System.out.println("Chuot - Man Hinh - Ban Phim");
                 String choiceTB = sc.nextLine();
+
+                if(choiceTB.equalsIgnoreCase("Chuot"))
+                {
+                    Chuot chuot = new Chuot();
+                    chuot.Nhap();
+                    ThemSanPham(chuot);
+                }
+
+                else if(choiceTB.equalsIgnoreCase("Man Hinh"))
+                {
+                    ManHinh manHinh = new ManHinh();
+                    manHinh.Nhap();
+                    ThemSanPham(manHinh);
+                }
+
+                else if(choiceTB.equalsIgnoreCase("Ban Phim"))
+                {
+                    BanPhim banPhim = new BanPhim();
+                    banPhim.Nhap();
+                    ThemSanPham(banPhim);
+                }
+                
+                else
+                {
+                    System.out.println("San pham khong ton tai.");
+                }
             }
 
             else
