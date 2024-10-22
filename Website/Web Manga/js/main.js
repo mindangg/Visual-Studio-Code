@@ -95,6 +95,18 @@ function best_RemoveSlider()
     best_dots[best_active + 1].classList.remove("best__active");
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 //best slider popup
 
 document.getElementById("product__close").addEventListener("click", function(){

@@ -10,53 +10,11 @@ public class CPU extends PhanCung{
 
     } 
 
-    public CPU(int soLuongLoi, int soNhan, int tocDoXungNhip) 
-    {
-        this.soLuongLoi = soLuongLoi;
-        this.soNhan = soNhan;
-        this.tocDoXungNhip = tocDoXungNhip;
-    }
-
-    public CPU(int soLuongLoi, int soNhan, int tocDoXungNhip, String loaiLinhKien, String model, String nhaSanXuat, String maSP, String tenSP, float giaSP, int soLuongSP, String moTaSP, float khuyenMaiSP, int thoiGianBaoHanhSP, float trongLuongSP, String mauSacSP, String phuKienDiKemSP) {
-        super(loaiLinhKien, model, nhaSanXuat, maSP, tenSP, giaSP, soLuongSP, moTaSP, khuyenMaiSP, thoiGianBaoHanhSP, trongLuongSP, mauSacSP, phuKienDiKemSP);
-        this.soLuongLoi = soLuongLoi;
-        this.soNhan = soNhan;
-        this.tocDoXungNhip = tocDoXungNhip;
-    }
 
 
 
 
 
-    public int GetSoNhan() 
-    {
-        return soNhan;
-    }
-
-    public void SetSoNhan(int soNhan) 
-    {
-        this.soNhan = soNhan;
-    }
-
-    public int GetSoLuongLoi() 
-    {
-        return soLuongLoi;
-    }
-
-    public void SetSoLuongLoi(int soLuongLoi) 
-    {
-        this.soLuongLoi = soLuongLoi;
-    }
-
-    public int GetTocDoXungNhip() 
-    {
-        return tocDoXungNhip;
-    }
-
-    public void SetTocDoXungNhip(int tocDoXungNhip) 
-    {
-        this.tocDoXungNhip = tocDoXungNhip;
-    }
 
     @Override
     public void Nhap()

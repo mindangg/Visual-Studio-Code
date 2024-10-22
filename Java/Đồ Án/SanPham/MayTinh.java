@@ -27,7 +27,7 @@ public abstract class MayTinh extends SanPham{
         this.loaiMayTinh = loaiMayTinh;
         this.heDieuHanh = heDieuHanh;
         this.coCardRoi = coCardRoi;
-        this.cacLinhKien = new PhanCung[5];
+        this.cacLinhKien = new PhanCung[4];
         this.soLuongLinhKien = 0;
 
     }
@@ -39,89 +39,45 @@ public abstract class MayTinh extends SanPham{
         return nhaSanXuat;
     }
 
-
-
-
-
     public void setNhaSanXuat(String nhaSanXuat) {
         this.nhaSanXuat = nhaSanXuat;
     }
-
-
-
-
 
     public String getModel() {
         return model;
     }
 
-
-
-
-
     public void setModel(String model) {
         this.model = model;
     }
-
-
-
-
 
     public String getLoaiMayTinh() {
         return loaiMayTinh;
     }
 
-
-
-
-
     public void setLoaiMayTinh(String loaiMayTinh) {
         this.loaiMayTinh = loaiMayTinh;
     }
-
-
-
-
 
     public String getHeDieuHanh() {
         return heDieuHanh;
     }
 
-
-
-
-
     public void setHeDieuHanh(String heDieuHanh) {
         this.heDieuHanh = heDieuHanh;
     }
-
-
-
-
 
     public boolean isCoCardRoi() {
         return coCardRoi;
     }
 
-
-
-
-
     public void setCoCardRoi(boolean coCardRoi) {
         this.coCardRoi = coCardRoi;
     }
 
-
-
-
-
     public PhanCung[] getCacLinhKien() {
         return cacLinhKien;
     }
-
-
-
-
 
     public void setCacLinhKien(PhanCung[] cacLinhKien) {
         this.cacLinhKien = cacLinhKien;
@@ -131,23 +87,9 @@ public abstract class MayTinh extends SanPham{
 
 
 
-    public int getSoLuongLinhKien() {
-        return soLuongLinhKien;
-    }
 
 
-
-
-
-    public void setSoLuongLinhKien(int soLuongLinhKien) {
-        this.soLuongLinhKien = soLuongLinhKien;
-    }
-
-
-
-
-
-    public void ThemPhanCung(PhanCung phanCung) 
+    public void themPhanCung(PhanCung phanCung) 
     {
         // soLuongLinhKien = 0;
         // PhanCung[] newCacLinhKien = Arrays.copyOf(cacLinhKien, cacLinhKien.length + 1);
@@ -167,54 +109,51 @@ public abstract class MayTinh extends SanPham{
     
 
     @Override
-    public void Nhap()
+    public void nhap()
     {
-        super.Nhap();
+        super.nhap();
         System.out.println("Nhap nha san xuat: ");
-        SetNhaSanXuat(sc.nextLine());
+        setNhaSanXuat(sc.nextLine());
         System.out.println("Nhap model san pham: ");
-        SetModel(sc.nextLine());
+        setModel(sc.nextLine());
         System.out.println("Nhap loai may tinh: ");
-        SetLoaiMayTinh(sc.nextLine());
+        setLoaiMayTinh(sc.nextLine());
         System.out.println("Nhap he dieu hanh: ");
-        SetHeDieuHanh(sc.nextLine());
+        setHeDieuHanh(sc.nextLine());
         System.out.println("Co card roi khong: ");
-        SetCoCardRoi(Boolean.parseBoolean(sc.nextLine()));
+        setCoCardRoi(Boolean.parseBoolean(sc.nextLine()));
 
         System.out.println("Nhap phan cung may tinh: ");
 
-        this.cacLinhKien = new PhanCung[5];
+        this.cacLinhKien = new PhanCung[4];
             
-        System.out.println("MainBoard: ");
-        MainBoard mainBoard = new MainBoard();
-        mainBoard.Nhap1();
-        ThemPhanCung(mainBoard);
+
 
         System.out.println("CPU: ");
         CPU cpu = new CPU();
-        cpu.Nhap1();
-        ThemPhanCung(cpu);
+        cpu.nhap1();
+        themPhanCung(cpu);
 
         System.out.println("GPU: ");
         GPU gpu = new GPU();
-        gpu.Nhap1();
-        ThemPhanCung(gpu);
+        gpu.nhap1();
+        themPhanCung(gpu);
 
         System.out.println("RAM: ");
         RAM ram = new RAM();
-        ram.Nhap1();
-        ThemPhanCung(ram);
+        ram.nhap1();
+        themPhanCung(ram);
     
         System.out.println("Bo Nho: ");
         BoNho boNho = new BoNho();
-        boNho.Nhap1();
-        ThemPhanCung(boNho);
+        boNho.nhap1();
+        themPhanCung(boNho);
     }
     
 
     
     @Override
-    public String ToString() {
+    public String toString() {
         String xuat = "";
         for(var i:cacLinhKien)
         {
@@ -227,9 +166,9 @@ public abstract class MayTinh extends SanPham{
 
 
     @Override
-    public void Xuat()
+    public void xuat()
     {
-        System.out.println(ToString());
+        System.out.println(toString());
     }
 
 
