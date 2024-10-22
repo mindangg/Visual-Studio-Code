@@ -107,6 +107,63 @@ function best_RemoveSlider()
 
 
 
+
+let book_list = document.querySelector(".book__slider .book__slider__list");
+let book_items = document.querySelectorAll(".book__slider .book__slider__list .book__slider__item");
+let book_dots = document.querySelectorAll(".book__slider .book__slider__dots li");
+let book_next = document.getElementById("book__slider__next");
+let book_prev = document.getElementById("book__slider__prev");
+
+let book_active = 0;
+let book_lengthItems = book_items.length - 4;
+
+book_next.onclick = function()
+{
+    if(book_active + 1 <= book_lengthItems)
+    {
+        book_active++;
+        book_ReloadSlider();
+        book_AddSlider();
+    }
+}
+
+book_prev.onclick = function()
+{
+    if(book_active - 1 >= 0)
+    {
+        book_active--;
+        book_ReloadSlider();
+        book_RemoveSlider();
+    }
+}
+
+function book_ReloadSlider()
+{
+    let book_checkLeft = book_items[book_active].offsetLeft;
+    book_list.style.left = -book_checkLeft + "px";
+}
+
+function book_AddSlider()
+{
+    book_dots[book_active].classList.add("book__active");
+}
+
+function book_RemoveSlider()
+{
+    book_dots[book_active + 1].classList.remove("book__active");
+}
+
+
+
+
+
+
+
+
+
+
+
+
 //best slider popup
 
 document.getElementById("product__close").addEventListener("click", function(){

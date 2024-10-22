@@ -138,7 +138,7 @@ body{
     /* background-color: purple; */
     margin: 0 40px 200px;
     /* margin-bottom: 200px; */
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .best__slider h1{
@@ -283,6 +283,173 @@ body{
 .best__slider__dots li.best__active{
     background-color: var(--green);
 } 
+
+/* book slider */
+
+.book__slider{
+    position: relative;
+    top: 190px;
+    max-width: 1519px;
+    max-width: 100vw;
+    height: 590px;
+    /* background-color: purple; */
+    margin: 0 40px 200px;
+    /* margin-bottom: 200px; */
+    /* overflow: hidden; */
+}
+
+.book__slider h1{
+    color: white;
+    font-size: 2.2em;
+    margin-bottom: 35px;
+}
+
+.book__slider__list{
+    position: absolute;
+    /* top: 0; */
+    /* top: 50px; */
+    left: 0;
+    height: 100%;
+    display: flex;
+    width: max-content;
+    transition: 0.7s;
+}
+
+.book__slider__list img{
+    width: 342px;
+    height: 360px;
+    transition: 0.22s ease-in;
+}
+
+.book__slider__item{
+    position: relative;
+    margin-right: 20px;
+}
+
+.book__slider__item img:nth-child(1){
+    position: absolute;
+}
+
+.book__slider__item img:hover{
+    cursor: pointer;
+}
+
+.book__slider__item img:nth-child(1):hover{
+    opacity: 0;
+}
+
+.book__slider__item h4{
+    position: absolute;
+    left: 0;
+    color: white;
+    /* font-size: 1em; */
+    margin-top: 3px;
+}
+
+.book__slider__item p{
+    position: absolute;
+    top: 67%;
+    color: var(--gray);
+    font-size: 15px;
+}
+
+.book__slider__item button{
+    position: absolute;
+    top: 51%;
+    left: 60.5%;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    background-color: var(--green);
+    border: none;
+    padding: 14px;  
+    /* opacity: 0; */
+    /* display: none; */
+}
+
+.book__slider__item button:hover{
+    cursor: pointer;
+    background-color: rgba(8, 220, 100, 0.8);
+}
+
+.book__slider__button{
+    position: absolute;
+    top: 90%;
+    left: 90%;
+    width: 90%;
+    display: flex;
+}
+
+.book__slider__button button{
+    width: 45px;
+    height: 45px;
+    border: solid 1px #303828;
+    border-radius: 50%;
+    background-color: var(--black);
+    color: var(--green);
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.book__slider__button button:hover{
+    cursor: pointer;
+}
+
+.book__slider__button button i:nth-child(2){
+    display: none;
+}
+
+.book__slider__button button:nth-child(1):hover #left__angle{
+    display: none;
+}
+
+.book__slider__button button:nth-child(1):hover #left__arrow{
+    display: inline;
+}
+
+.book__slider__button button:nth-child(2):hover #right__angle{
+    display: none;
+}
+
+.book__slider__button button:nth-child(2):hover #right__arrow{
+    display: inline;
+}
+
+.book__slider__dots{
+    position: absolute;
+    bottom: 6.2%;
+    left: 5%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.book__slider__dots li{
+    list-style: none;
+    width: 160px;
+    height: 1.5px;
+    /* width: 20px;
+    height: 20px; */
+    background-color: #142c24;
+    /* background-color: purple; */
+    /* margin-right: 10px; */
+    transition: 0.5s ease;
+}
+
+.book__slider__dots li.best__active{
+    background-color: var(--green);
+} 
+
+
+
+
+
+
+
+
+
+
 
 
 
