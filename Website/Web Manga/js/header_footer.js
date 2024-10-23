@@ -50,7 +50,7 @@ class SpecialHeader extends HTMLElement{
             
                         <ul>
                             <li><a href="">Family</a></li>
-                            <li><a href="">Shoujo</a></li>
+                            <li><a href="">Comedy</a></li>
                         </ul>
             
                         <ul>
@@ -242,8 +242,19 @@ document.getElementById("search__close").addEventListener("click", function(){
 })
 
 document.getElementById("shopping__close").addEventListener("click", function(){
+
+    document.querySelector(".shopping__container").animate = "rightToLeft 0.5s ease reverse";   
+})
+
+document.getElementById("shopping__close").addEventListener("click", function(){
+
     document.querySelector(".shopping__popup").style.display = "none";
 })
+
+
+
+
+
 
 
 

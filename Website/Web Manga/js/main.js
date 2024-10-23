@@ -48,7 +48,7 @@ dots.forEach((li, key) =>{
     })
 })
 
-//slider
+//best slider
 
 let best_list = document.querySelector(".best__slider .best__slider__list");
 let best_items = document.querySelectorAll(".best__slider .best__slider__list .best__slider__item");
@@ -95,18 +95,7 @@ function best_RemoveSlider()
     best_dots[best_active + 1].classList.remove("best__active");
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+//book slider
 
 let book_list = document.querySelector(".book__slider .book__slider__list");
 let book_items = document.querySelectorAll(".book__slider .book__slider__list .book__slider__item");
@@ -153,18 +142,11 @@ function book_RemoveSlider()
     book_dots[book_active + 1].classList.remove("book__active");
 }
 
-
-
-
-
-
-
-
-
-
-
-
 //best slider popup
+
+document.getElementById("best__item1").addEventListener("click", function(){
+    document.querySelector(".product__page").style.display = "inline";
+})
 
 document.getElementById("product__close").addEventListener("click", function(){
     document.querySelector(".product__page").style.display = "none";

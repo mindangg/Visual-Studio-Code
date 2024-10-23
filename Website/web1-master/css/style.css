@@ -420,7 +420,7 @@ body,html,*{
 .bannerSection .slideshow{
 	display: none;
 }
-.bannerSection .active,{
+.bannerSection .active{
 	background-color: #717171;
 	color: white;
 }
