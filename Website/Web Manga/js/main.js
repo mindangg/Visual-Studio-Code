@@ -149,6 +149,11 @@ document.getElementById("best__item1").addEventListener("click", function(){
 })
 
 document.getElementById("product__close").addEventListener("click", function(){
+    document.querySelector(".product__page").animate.ca
+})
+
+
+document.getElementById("product__close").addEventListener("click", function(){
     document.querySelector(".product__page").style.display = "none";
 })
 

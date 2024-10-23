@@ -88,19 +88,19 @@ class SpecialHeader extends HTMLElement{
                     <a href="#" class="navbar__link">Price</a>
                     <div class="navbar__price">
                         <ul>
-                            <li><a href="">Under $10 Dollars</a></li>
+                            <li><a href="">Under $5 Dollars</a></li>
                         </ul>
             
                         <ul>
-                            <li><a href="">$10 To $20 Dollars</a></li>
+                            <li><a href="">$5 To $7 Dollars</a></li>
                         </ul>
             
                         <ul>
-                            <li><a href="">$20 To $50 dollars</a></li>
+                            <li><a href="">$7 To $15 dollars</a></li>
                         </ul>
             
                         <ul>
-                            <li><a href="">Over $50 dollars</a></li>
+                            <li><a href="">Over $15 dollars</a></li>
                         </ul>
                     </div>
                 </li>
@@ -177,7 +177,7 @@ class SpecialFooter extends HTMLElement{
 
 
             <div class="footer__content">
-                <h3>Newsletter <div class="footer__underline"><span></span></div> </h3>
+                <h3>Newsletter <div class="footer__underline"><span></span></div></h3>
                 <form class="footer__form">
                     <i class="fa-regular fa-envelope" style="color:white;"></i>
                     <input type="email" placeholder="E-mail" required>
