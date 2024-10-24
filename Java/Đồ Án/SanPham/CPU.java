@@ -9,59 +9,93 @@ public class CPU extends PhanCung{
     {
 
     } 
+    
+    public CPU(int soNhan, int soLuongLoi, int tocDoXungNhip) {
+        this.soNhan = soNhan;
+        this.soLuongLoi = soLuongLoi;
+        this.tocDoXungNhip = tocDoXungNhip;
+    }
 
+    public CPU(String maSP, String tenSP, float giaSP, float khuyenMaiSP, int thoiGianBaoHanhSP, float trongLuongSP,
+            String mauSacSP, String nhaSanXuat, String loaiLinhKien, String model, int soNhan, int soLuongLoi,
+            int tocDoXungNhip) {
+        super(maSP, tenSP, giaSP, khuyenMaiSP, thoiGianBaoHanhSP, trongLuongSP, mauSacSP, nhaSanXuat, loaiLinhKien,
+                model);
+        this.soNhan = soNhan;
+        this.soLuongLoi = soLuongLoi;
+        this.tocDoXungNhip = tocDoXungNhip;
+    }
 
+    public int getSoNhan() {
+        return soNhan;
+    }
 
+    public void setSoNhan(int soNhan) {
+        this.soNhan = soNhan;
+    }
 
+    public int getSoLuongLoi() {
+        return soLuongLoi;
+    }
 
+    public void setSoLuongLoi(int soLuongLoi) {
+        this.soLuongLoi = soLuongLoi;
+    }
 
+    public int getTocDoXungNhip() {
+        return tocDoXungNhip;
+    }
+
+    public void setTocDoXungNhip(int tocDoXungNhip) {
+        this.tocDoXungNhip = tocDoXungNhip;
+    }
 
     @Override
-    public void Nhap()
+    public void nhap()
     {
-        super.Nhap();
+        super.nhap();
         System.out.println("Nhap so nhan: ");
-        SetSoNhan(Integer.parseInt(sc.nextLine()));
+        setSoNhan(Integer.parseInt(sc.nextLine()));
         System.out.println("Nhap so luong loi: ");
-        SetSoLuongLoi(Integer.parseInt(sc.nextLine()));
+        setSoLuongLoi(Integer.parseInt(sc.nextLine()));
         System.out.println("Nhap toc do xung nhip: ");
-        SetTocDoXungNhip(Integer.parseInt(sc.nextLine()));
+        setTocDoXungNhip(Integer.parseInt(sc.nextLine()));
     }  
     
     @Override
-    public void Nhap1()
+    public void nhap1()
     {
-        super.Nhap1();
+        super.nhap1();
         System.out.println("Nhap so nhan: ");
-        SetSoNhan(Integer.parseInt(sc.nextLine()));
+        setSoNhan(Integer.parseInt(sc.nextLine()));
         System.out.println("Nhap so luong loi: ");
-        SetSoLuongLoi(Integer.parseInt(sc.nextLine()));
+        setSoLuongLoi(Integer.parseInt(sc.nextLine()));
         System.out.println("Nhap toc do xung nhip: ");
-        SetTocDoXungNhip(Integer.parseInt(sc.nextLine()));
+        setTocDoXungNhip(Integer.parseInt(sc.nextLine()));
     }
 
     @Override
-    public String ToString() 
+    public String toString() 
     {
-        return super.ToString() + "CPU [soNhan=" + soNhan + ", soLuong=" + soLuongLoi + ", tocDoXungNhip=" + tocDoXungNhip + "]";
+        return super.toString() + "CPU [soNhan=" + soNhan + ", soLuong=" + soLuongLoi + ", tocDoXungNhip=" + tocDoXungNhip + "]";
     }
 
     @Override
-    public String ToString1() 
+    public String toString1() 
     {
-        return super.ToString1() + "CPU [soNhan=" + soNhan + ", soLuong=" + soLuongLoi + ", tocDoXungNhip=" + tocDoXungNhip + "]";
+        return super.toString1() + "CPU [soNhan=" + soNhan + ", soLuong=" + soLuongLoi + ", tocDoXungNhip=" + tocDoXungNhip + "]";
     }
 
     @Override
-    public void Xuat()
+    public void xuat()
     {
-        System.out.println(ToString());
+        System.out.println(toString());
     }
 
     @Override
-    public void Xuat1()
+    public void xuat1()
     {
-        System.out.println(ToString1());
+        System.out.println(toString1());
     }
 
 }

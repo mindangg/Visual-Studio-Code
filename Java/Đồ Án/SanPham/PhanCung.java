@@ -1,8 +1,8 @@
 package SanPham;
 
 public abstract class PhanCung extends SanPham{
-    protected String loaiLinhKien;
     protected String nhaSanXuat;
+    protected String loaiLinhKien;
     protected String model;
 
     public PhanCung() 
@@ -10,51 +10,80 @@ public abstract class PhanCung extends SanPham{
 
     }
 
+    public PhanCung(String maSP, String tenSP, float giaSP, float khuyenMaiSP, int thoiGianBaoHanhSP,
+            float trongLuongSP, String mauSacSP, String nhaSanXuat, String loaiLinhKien, String model) {
+        super(maSP, tenSP, giaSP, khuyenMaiSP, thoiGianBaoHanhSP, trongLuongSP, mauSacSP);
+        this.nhaSanXuat = nhaSanXuat;
+        this.loaiLinhKien = loaiLinhKien;
+        this.model = model;
+    }
 
+    public String getNhaSanXuat() {
+        return nhaSanXuat;
+    }
 
+    public void setNhaSanXuat(String nhaSanXuat) {
+        this.nhaSanXuat = nhaSanXuat;
+    }
 
+    public String getLoaiLinhKien() {
+        return loaiLinhKien;
+    }
+
+    public void setLoaiLinhKien(String loaiLinhKien) {
+        this.loaiLinhKien = loaiLinhKien;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
 
     @Override
-    public void Nhap()
+    public void nhap()
     {
-        super.Nhap();
-        System.out.println("Nhap loai linh kien: ");
-        SetLoaiLinhKien(sc.nextLine());
+        super.nhap();
         System.out.println("Nhap nha san xuat: ");
-        SetNhaSanXuat(sc.nextLine());
+        setNhaSanXuat(sc.nextLine());
+        System.out.println("Nhap loai linh kien: ");
+        setLoaiLinhKien(sc.nextLine());
+        System.out.println("Nhap nha san xuat: ");
+        setNhaSanXuat(sc.nextLine());
         System.out.println("Nhap model san pham: ");
-        SetModel(sc.nextLine());
+        setModel(sc.nextLine());
     }
 
-    public void Nhap1()
+    public void nhap1()
     {
         System.out.println("Nhap loai linh kien: ");
-        SetLoaiLinhKien(sc.nextLine());
+        setLoaiLinhKien(sc.nextLine());
         System.out.println("Nhap nha san xuat: ");
-        SetNhaSanXuat(sc.nextLine());
+        setNhaSanXuat(sc.nextLine());
         System.out.println("Nhap model san pham: ");
-        SetModel(sc.nextLine());
+        setModel(sc.nextLine());
     }
 
     @Override
-    public String ToString() 
-    {
-        return super.ToString() + "PhanCung [nhaSanXuat=" + nhaSanXuat + ", loaiSP=" + loaiLinhKien + "]";
+    public String toString(){
+        return super.toString() + "PhanCung [nhaSanXuat=" + nhaSanXuat + ", loaiLinhKien=" + loaiLinhKien + ", model=" + model + "]";
     }
 
-    public String ToString1()
-    {
-        return "PhanCung [nhaSanXuat=" + nhaSanXuat + ", loaiSP=" + loaiLinhKien + "]";
+    public String toString1(){
+        return "PhanCung [nhaSanXuat=" + nhaSanXuat + ", loaiLinhKien=" + loaiLinhKien + ", model=" + model + "]";
     }
+
 
     @Override
-    public void Xuat()
+    public void xuat()
     {
-        System.out.println(ToString());
+        System.out.println(toString());
     }
 
-    public void Xuat1()
+    public void xuat1()
     {
-        System.out.println(ToString1());
+        System.out.println(toString1());
     }
 }

@@ -12,15 +12,21 @@ public class ManHinh extends ThietBiNgoaiVi{
     
     }
 
-    public ManHinh(String kieuManHinh, String kichThuoc, int tanSoQuet, String tamNen, int doPhanGiai, String loaiThietBi, String phuongThucKetNoi) 
-    {
-        super(loaiThietBi, phuongThucKetNoi);
+    
+
+    public ManHinh(String maSP, String tenSP, float giaSP, float khuyenMaiSP, int thoiGianBaoHanhSP, float trongLuongSP,
+            String mauSacSP, String nhaSanXuat, String loaiThietBi, String phuongThucKetNoi, String kieuManHinh,
+            String kichThuoc, int tanSoQuet, String tamNen, int doPhanGiai) {
+        super(maSP, tenSP, giaSP, khuyenMaiSP, thoiGianBaoHanhSP, trongLuongSP, mauSacSP, nhaSanXuat, loaiThietBi,
+                phuongThucKetNoi);
         this.kieuManHinh = kieuManHinh;
         this.kichThuoc = kichThuoc;
         this.tanSoQuet = tanSoQuet;
         this.tamNen = tamNen;
         this.doPhanGiai = doPhanGiai;
     }
+
+
 
     public String getKieuManHinh() {
         return kieuManHinh;
@@ -87,6 +93,6 @@ public class ManHinh extends ThietBiNgoaiVi{
     @Override
     public void xuat()
     {
-        System.out.println(ToString());
+        System.out.println(toString());
     }
 }

@@ -40,38 +40,56 @@ public class QLSanPham{
             System.out.println("0. Thoat.");
             choiceMenu = Integer.parseInt(sc.nextLine());
 
+            // switch(choiceMenu) 
+            // {
+            //     case 1:
+            //         nhapDanhSach();
+            //         break;
+
+            //     case 2:
+            //         xuatDanhSach();
+            //         break;
+
+            //     case 3:
+            //         docTuFile();
+            //         break;
+
+            //     case 4:
+            //         nhapVaoFile();
+            //         break;
+
+            //     case 5:
+            //         suaPhanTuTheoMa();
+            //         break;
+
+            //     case 6:
+            //         xoaPhanTuTheoMa();
+            //         break;
+
+            //     case 7:
+            //         timKiem();
+            //         break;
+
+            //     default:
+            //         throw new AssertionError();
+
             switch(choiceMenu) 
             {
-                case 1:
-                    nhapDanhSach();
-                    break;
+                case 1 -> nhapDanhSach();
 
-                case 2:
-                    xuatDanhSach();
-                    break;
+                case 2 -> xuatDanhSach();
 
-                case 3:
-                    docTuFile();
-                    break;
+                case 3 -> docTuFile();
 
-                case 4:
-                    nhapVaoFile();
-                    break;
+                case 4 -> nhapVaoFile();
 
-                case 5:
-                    suaPhanTuTheoMa();
-                    break;
+                case 5 -> suaPhanTuTheoMa();
 
-                case 6:
-                    xoaPhanTuTheoMa();
-                    break;
+                case 6 -> xoaPhanTuTheoMa();
 
-                case 7:
-                    timKiem();
-                    break;
+                case 7 -> timKiem();
 
-                default:
-                    throw new AssertionError();
+                default -> throw new AssertionError();
             }
         }
     }
@@ -92,15 +110,15 @@ public class QLSanPham{
                 String choiceMT = sc.nextLine();
                 if(choiceMT.equalsIgnoreCase("Desktop"))
                 {
-                    Desktop desktop = new Desktop();
-                    desktop.Nhap();
+                    SanPham desktop = new Desktop();
+                    desktop.nhap();
                     themSanPham(desktop);
                 }
 
                 else if(choiceMT.equalsIgnoreCase("Laptop"))
                 {
-                    Laptop laptop = new Laptop();
-                    laptop.Nhap();
+                    SanPham laptop = new Laptop();
+                    laptop.nhap();
                     themSanPham(laptop);
                 }
 
@@ -118,29 +136,29 @@ public class QLSanPham{
 
                 if(choicePC.equalsIgnoreCase("CPU"))
                 {
-                    CPU cpu = new CPU();
-                    cpu.Nhap();
+                    SanPham cpu = new CPU();
+                    cpu.nhap();
                     themSanPham(cpu);
                 }
 
                 else if(choicePC.equalsIgnoreCase("GPU"))
                 {
-                    GPU gpu = new GPU();
-                    gpu.Nhap();
+                    SanPham gpu = new GPU();
+                    gpu.nhap();
                     themSanPham(gpu);
                 }
 
                 else if(choicePC.equalsIgnoreCase("RAM"))
                 {
-                    RAM ram = new RAM();
-                    ram.Nhap();
+                    SanPham ram = new RAM();
+                    ram.nhap();
                     themSanPham(ram);
                 }
 
                 else if(choicePC.equalsIgnoreCase("Bo Nho"))
                 {
-                    BoNho boNho = new BoNho();
-                    boNho.Nhap();
+                    SanPham boNho = new BoNho();
+                    boNho.nhap();
                     themSanPham(boNho);
                 }
                 
@@ -158,22 +176,22 @@ public class QLSanPham{
 
                 if(choiceTB.equalsIgnoreCase("Chuot"))
                 {
-                    Chuot chuot = new Chuot();
-                    chuot.Nhap();
+                    SanPham chuot = new Chuot();
+                    chuot.nhap();
                     themSanPham(chuot);
                 }
 
                 else if(choiceTB.equalsIgnoreCase("Man Hinh"))
                 {
-                    ManHinh manHinh = new ManHinh();
-                    manHinh.Nhap();
+                    SanPham manHinh = new ManHinh();
+                    manHinh.nhap();
                     themSanPham(manHinh);
                 }
 
                 else if(choiceTB.equalsIgnoreCase("Ban Phim"))
                 {
-                    BanPhim banPhim = new BanPhim();
-                    banPhim.Nhap();
+                    SanPham banPhim = new BanPhim();
+                    banPhim.nhap();
                     themSanPham(banPhim);
                 }
                 

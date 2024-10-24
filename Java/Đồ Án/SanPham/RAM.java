@@ -9,77 +9,74 @@ public class RAM extends PhanCung{
 
     }
 
-    public RAM(int dungLuongRAM, String loaiRAM) 
-    {
+    public RAM(int dungLuongRAM, String loaiRAM) {
         this.dungLuongRAM = dungLuongRAM;
         this.loaiRAM = loaiRAM;
     }
 
-    public RAM(int dungLuongRAM, String loaiRAM, String loaiLinhKien, String model, String nhaSanXuat, String maSP, String tenSP, float giaSP, int soLuongSP, String moTaSP, float khuyenMaiSP, int thoiGianBaoHanhSP, float trongLuongSP, String mauSacSP, String phuKienDiKemSP) {
-        super(loaiLinhKien, model, nhaSanXuat, maSP, tenSP, giaSP, soLuongSP, moTaSP, khuyenMaiSP, thoiGianBaoHanhSP, trongLuongSP, mauSacSP, phuKienDiKemSP);
+    public RAM(String maSP, String tenSP, float giaSP, float khuyenMaiSP, int thoiGianBaoHanhSP, float trongLuongSP,
+            String mauSacSP, String nhaSanXuat, String loaiLinhKien, String model, int dungLuongRAM, String loaiRAM) {
+        super(maSP, tenSP, giaSP, khuyenMaiSP, thoiGianBaoHanhSP, trongLuongSP, mauSacSP, nhaSanXuat, loaiLinhKien,
+                model);
         this.dungLuongRAM = dungLuongRAM;
         this.loaiRAM = loaiRAM;
     }
 
-    public int GetDungLuongRAM() 
-    {
+    public int getDungLuongRAM() {
         return dungLuongRAM;
     }
 
-    public void SetDungLuongRAM(int dungLuongRAM) 
-    {
+    public void setDungLuongRAM(int dungLuongRAM) {
         this.dungLuongRAM = dungLuongRAM;
     }
 
-    public String GetLoaiRAM() 
-    {
+    public String getLoaiRAM() {
         return loaiRAM;
     }
 
-    public void SetLoaiRAM(String loaiRAM) 
-    {
+    public void setLoaiRAM(String loaiRAM) {
         this.loaiRAM = loaiRAM;
     }
 
     @Override
-    public void Nhap()
+    public void nhap()
     {
-        super.Nhap();
+        super.nhap();
         System.out.println("Nhap dung luong RAM: ");
-        SetDungLuongRAM(Integer.parseInt(sc.nextLine()));
+        setDungLuongRAM(Integer.parseInt(sc.nextLine()));
         System.out.println("Nhap loai RAM: ");
-        SetLoaiRAM(sc.nextLine());
+        setLoaiRAM(sc.nextLine());
     }   
     
     @Override
-    public void Nhap1()
+    public void nhap1()
     {
-        super.Nhap1();
+        super.nhap1();
         System.out.println("Nhap dung luong RAM: ");
-        SetDungLuongRAM(Integer.parseInt(sc.nextLine()));
+        setDungLuongRAM(Integer.parseInt(sc.nextLine()));
         System.out.println("Nhap loai RAM: ");
-        SetLoaiRAM(sc.nextLine());
+        setLoaiRAM(sc.nextLine());
     }
 
     @Override
-    public String ToString() {
-        return super.ToString() + "RAM [dungLuong=" + dungLuongRAM + ", loaiRAM=" + loaiRAM + "]";
+    public String toString() {
+        return super.toString() + "RAM [dungLuong=" + dungLuongRAM + ", loaiRAM=" + loaiRAM + "]";
     }
 
     @Override
-    public String ToString1() {
-        return super.ToString1() + "RAM [dungLuong=" + dungLuongRAM + ", loaiRAM=" + loaiRAM + "]";
+    public String toString1() {
+        return super.toString1() + "RAM [dungLuong=" + dungLuongRAM + ", loaiRAM=" + loaiRAM + "]";
     }
 
     @Override
-    public void Xuat()
+    public void xuat()
     {
-        System.out.println(ToString());
+        System.out.println(toString());
     }
 
     @Override
-    public void Xuat1()
+    public void xuat1()
     {
-        System.out.println(ToString1());
+        System.out.println(toString1());
     }
 }

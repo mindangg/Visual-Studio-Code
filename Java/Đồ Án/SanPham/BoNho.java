@@ -9,80 +9,78 @@ public class BoNho extends PhanCung{
 
     }
 
-    public BoNho(int dungLuongBoNho, String loaiBoNho) 
-    {
+    public BoNho(int dungLuongBoNho, String loaiBoNho) {
         this.dungLuongBoNho = dungLuongBoNho;
         this.loaiBoNho = loaiBoNho;
     }
 
-    public BoNho(int dungLuongBoNho, String loaiBoNho, String loaiLinhKien, String model, String nhaSanXuat, String maSP, String tenSP, float giaSP, int soLuongSP, String moTaSP, float khuyenMaiSP, int thoiGianBaoHanhSP, float trongLuongSP, String mauSacSP, String phuKienDiKemSP) {
-        super(loaiLinhKien, model, nhaSanXuat, maSP, tenSP, giaSP, soLuongSP, moTaSP, khuyenMaiSP, thoiGianBaoHanhSP, trongLuongSP, mauSacSP, phuKienDiKemSP);
+    public BoNho(String maSP, String tenSP, float giaSP, float khuyenMaiSP, int thoiGianBaoHanhSP, float trongLuongSP,
+            String mauSacSP, String nhaSanXuat, String loaiLinhKien, String model, int dungLuongBoNho,
+            String loaiBoNho) {
+        super(maSP, tenSP, giaSP, khuyenMaiSP, thoiGianBaoHanhSP, trongLuongSP, mauSacSP, nhaSanXuat, loaiLinhKien,
+                model);
         this.dungLuongBoNho = dungLuongBoNho;
         this.loaiBoNho = loaiBoNho;
     }
 
-    public int GetDungLuongBoNho() 
-    {
+    public int getDungLuongBoNho() {
         return dungLuongBoNho;
     }
 
-    public void SetDungLuongBoNho(int dungLuongBoNho) 
-    {
+    public void setDungLuongBoNho(int dungLuongBoNho) {
         this.dungLuongBoNho = dungLuongBoNho;
     }
 
-    public String GetLoaiBoNho() 
-    {
+    public String getLoaiBoNho() {
         return loaiBoNho;
     }
 
-    public void SetLoaiBoNho(String loaiBoNho) 
-    {
+    public void setLoaiBoNho(String loaiBoNho) {
         this.loaiBoNho = loaiBoNho;
     }
 
     @Override
-    public void Nhap()
+    public void nhap()
     {
-        super.Nhap();
+        super.nhap();
         System.out.println("Nhap dung luong: ");
-        SetDungLuongBoNho(Integer.parseInt(sc.nextLine()));
+        setDungLuongBoNho(Integer.parseInt(sc.nextLine()));
         System.out.println("Nhap loai bo nho: ");
-        SetLoaiBoNho(sc.nextLine());
+        setLoaiBoNho(sc.nextLine());
     }  
     
     @Override
-    public void Nhap1()
+    public void nhap1()
     {
-        super.Nhap1();
+        super.nhap1();
         System.out.println("Nhap dung luong: ");
-        SetDungLuongBoNho(Integer.parseInt(sc.nextLine()));
+        setDungLuongBoNho(Integer.parseInt(sc.nextLine()));
         System.out.println("Nhap loai bo nho: ");
-        SetLoaiBoNho(sc.nextLine());
+        setLoaiBoNho(sc.nextLine());
     }
 
     @Override
-    public String ToString() 
+    public String toString() 
     {
-        return super.ToString() + "BoNho [dungLuong=" + dungLuongBoNho + ", loaiBoNho=" + loaiBoNho + "]";
+        return super.toString() + "BoNho [dungLuong=" + dungLuongBoNho + ", loaiBoNho=" + loaiBoNho + "]";
     }
 
     @Override
-    public String ToString1() 
+    public String toString1() 
     {
-        return super.ToString1() + "BoNho [dungLuong=" + dungLuongBoNho + ", loaiBoNho=" + loaiBoNho + "]";
+        return super.toString1() + "BoNho [dungLuong=" + dungLuongBoNho + ", loaiBoNho=" + loaiBoNho + "]";
     }
 
     @Override
-    public void Xuat()
+    public void xuat()
     {
-        System.out.println(ToString());
+        System.out.println(toString());
     }
 
     @Override
-    public void Xuat1()
+    public void xuat1()
     {
-        System.out.println(ToString1());
+        System.out.println(toString1());
     }
 
 }

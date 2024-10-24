@@ -10,8 +10,11 @@ public class BanPhim extends ThietBiNgoaiVi {
 
     }
 
-    public BanPhim(String kichThuoc, String denLED, String switchBP, String loaiThietBi, String phuongThucKetNoi) {
-        super(loaiThietBi, phuongThucKetNoi);
+    public BanPhim(String maSP, String tenSP, float giaSP, float khuyenMaiSP, int thoiGianBaoHanhSP, float trongLuongSP,
+            String mauSacSP, String nhaSanXuat, String loaiThietBi, String phuongThucKetNoi, String kichThuoc,
+            String denLED, String switchBP) {
+        super(maSP, tenSP, giaSP, khuyenMaiSP, thoiGianBaoHanhSP, trongLuongSP, mauSacSP, nhaSanXuat, loaiThietBi,
+                phuongThucKetNoi);
         this.kichThuoc = kichThuoc;
         this.denLED = denLED;
         this.switchBP = switchBP;
